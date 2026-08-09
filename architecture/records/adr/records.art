@@ -1,0 +1,25 @@
+# Module: Records
+
+**Purpose:** Decide how the conventions repository describes its project hierarchy.
+
+## Decision: Records Are the Repository Metadata Source of Truth
+
+**Status:** Adopted
+
+**Context:** The conventions repository needs to describe its project,
+  namespaces, packages, paths, and relationships without relying on the
+  workspace's records. `repos/workspace-tooling/ops/records/` already provides
+  the working project/namespace/package record pattern.
+
+**Decision:** The conventions repository carries its own `ops/records/`
+  hierarchy. It has at least one project record under
+  `ops/records/projects/`, one record for each namespace under
+  `ops/records/namespaces/`, and one record for each package under
+  `ops/records/packages/`. The project record identifies namespaces and
+  workspaces; namespace records identify packages; package records identify
+  content paths and extension relationships.
+
+**Consequences:** The repository scaffold and migrated package layout must be
+  kept in sync with these records. The workspace record points to the
+  repository but does not duplicate its project-specific metadata. The exact
+  namespace names and package paths remain governed by the taxonomy proposal.

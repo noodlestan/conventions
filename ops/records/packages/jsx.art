@@ -6,7 +6,7 @@
 
 **Description:** Reference conventions for JSX, extending TypeScript conventions.
 
-**Path:** `packages/jsx/`
+**Path:** `jsx/`
 
 **Canonical Name:** `@noodlestan/refs-conventions-jsx`
 
@@ -19,7 +19,7 @@
 **Dependencies:**
 
 - Direct:
-  - Package Dependency: TypeScript Conventions
+    - Package Dependency: TypeScript Conventions
 
 **Scaffolders:**
 

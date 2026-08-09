@@ -6,7 +6,7 @@
 
 **Description:** Reference conventions for SolidJS, extending JSX conventions.
 
-**Path:** `packages/solidjs/`
+**Path:** `solidjs/`
 
 **Canonical Name:** `@noodlestan/refs-conventions-solidjs`
 
@@ -19,7 +19,7 @@
 **Dependencies:**
 
 - Direct:
-  - Package Dependency: JSX Conventions
+    - Package Dependency: JSX Conventions
 
 **Scaffolders:**
 

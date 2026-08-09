@@ -1,0 +1,30 @@
+# Module: Packaging
+
+**Purpose:** Decide how convention packages compose and extend one another.
+
+## Decision: Extensions Reference Their Base Package
+
+**Status:** Adopted
+
+**Context:** Some conventions may specialize a broader concern. Copying base
+  documents into an extending package would create drift, while treating every
+  package as unrelated would lose the relationship needed by consumers.
+
+**Decision:** A package may explicitly extend another package. The package
+record names its base package, and every extending convention file contains a
+mandatory reading section pointing to the parent package, for example:
+
+```text
+:READ `@noodlestan/refs-conventions-jsx/`
+```
+
+The child file describes only additions or constraints. It does not copy the
+base package's documents; consumers resolve the base package plus the
+extension.
+
+**Consequences:** Package records and inventories need an explicit extension
+  relationship. The repository must define compatibility and precedence rules
+  before extension-heavy packages are migrated. The adopted chain is
+  `@noodlestan/refs-conventions-typescript` ←
+  `@noodlestan/refs-conventions-jsx` ←
+  `@noodlestan/refs-conventions-solidjs`.
