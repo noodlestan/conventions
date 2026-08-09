@@ -1,0 +1,25 @@
+# Module
+
+## Project: Conventions
+
+**Purpose:** Maintain reusable Noodlestan conventions as a standalone reference package.
+
+**Description:** A private documentation and reference package containing convention documents and their inventory.
+
+**Path:** `./`
+
+**Package Name:** `@noodlestan/conventions`
+
+**Private:** `true`
+
+**PackageFile:** `package.json`
+
+**License:** MIT
+
+**Namespaces:**
+
+- Package and namespace records are pending the next package-mapping slice.
+
+**Packages:**
+
+- Package record is pending the next package-mapping slice.

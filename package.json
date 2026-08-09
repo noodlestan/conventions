@@ -1,0 +1,7 @@
+{
+  "name": "@noodlestan/conventions",
+  "private": true,
+  "description": "Reusable Noodlestan conventions as a reference package",
+  "license": "MIT",
+  "dependencies": {}
+}
