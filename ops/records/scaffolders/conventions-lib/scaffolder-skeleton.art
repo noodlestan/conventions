@@ -1,0 +1,9 @@
+# Module
+
+## Scaffolder Skeleton: Conventions Lib
+
+**Purpose:** Scaffolds a conventions reference package with its README and package metadata.
+
+**Source:** `./skeleton`
+
+**Target:** `{{%path}}`

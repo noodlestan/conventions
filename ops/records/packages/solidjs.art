@@ -1,0 +1,34 @@
+# Module
+
+## Package: SolidJS Conventions
+
+**Purpose:** SolidJS-specific conventions.
+
+**Description:** Reference conventions for SolidJS, extending JSX conventions; documents will be migrated in a later slice.
+
+**Path:** `packages/solidjs/`
+
+**Canonical Name:** `@noodlestan/refs-conventions-solidjs`
+
+**Language:** Markdown
+
+**Extends:** `@noodlestan/refs-conventions-jsx`
+
+**PackageFile:** package.json
+
+**Dependencies:**
+
+- Direct:
+  - Package Dependency: JSX Conventions
+
+**Scaffolders:**
+
+- Scaffolder Skeleton: Conventions Lib
+
+## Package Dependency: JSX Conventions
+
+**Canonical Name:** `@noodlestan/refs-conventions-jsx`
+
+**Purpose:** Base JSX conventions extended by the SolidJS reference package.
+
+**Version:** `*`

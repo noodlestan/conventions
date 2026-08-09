@@ -18,8 +18,18 @@
 
 **Namespaces:**
 
-- Package and namespace records are pending the next package-mapping slice.
+- Namespace: Refs Conventions
 
 **Packages:**
 
-- Package record is pending the next package-mapping slice.
+- Package: TypeScript Conventions
+- Package: JSX Conventions
+- Package: SolidJS Conventions
+- Package: SCSS Conventions
+
+**Workspaces:**
+
+- `packages/typescript/`
+- `packages/jsx/`
+- `packages/solidjs/`
+- `packages/scss/`

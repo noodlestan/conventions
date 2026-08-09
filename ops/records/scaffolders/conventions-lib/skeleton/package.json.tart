@@ -1,0 +1,6 @@
+{
+  "name": "{{%package.canonical-name}}",
+  "private": true,
+  "description": "{{%package.description}}",
+  "license": "MIT"
+}

@@ -1,0 +1,23 @@
+# Module
+
+## Package: SCSS Conventions
+
+**Purpose:** SCSS and styling conventions.
+
+**Description:** Reference conventions for SCSS; documents will be migrated in a later slice.
+
+**Path:** `packages/scss/`
+
+**Canonical Name:** `@noodlestan/refs-conventions-scss`
+
+**Language:** Markdown
+
+**PackageFile:** package.json
+
+**Dependencies:**
+
+- Direct: (none)
+
+**Scaffolders:**
+
+- Scaffolder Skeleton: Conventions Lib

@@ -1,0 +1,23 @@
+# Module
+
+## Package: TypeScript Conventions
+
+**Purpose:** TypeScript language and project conventions.
+
+**Description:** Reference conventions for TypeScript; documents will be migrated in a later slice.
+
+**Path:** `packages/typescript/`
+
+**Canonical Name:** `@noodlestan/refs-conventions-typescript`
+
+**Language:** Markdown
+
+**PackageFile:** package.json
+
+**Dependencies:**
+
+- Direct: (none)
+
+**Scaffolders:**
+
+- Scaffolder Skeleton: Conventions Lib

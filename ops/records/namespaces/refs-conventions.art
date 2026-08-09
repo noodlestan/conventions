@@ -1,0 +1,20 @@
+# Module
+
+## Namespace: Refs Conventions
+
+**Purpose:** Maintain reusable language and styling conventions.
+
+**Description:** Reference packages for TypeScript, JSX, SolidJS, and SCSS conventions.
+
+**Path:** `packages/`
+
+**Packages:**
+
+- Package: TypeScript Conventions
+- Package: JSX Conventions
+- Package: SolidJS Conventions
+- Package: SCSS Conventions
+
+**Scaffolders:**
+
+- (none)
