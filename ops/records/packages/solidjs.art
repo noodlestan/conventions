@@ -4,7 +4,7 @@
 
 **Purpose:** SolidJS-specific conventions.
 
-**Description:** Reference conventions for SolidJS, extending JSX conventions; documents will be migrated in a later slice.
+**Description:** Reference conventions for SolidJS, extending JSX conventions.
 
 **Path:** `packages/solidjs/`
 

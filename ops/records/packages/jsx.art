@@ -4,7 +4,7 @@
 
 **Purpose:** JSX syntax and authoring conventions.
 
-**Description:** Reference conventions for JSX, extending TypeScript conventions; documents will be migrated in a later slice.
+**Description:** Reference conventions for JSX, extending TypeScript conventions.
 
 **Path:** `packages/jsx/`
 
