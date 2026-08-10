@@ -110,38 +110,20 @@ reference inventory.
 
 ### Architecture
 
-The workspace coordinates the project through `reference/_architect.md`,
-`reference/_guide.md`, `reference/_wip.md`, and
-`reference/_backlog/plan-{work-chunk}/`. The conventions repository contains
-the migrated reference documents, package documentation, and an `ops/records/`
-hierarchy:
+## Project Architecture
 
-- `ops/records/projects/{project}.art` describes the repository project,
-  workspaces, namespaces, dependencies, scripts, and scaffolders.
-- `ops/records/namespaces/{namespace}.art` describes a namespace and its
-  packages.
-- `ops/records/packages/{package}.art` describes a package, its path, content,
-  dependencies, and any package it extends.
+- Project is `@noodlestan/conventions`.
+- Reference documents are split into convention packages.
+- Packages may extend other packages; extending files use a mandatory `:READ`
+  directive for the parent package.
+- Every project, namespace, and package in the conventions repository is
+  described by its repository-local `ops/records/` files.
+- The repository-local `ops/records/` hierarchy is authoritative for project,
+  namespace, package, and scaffolder metadata.
 
-The workspace repository record is the cross-repository pointer; it does not
-duplicate these project-specific records.
+### Iterations
 
-### Steps
-
-1. **Initialize the conventions repository** — check out the existing empty
-   remote, add the root license, README, package metadata, ignore rules, the
-   project record, and a reference inventory shell, then validate and commit the
-   standalone foundation. This slice does not require final package paths.
-2. **Finalize package records** — create the `refs-conventions` namespace and
-   package records, attach the `Conventions Lib` scaffolder, declare direct
-   package dependencies, and confirm the extension chain.
-3. **Migrate the convention references** — split the current convention files
-   into the approved package paths, preserve their names and useful links,
-   complete the inventory, and record extension relationships.
-4. **Validate the package boundary** — verify the root metadata, records,
-   package ownership, extension links, inventory, and repository-local workflow
-   from a clean checkout; record any package-manager or publication limitation
-   without expanding scope.
+WIP
 
 ### Follow-ups (out of scope for this plan)
 
@@ -158,7 +140,3 @@ duplicate these project-specific records.
   published or broadly consumed.
 - Decide whether the repository later needs a generated site or searchable
   documentation layer.
-
-## Active Backlog
-
-- `$ROOT/reference/_backlog/plan-noodlestan-refs-package/plan.md`

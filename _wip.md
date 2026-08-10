@@ -7,6 +7,7 @@ validation `93a5c72`.
 
 ## ACTIONABLE
 
+- Describe architecture in `architecture/index.md`.
 - Validate the relocated context layout and all repository-local links.
 - Update the workspace and repository records so they no longer describe the
   moved context as workspace-owned `reference/` content.
@@ -23,10 +24,3 @@ validation `93a5c72`.
 ## BLOCKER
 
 - None.
-
-## Context Map
-
-- [`_guide`](_guide) — repository workflow and layout.
-- [`_architect`](_architect) — project direction and next workstream.
-- [`backlog/`](backlog/) — plans, instructions, and reports.
-- [`architecture/records/adr/`](architecture/records/adr/) — adopted decisions.
