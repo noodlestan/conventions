@@ -11,7 +11,7 @@ documents have been migrated into those package boundaries. The standalone
 package has now been validated; remaining packaging questions are tracked in
 WIP.
 
-**Template:** `$ROOT/.agents/domains/plans/templates/plan__template.md`
+**Template:** `$WORSKPACE/.agents/domains/plans/templates/plan__template.md`
 
 **Skill:** `write-plan`
 
@@ -26,24 +26,24 @@ reference package. The workspace remains the planning and coordination home.
 
 No task files exist yet. The initial source material is:
 
-- `$ROOT/reference/conventions/`
-- `$ROOT/reference/index.md`
-- `$ROOT/reference/_guide.md`
-- `$ROOT/reference/_wip.md`
+- `$WORSKPACE/reference/conventions/`
+- `$WORSKPACE/reference/index.md`
+- `$WORSKPACE/reference/_guide.md`
+- `$WORSKPACE/reference/_wip.md`
 
 ## Mandatory Reading
 
-- `$ROOT/.agents/domains/plans/definitions/index.md`
-- `$ROOT/.agents/domains/plans/files/index.md`
-- `$ROOT/.agents/domains/plans/structures/plan__structure.md`
-- `$ROOT/reference/_guide.md`
-- `$ROOT/reference/_wip.md`
-- `$ROOT/reference/index.md`
-- `$ROOT/reference/_architect.md`
-- `$ROOT/reference/_adr/taxonomy.art`
-- `$ROOT/reference/_adr/packaging.art`
-- `$ROOT/reference/_adr/records.art`
-- `$ROOT/ops/records/repositories/conventions.art`
+- `$WORSKPACE/.agents/domains/plans/definitions/index.md`
+- `$WORSKPACE/.agents/domains/plans/files/index.md`
+- `$WORSKPACE/.agents/domains/plans/structures/plan__structure.md`
+- `$WORSKPACE/reference/_guide.md`
+- `$WORSKPACE/reference/_wip.md`
+- `$WORSKPACE/reference/index.md`
+- `$WORSKPACE/reference/_architect.md`
+- `$WORSKPACE/reference/_adr/taxonomy.art`
+- `$WORSKPACE/reference/_adr/packaging.art`
+- `$WORSKPACE/reference/_adr/records.art`
+- `$WORSKPACE/ops/records/repositories/conventions.art`
 
 ## Commits
 
@@ -56,11 +56,11 @@ entry point, reference inventory shell, and standalone validation workflow in
 the existing empty remote. Package and namespace records wait for the next
 taxonomy review.
 
-**Instructions File:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository.md`
+**Instructions File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository.md`
 
 **Commit:** `fc18b2f scaffold-conventions-repository`
 
-**Report:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository__report.md`
+**Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository__report.md`
 
 **Evidence:** The standalone repository foundation and project record were
 created, validated, committed, and pushed. Package and namespace records were
@@ -73,11 +73,11 @@ intentionally deferred to the next slice.
 Create the conventions repository's namespace and package records from the
 agreed working taxonomy and extension chain.
 
-**Instructions File:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/define-conventions-package-records.md`
+**Instructions File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/define-conventions-package-records.md`
 
 **Commit:** `5de2971 define-conventions-package-records`
 
-**Report:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/define-conventions-package-records__report.md`
+**Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/define-conventions-package-records__report.md`
 
 **Evidence:** The project, namespace, package, scaffolder, and template
 records were created, validated, committed, and pushed to the conventions
@@ -90,14 +90,14 @@ repository.
 Move the convention references into the package structure defined by the
 records and preserve their domain organization and links.
 
-**Instructions File:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/migrate-reference-conventions.md`
+**Instructions File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/migrate-reference-conventions.md`
 
 The repository records are complete and this slice migrated the four
 convention documents into their package boundaries.
 
 **Commit:** `776dd2f migrate reference conventions`
 
-**Report:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/migrate-reference-conventions__report.md`
+**Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/migrate-reference-conventions__report.md`
 
 **Evidence:** The four convention packages, inheritance directives, repository
 documentation, and inventory links were migrated and validated in a clean local
@@ -111,13 +111,13 @@ and the delegation completion confirms the retry pushed it to `origin/main`.
 Validate the migrated package from a clean repository checkout, including its
 root metadata, inventory, local links, and documented standalone workflow.
 
-**Instructions File:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/validate-conventions-package.md`
+**Instructions File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/validate-conventions-package.md`
 
 The migration commit is complete and the validation instruction has completed.
 
 **Commit:** `93a5c72 validate-conventions-package`
 
-**Report:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/validate-conventions-package__report.md`
+**Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/validate-conventions-package__report.md`
 
 **Evidence:** README publication wording was corrected; metadata, records,
 package ownership, links, extension directives, and a fresh archive checkout
@@ -128,44 +128,43 @@ clean.
 
 ### `scaffold-conventions-repository` - `COMPLETED`
 
-**Instruction File:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository.md`
+**Instruction File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository.md`
 
 **Worker:** `Hegel` (`019fe3bd-02e4-7243-ad25-d7b0a19873ba`)
 
 **Commit:** `fc18b2f scaffold-conventions-repository`
 
-**Report:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository__report.md`
+**Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository__report.md`
 
 ### `define-conventions-package-records` - `COMPLETED`
 
-**Instruction File:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/define-conventions-package-records.md`
+**Instruction File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/define-conventions-package-records.md`
 
 **Worker:** `Ptolemy` (`019fe455-3533-72a0-8818-508bb993b18e`)
 
 **Commit:** `5de2971 define-conventions-package-records`
 
-**Report:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/define-conventions-package-records__report.md`
+**Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/define-conventions-package-records__report.md`
 
 ### `migrate-reference-conventions` - `COMPLETED`
 
-**Instruction File:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/migrate-reference-conventions.md`
+**Instruction File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/migrate-reference-conventions.md`
 
 **Worker:** `Hypatia` (`019fe609-adac-72e3-a2a8-e8e9156b1bff`)
 
 **Commit:** `776dd2f migrate reference conventions`
 
-**Report:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/migrate-reference-conventions__report.md`
+**Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/migrate-reference-conventions__report.md`
 
 ### `validate-conventions-package` - `COMPLETED`
 
-**Instruction File:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/validate-conventions-package.md`
+**Instruction File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/validate-conventions-package.md`
 
 **Worker:** `Fermat` (`019fe622-bb93-7962-8a71-32ea63e49983`)
 
 **Commit:** `93a5c72 validate-conventions-package`
 
-**Report:** `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/validate-conventions-package__report.md`
-
+**Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/validate-conventions-package__report.md`
 
 ## Follow ups
 
