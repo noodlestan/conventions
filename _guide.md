@@ -9,14 +9,13 @@ require an `_module.md` companion file.
 
 ## Mandatory Reading
 
-::READ `_guide` — this project overview, workflow, and agent interactions.
+::READ `_guide.md` — this project overview, workflow, and agent interactions.
 
-::READ `_wip` — transient work state, blockers, and current hand-offs.
+::READ `_wip.md` — transient work state, blockers, and current hand-offs.
 
-::READ `_architect` — project direction, package taxonomy, extension model, and sequence.
+::READ `_architect.md` — project direction, package taxonomy, extension model, and sequence.
 
 ::READ `architecture/records/adr/` — architecture proposals and decisions that constrain planning.
-
 
 ## Agents and User Interactions
 
@@ -30,7 +29,7 @@ self-contained within this repository.
 2. Turn architectural questions into proposals under `_adr/`.
 3. Discuss proposals with the user; do not autonomously resolve open decisions.
 4. Update `_architect.md` with the agreed direction.
-5. Refine the active plan and instructions under `_backlog/`.
+5. Refine the active plan and instructions under `backlog/`.
 6. Delegate only instructions whose status is `PLANNED`.
 7. Let the worker execute, validate, commit, push, and report.
 8. Integrate the report into the plan and WIP before preparing the next slice.
@@ -48,8 +47,8 @@ self-contained within this repository.
 
 ## Companion Files
 
-- [`_wip`](_wip) — transient blockers, questions, and hand-offs.
-- [`_architect`](_architect) — high-level project direction.
+- [`_wip.md`](_wip.md) — transient blockers, questions, and hand-offs.
+- [`_architect.md`](_architect.md) — high-level project direction.
 - [`architecture/records/adr/`](architecture/records/adr/) — architecture
   proposals and decisions.
 - [`backlog/`](backlog/) — plans, instructions, and reports.
