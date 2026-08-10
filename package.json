@@ -1,7 +1,16 @@
 {
-  "name": "@noodlestan/conventions",
+  "name": "noodlestan/conventions",
+  "version": "0.0.1",
   "private": true,
   "description": "Reusable Noodlestan conventions as a reference package",
+  "author": "Noodlestan",
   "license": "MIT",
+  "packageManager": "npm@10.2.3",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {}
 }

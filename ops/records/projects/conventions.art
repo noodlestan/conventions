@@ -8,7 +8,9 @@
 
 **Path:** `./`
 
-**Package Name:** `@noodlestan/conventions`
+**Remote:** `git@github.com:noodlestan/conventions.git`
+
+**Canonical Name:** `noodlestan/conventions`
 
 **Private:** `true`
 
@@ -16,20 +18,27 @@
 
 **License:** MIT
 
+**Workspaces:**
+
+- `packages/*`
+
 **Namespaces:**
 
 - Namespace: Refs Conventions
 
-**Packages:**
+**Setup:**
 
-- Package: TypeScript Conventions
-- Package: JSX Conventions
-- Package: SolidJS Conventions
-- Package: SCSS Conventions
+```
+# run at root of repository, not per package
+npm ci
+```
 
-**Workspaces:**
+**Verification:**
 
-- `packages/typescript/`
-- `packages/jsx/`
-- `packages/solidjs/`
-- `packages/scss/`
+```
+# per package modified
+npm run lint:fix # to fix formatting issues automatically
+npm run lint # to report other issues
+npm run build
+npm run test
+```
