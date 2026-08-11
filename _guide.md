@@ -26,6 +26,25 @@ packages/           — convention package content
 architecture/       — ADRs
 ```
 
+## Setup
+
+Run at root of repository, not per package:
+
+```bash
+npm ci # to install dependencies.
+```
+
+## Verification
+
+Run per package modified:
+
+```bash
+npm run lint:fix # to fix formatting issues automatically
+npm run lint # to report other issues
+npm run build
+npm run test
+```
+
 ## Records Management
 
 The workspace maintains ops records at `ops/records` detailing project configurations, namespaces, packages, dependencies, scaffolding and more.
