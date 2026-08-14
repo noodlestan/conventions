@@ -27,7 +27,7 @@ coordination and planning home.
 
 The conventions repo is a reference package, not a second workspace and not a
 build root. The workspace record at
-`$ROOT/ops/records/repositories/conventions.art` declares the repository and
+`$ROOT/_records/repositories/conventions.art` declares the repository and
 its checkout; the repo owns its own README, license, package metadata, and
 reference inventory.
 
@@ -42,9 +42,9 @@ reference inventory.
   be representable without copying the base package's documents. An extending
   convention file must include a mandatory `READ` reference to its parent
   package.
-- Project, namespace, and package records under the repository's `ops/records/`
-  directory, following the record model already used by
-  `repos/workspace-tooling/ops/records/`.
+- Project, namespace, and package records under the repository's `_records/`
+   directory, following the record model already used by
+   `repos/workspace-tooling/_records/`.
 - The current convention documents migrated from `$ROOT/reference/conventions/`
   into the package boundaries established by that mapping.
 - An inventory that preserves document names, package ownership, extension
@@ -69,7 +69,7 @@ reference inventory.
   directory layout as an implicit taxonomy.
 - Treat package extension as an explicit relationship. An extending package
   may add or constrain a base package, but must not silently fork its content.
-- Record every project, namespace, and package in `ops/records/`; records are
+- Record every project, namespace, and package in `_records/`; records are
   the authoritative metadata for the repository scaffold.
 - Keep the root brief separate from executable backlog chunks.
 - Preserve convention content and links during migration unless a broken link
@@ -97,7 +97,7 @@ reference inventory.
   without the workspace checkout.
 - The repository carries no workspace planning files or project-specific
   records from this workspace; it carries its own project, namespace, and
-  package records under `ops/records/`.
+   package records under `_records/`.
 - The convention inventory and README agree with the files actually present.
 - Every reference document belongs to one package; shared use is inherited from
   a base package and is never left as unassigned material.
@@ -117,8 +117,8 @@ reference inventory.
 - Packages may extend other packages; extending files use a mandatory `:READ`
   directive for the parent package.
 - Every project, namespace, and package in the conventions repository is
-  described by its repository-local `ops/records/` files.
-- The repository-local `ops/records/` hierarchy is authoritative for project,
+   described by its repository-local `_records/` files.
+- The repository-local `_records/` hierarchy is authoritative for project,
   namespace, package, and scaffolder metadata.
 
 ### Iterations

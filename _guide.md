@@ -47,7 +47,16 @@ npm run test
 
 ## Records Management
 
-The workspace maintains ops records at `ops/records` detailing project configurations, namespaces, packages, dependencies, scaffolding and more.
+Records are co-located with the resources they describe in `_records/` directories:
+
+- **Project:** `_records/project.art`
+- **Namespace:** `{namespace}/_records/namespace.art`
+- **Package:** `{package-path}/_records/package.art`
+
+Examples:
+- `repos/conventions/_records/project.art`
+- `repos/conventions/refs/_records/namespace.art`
+- `repos/conventions/refs/typescript/_records/package.art`
 
 ## References
 
