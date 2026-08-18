@@ -57,7 +57,7 @@ The workspace maintains an architecture reference at `architecture/index.md` and
 
 This project plans its work with the plan workflow defined in `$WORKSPACE/.agents/domains/plans/`.
 
-The short-term focus is captured in `_wip.md` – actionable items, pending questions, blockers, and follow-ups (no done items).
+The short-term focus is captured in `_wip.md` — actionable items, pending questions, blockers, and follow-ups (no done items).
 
 The requirements, use cases, and principles are captured in `_architect.md`, along with approach to work sequence, iterations, and milestones.
 
