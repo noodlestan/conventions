@@ -10,6 +10,12 @@
 
 **Canonical Name:** `@noodlestan/refs-conventions-jsx`
 
+**Version:** –
+
+**Private:** `trie`
+
+**Published:** `false`
+
 **Language:** Markdown
 
 **Extends:** `@noodlestan/refs-conventions-typescript`
