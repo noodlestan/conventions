@@ -11,7 +11,7 @@ documents have been migrated into those package boundaries. The standalone
 package has now been validated; remaining packaging questions are tracked in
 WIP.
 
-**Template:** `$WORSKPACE/.agents/domains/plans/templates/plan__template.md`
+**Template:** `$WORSKPACE/.agents/domains/plans/templates/plan.tart`
 
 **Skill:** `write-plan`
 
@@ -35,7 +35,7 @@ No task files exist yet. The initial source material is:
 
 - `$WORSKPACE/.agents/domains/plans/definitions/index.md`
 - `$WORSKPACE/.agents/domains/plans/files/index.md`
-- `$WORSKPACE/.agents/domains/plans/structures/plan__structure.md`
+- `$WORSKPACE/.agents/domains/plans/structures/plan.art`
 - `$WORSKPACE/reference/_guide.md`
 - `$WORSKPACE/reference/_wip.md`
 - `$WORSKPACE/reference/index.md`

@@ -26,7 +26,7 @@ boundary, and project record that later package-mapping work will fill.
 
 - `$ROOT/.agents/domains/plans/definitions/index.md`
 - `$ROOT/.agents/domains/plans/files/index.md`
-- `$ROOT/.agents/domains/plans/templates/report__template.md`
+- `$ROOT/.agents/domains/plans/templates/instructions-report.tart`
 - `$ROOT/reference/_guide.md`
 - `$ROOT/reference/_architect.md`
 - `$ROOT/reference/_wip.md`
@@ -126,7 +126,7 @@ migration instruction.
 1. Summarise the current context, asking: are you reporting completion or a BLOCKER?
 2. Gather evidence of changes and validation outcomes, or blocker details.
 3. Use the `render-template` skill with
-   `$ROOT/.agents/domains/plans/templates/report__template.md` to write
+   `$ROOT/.agents/domains/plans/templates/instructions-report.tart` to write
    `$ROOT/reference/_backlog/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository__report.md`.
 4. Report tersely: happy face plus up to three bullets containing the commit,
    created artefacts, and any blocker.
