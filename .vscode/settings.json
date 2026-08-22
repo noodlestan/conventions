@@ -1,0 +1,23 @@
+{
+  "files.associations": {
+    "*.art": "markdown",
+    "*.tart": "markdown"
+  },
+  "editor.tabSize": 4,
+  "editor.insertSpaces": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.exclude": {
+    "**/*.lock.hcl": true,
+    "**/.terraform": true,
+    "**/terraform.tfstate*": true
+  },
+  "search.exclude": {
+    "**/*.lock.hcl": true,
+    "**/.terraform": true,
+    "**/terraform.tfstate*": true
+  }
+}
