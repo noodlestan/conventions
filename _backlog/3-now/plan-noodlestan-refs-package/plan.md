@@ -24,18 +24,10 @@ reference package. The workspace remains the planning and coordination home.
 
 ## Source Tasks
 
-No task files exist yet. The initial source material is:
-
-- `$WORSKPACE/reference/conventions/`
-- `$WORSKPACE/reference/index.md`
-- `$WORSKPACE/reference/_guide.md`
-- `$WORSKPACE/reference/_wip.md`
+No task files existed. The initial source material was `$WORSKPACE/reference/*` (migrated meanwhile).
 
 ## Mandatory Reading
 
-- `$WORSKPACE/.agents/domains/plans/definitions/index.md`
-- `$WORSKPACE/.agents/domains/plans/files/index.md`
-- `$WORSKPACE/.agents/domains/plans/structures/plan.art`
 - `$WORSKPACE/reference/_guide.md`
 - `$WORSKPACE/reference/_wip.md`
 - `$WORSKPACE/reference/index.md`
@@ -43,7 +35,7 @@ No task files exist yet. The initial source material is:
 - `$WORSKPACE/reference/_adr/taxonomy.art`
 - `$WORSKPACE/reference/_adr/packaging.art`
 - `$WORSKPACE/reference/_adr/records.art`
-- `$WORSKPACE/ops/records/repositories/conventions.art`
+- `$WORSKPACE/_records/repositories/conventions.art`
 
 ## Commits
 

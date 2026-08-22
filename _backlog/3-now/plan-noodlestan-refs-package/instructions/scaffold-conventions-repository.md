@@ -31,10 +31,10 @@ boundary, and project record that later package-mapping work will fill.
 - `$ROOT/reference/_architect.md`
 - `$ROOT/reference/_wip.md`
 - `$ROOT/reference/index.md`
-- `$ROOT/ops/records/repositories/conventions.art`
-- `$ROOT/repos/workspace-tooling/ops/records/projects/workspace-tooling.art`
-- `$ROOT/repos/workspace-tooling/ops/records/namespaces/cli.art`
-- `$ROOT/repos/workspace-tooling/ops/records/packages/esbuild.art`
+- `$ROOT/_records/repositories/conventions.art`
+- `$ROOT/repos/workspace-tooling/_records/projects/workspace-tooling.art`
+- `$ROOT/repos/workspace-tooling/_records/namespaces/cli.art`
+- `$ROOT/repos/workspace-tooling/_records/packages/esbuild.art`
 - `$ROOT/.agents/domains/project/structures/project.art`
 - `$ROOT/.agents/domains/project/structures/package.art`
 
@@ -62,7 +62,7 @@ Work only in the checkout of the conventions repository at
 - Add a minimal `.gitignore` for generated files and dependency directories.
 - Add the initial `index.md` inventory shell with a placeholder section for the
   convention documents that the next migration instruction will populate.
-- Add `ops/records/projects/conventions.art` using the same record style as the
+- Add `_records/projects/conventions.art` using the same record style as the
   workspace-tooling project record. Record the repository project, root path,
   package name, and current private status. Do not invent namespaces or package
   records before the package mapping is finalized; state that they are pending
@@ -100,7 +100,7 @@ Work only in the checkout of the conventions repository at
   package is private, and it has no runtime dependencies.
 - Confirm `README.md`, `LICENSE`, `.gitignore`, and `index.md` exist and the
   README links only to files present in the repository.
-- Confirm `ops/records/projects/conventions.art` exists and does not claim
+- Confirm `_records/projects/conventions.art` exists and does not claim
   package or namespace records that are not present yet.
 - Run the repository's available documentation or lint validation. If no such
   script exists yet, record that fact rather than adding a toolchain in this

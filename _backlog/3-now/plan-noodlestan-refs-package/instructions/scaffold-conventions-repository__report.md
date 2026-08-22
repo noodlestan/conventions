@@ -18,7 +18,7 @@ The foundation was created only in `$ROOT/repos/conventions`:
 - `README.md` — describes the reference package, current layout, and maintenance status.
 - `package.json` — declares `@noodlestan/conventions` as private with no dependencies.
 - `index.md` — inventory shell with a pending convention-document section.
-- `ops/records/projects/conventions.art` — records the repository project, root path, package name, private status, and pending package/namespace mapping.
+- `_records/projects/conventions.art` — records the repository project, root path, package name, private status, and pending package/namespace mapping.
 
 No convention documents, workspace planning files, namespace records, or package
 records were added.

@@ -23,12 +23,12 @@ consistent, and consumable as a standalone reference repository.
 - `$ROOT/reference/_adr/taxonomy.art`
 - `$ROOT/reference/_adr/packaging.art`
 - `$ROOT/reference/_adr/records.art`
-- `$ROOT/ops/records/repositories/conventions.art`
+- `$ROOT/_records/repositories/conventions.art`
 
 ## Changes
 
 Work only in `$ROOT/repos/conventions`. Inspect the root README, package
-metadata, inventory, convention files, and `ops/records/` hierarchy. Correct
+metadata, inventory, convention files, and `_records/` hierarchy. Correct
 only inconsistencies introduced by the migration; do not expand the package
 taxonomy or add publication tooling.
 

@@ -33,9 +33,9 @@ losing ownership, inheritance, or source links.
 - `$ROOT/reference/conventions/jsx.md`
 - `$ROOT/reference/conventions/solid-js.md`
 - `$ROOT/reference/conventions/scss.md`
-- `$ROOT/repos/workspace-tooling/ops/records/projects/workspace-tooling.art`
-- `$ROOT/repos/workspace-tooling/ops/records/namespaces/cli.art`
-- `$ROOT/repos/workspace-tooling/ops/records/packages/esbuild.art`
+- `$ROOT/repos/workspace-tooling/_records/projects/workspace-tooling.art`
+- `$ROOT/repos/workspace-tooling/_records/namespaces/cli.art`
+- `$ROOT/repos/workspace-tooling/_records/packages/esbuild.art`
 
 ## Changes
 
@@ -68,8 +68,7 @@ Work only in `$ROOT/repos/conventions`.
 - Every package directory has one package record and one namespace record
   references each package.
 - Every migrated document has exactly one package owner.
-- `jsx` contains `:READ \`@noodlestan/refs-conventions-typescript/\`` and
-  `solid-js` contains `:READ \`@noodlestan/refs-conventions-jsx/\``.
+- `jsx` contains `:READ \`@noodlestan/refs-conventions-typescript/\``and`solid-js`contains`:READ \`@noodlestan/refs-conventions-jsx/\``.
 - No document contains a broken local link or an untracked package boundary.
 - The repository's available documentation validation passes.
 

@@ -28,17 +28,17 @@ document migration must follow.
 - `$ROOT/reference/_adr/taxonomy.art`
 - `$ROOT/reference/_adr/packaging.art`
 - `$ROOT/reference/_adr/records.art`
-- `$ROOT/ops/records/repositories/conventions.art`
-- `$ROOT/repos/workspace-tooling/ops/records/projects/workspace-tooling.art`
-- `$ROOT/repos/workspace-tooling/ops/records/namespaces/cli.art`
-- `$ROOT/repos/workspace-tooling/ops/records/packages/esbuild.art`
+- `$ROOT/_records/repositories/conventions.art`
+- `$ROOT/repos/workspace-tooling/_records/projects/workspace-tooling.art`
+- `$ROOT/repos/workspace-tooling/_records/namespaces/cli.art`
+- `$ROOT/repos/workspace-tooling/_records/packages/esbuild.art`
 - `$ROOT/.agents/domains/project/structures/scaffolder-skeleton.art`
 - `$ROOT/.agents/domains/project/structures/package-dependency.art`
 - `$ROOT/.agents/domains/project/structures/package.art`
 - `$ROOT/.agents/domains/project/structures/namespace.art`
-- `$ROOT/repos/artificial/ops/records/scaffolders/skeleton-common/scaffolder-skeleton.art`
-- `$ROOT/repos/artificial/ops/records/scaffolders/skeleton-lib/scaffolder-skeleton.art`
-- `$ROOT/repos/artificial/ops/records/scaffolders/skeleton-lib/skeleton/`
+- `$ROOT/repos/artificial/_records/scaffolders/skeleton-common/scaffolder-skeleton.art`
+- `$ROOT/repos/artificial/_records/scaffolders/skeleton-lib/scaffolder-skeleton.art`
+- `$ROOT/repos/artificial/_records/scaffolders/skeleton-lib/skeleton/`
 
 ## Changes
 
@@ -46,10 +46,10 @@ Clone or fetch `git@github.com:noodlestan/conventions.git` into
 `$ROOT/repos/conventions`, verify the foundation commit exists on `origin/main`,
 and work only in that checkout.
 
-- Update `ops/records/projects/conventions.art` to identify the
+- Update `_records/projects/conventions.art` to identify the
   `refs-conventions` namespace and its package workspaces.
-- Create `ops/records/namespaces/refs-conventions.art` for the namespace.
-- Create package records under `ops/records/packages/` for:
+- Create `_records/namespaces/refs-conventions.art` for the namespace.
+- Create package records under `_records/packages/` for:
   - `@noodlestan/refs-conventions-typescript`
   - `@noodlestan/refs-conventions-jsx`
   - `@noodlestan/refs-conventions-solidjs`
@@ -59,7 +59,7 @@ and work only in that checkout.
   record model establishes a correction.
 - Record the extension chain: JSX extends TypeScript; SolidJS extends JSX;
   SCSS is independent.
-- Create `ops/records/scaffolders/conventions-lib/scaffolder-skeleton.art`
+- Create `_records/scaffolders/conventions-lib/scaffolder-skeleton.art`
   using the `Scaffolder Skeleton` structure and the `skeleton-lib` pattern.
   Name the record `Scaffolder Skeleton: Conventions Lib`, set its source to
   `./skeleton`, and include `.tart` templates for at least `README.md` and

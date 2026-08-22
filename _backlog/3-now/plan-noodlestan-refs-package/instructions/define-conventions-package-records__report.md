@@ -12,14 +12,14 @@
 
 #### Files changed
 
-- `repos/conventions/ops/records/projects/conventions.art` — identifies the Refs Conventions namespace, four package records, and concrete package workspaces; retains the private root package metadata.
-- `repos/conventions/ops/records/namespaces/refs-conventions.art` — defines the namespace and its four packages.
-- `repos/conventions/ops/records/packages/typescript.art` — defines the TypeScript package with no direct dependencies.
-- `repos/conventions/ops/records/packages/jsx.art` — defines the JSX package, its TypeScript extension, and inline TypeScript dependency record.
-- `repos/conventions/ops/records/packages/solidjs.art` — defines the SolidJS package, its JSX extension, and inline JSX dependency record.
-- `repos/conventions/ops/records/packages/scss.art` — defines the independent SCSS package with no direct dependencies.
-- `repos/conventions/ops/records/scaffolders/conventions-lib/scaffolder-skeleton.art` — defines `Scaffolder Skeleton: Conventions Lib` with relative source `./skeleton`.
-- `repos/conventions/ops/records/scaffolders/conventions-lib/skeleton/README.md.tart` and `package.json.tart` — provide the required package templates.
+- `repos/conventions/_records/projects/conventions.art` — identifies the Refs Conventions namespace, four package records, and concrete package workspaces; retains the private root package metadata.
+- `repos/conventions/_records/namespaces/refs-conventions.art` — defines the namespace and its four packages.
+- `repos/conventions/_records/packages/typescript.art` — defines the TypeScript package with no direct dependencies.
+- `repos/conventions/_records/packages/jsx.art` — defines the JSX package, its TypeScript extension, and inline TypeScript dependency record.
+- `repos/conventions/_records/packages/solidjs.art` — defines the SolidJS package, its JSX extension, and inline JSX dependency record.
+- `repos/conventions/_records/packages/scss.art` — defines the independent SCSS package with no direct dependencies.
+- `repos/conventions/_records/scaffolders/conventions-lib/scaffolder-skeleton.art` — defines `Scaffolder Skeleton: Conventions Lib` with relative source `./skeleton`.
+- `repos/conventions/_records/scaffolders/conventions-lib/skeleton/README.md.tart` and `package.json.tart` — provide the required package templates.
 
 #### Commit and push
 
