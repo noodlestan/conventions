@@ -54,9 +54,10 @@ Records are co-located with the resources they describe in `_records/` directori
 - **Package:** `{package-path}/_records/package.art`
 
 Examples:
-- `repos/conventions/_records/project.art`
-- `repos/conventions/refs/_records/namespace.art`
-- `repos/conventions/refs/typescript/_records/package.art`
+
+- `checkouts/conventions/_records/project.art`
+- `checkouts/conventions/refs/_records/namespace.art`
+- `checkouts/conventions/refs/typescript/_records/package.art`
 
 ## References
 

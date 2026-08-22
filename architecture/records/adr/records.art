@@ -8,7 +8,7 @@
 
 **Context:** The conventions repository needs to describe its project,
 namespaces, packages, paths, and relationships without relying on the
-workspace's records. `repos/workspace-tooling/_records/` already provides
+workspace's records. `checkouts/workspace-tooling/_records/` already provides
 the working project/namespace/package record pattern.
 
 **Decision:** The conventions repository carries its own `_records/`

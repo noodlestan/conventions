@@ -27,7 +27,7 @@ consistent, and consumable as a standalone reference repository.
 
 ## Changes
 
-Work only in `$ROOT/repos/conventions`. Inspect the root README, package
+Work only in `$ROOT/checkouts/conventions`. Inspect the root README, package
 metadata, inventory, convention files, and `_records/` hierarchy. Correct
 only inconsistencies introduced by the migration; do not expand the package
 taxonomy or add publication tooling.

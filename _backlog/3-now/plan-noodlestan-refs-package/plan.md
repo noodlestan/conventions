@@ -118,41 +118,33 @@ clean.
 
 ## Delegations
 
-### `scaffold-conventions-repository` - `COMPLETED`
+### `scaffold-conventions-repository` - `COMMITTED`
 
 **Instruction File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository.md`
-
-**Worker:** `Hegel` (`019fe3bd-02e4-7243-ad25-d7b0a19873ba`)
 
 **Commit:** `fc18b2f scaffold-conventions-repository`
 
 **Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/scaffold-conventions-repository__report.md`
 
-### `define-conventions-package-records` - `COMPLETED`
+### `define-conventions-package-records` - `COMMITTED`
 
 **Instruction File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/define-conventions-package-records.md`
-
-**Worker:** `Ptolemy` (`019fe455-3533-72a0-8818-508bb993b18e`)
 
 **Commit:** `5de2971 define-conventions-package-records`
 
 **Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/define-conventions-package-records__report.md`
 
-### `migrate-reference-conventions` - `COMPLETED`
+### `migrate-reference-conventions` - `COMMITTED`
 
 **Instruction File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/migrate-reference-conventions.md`
-
-**Worker:** `Hypatia` (`019fe609-adac-72e3-a2a8-e8e9156b1bff`)
 
 **Commit:** `776dd2f migrate reference conventions`
 
 **Report:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/migrate-reference-conventions__report.md`
 
-### `validate-conventions-package` - `COMPLETED`
+### `validate-conventions-package` - `COMMITTED`
 
 **Instruction File:** `_backlog/3-now/plan-noodlestan-refs-package/instructions/validate-conventions-package.md`
-
-**Worker:** `Fermat` (`019fe622-bb93-7962-8a71-32ea63e49983`)
 
 **Commit:** `93a5c72 validate-conventions-package`
 

@@ -43,8 +43,8 @@ reference inventory.
   convention file must include a mandatory `READ` reference to its parent
   package.
 - Project, namespace, and package records under the repository's `_records/`
-   directory, following the record model already used by
-   `repos/workspace-tooling/_records/`.
+  directory, following the record model already used by
+  `checkouts/workspace-tooling/_records/`.
 - The current convention documents migrated from `$ROOT/reference/conventions/`
   into the package boundaries established by that mapping.
 - An inventory that preserves document names, package ownership, extension
@@ -97,7 +97,7 @@ reference inventory.
   without the workspace checkout.
 - The repository carries no workspace planning files or project-specific
   records from this workspace; it carries its own project, namespace, and
-   package records under `_records/`.
+  package records under `_records/`.
 - The convention inventory and README agree with the files actually present.
 - Every reference document belongs to one package; shared use is inherited from
   a base package and is never left as unassigned material.
@@ -117,7 +117,7 @@ reference inventory.
 - Packages may extend other packages; extending files use a mandatory `:READ`
   directive for the parent package.
 - Every project, namespace, and package in the conventions repository is
-   described by its repository-local `_records/` files.
+  described by its repository-local `_records/` files.
 - The repository-local `_records/` hierarchy is authoritative for project,
   namespace, package, and scaffolder metadata.
 
