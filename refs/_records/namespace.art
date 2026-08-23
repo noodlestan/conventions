@@ -6,15 +6,14 @@
 
 **Description:** Reference packages for TypeScript, JSX, SolidJS, and SCSS conventions.
 
+**Owner:** Project: Artificial
+
+**Author:** Noodlestan Collective
+
 **Path:** `packages/`
-
-**Packages:**
-
-- Package: TypeScript Conventions
-- Package: JSX Conventions
-- Package: SolidJS Conventions
-- Package: SCSS Conventions
 
 **Scaffolders:**
 
-- (none)
+- Scaffolder Files: Namespace README
+
+**License:** License: Noodlestan 2026 MIT

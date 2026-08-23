@@ -24,8 +24,8 @@
 
 **Dependencies:**
 
-- Direct:
-    - Package Dependency: JSX Conventions
+- Runtime:
+  - Package Dependency: JSX Conventions
 
 **Scaffolders:**
 

@@ -1,0 +1,13 @@
+# Module
+
+## Package Script Set: Root Lifecycle
+
+**Scripts:**
+
+- Package Script: Lint
+  - Purpose: Lint all packages
+  - Command: `turbo run lint`
+
+- Package Script: Lint Fix
+  - Purpose: Fix lint issues
+  - Command: `turbo run lint:fix`

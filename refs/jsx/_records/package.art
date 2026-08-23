@@ -24,8 +24,8 @@
 
 **Dependencies:**
 
-- Direct:
-    - Package Dependency: TypeScript Conventions
+- Runtime:
+  - Package Dependency: TypeScript Conventions
 
 **Scaffolders:**
 

@@ -8,11 +8,10 @@ Agents SHOULD scan these files for relevant clarifications when faced with ambig
 
 - `_guide.md` — this project overview, workflow, and agent interactions.
 - `_wip.md` — transient work state, blockers, and current hand-offs.
-- `_architect.md` — project direction, package taxonomy, extension model, and sequence.
+- `_backlog/_architect.md` — project direction, package taxonomy, extension model, and sequence.
 - `packages/` — convention package content.
 - `architecture/records/adr/` — architecture proposals and decisions that constrain planning.
-- [`index.md`](index.md) — inventory of references hosted in this repository.
-- `_backlog/3-now/plan-noodlestan-refs-package/plan.md` — active plan.
+- `index.md` — inventory of references hosted in this repository.
 
 ## Repository Layout
 
@@ -28,7 +27,7 @@ architecture/       — ADRs
 
 ## Setup
 
-Run at root of repository, not per package:
+Run at the root of the repository:
 
 ```bash
 npm ci # to install dependencies.

@@ -6,41 +6,20 @@
 
 **Description:** A private documentation and reference package containing convention documents and their inventory.
 
-**Path:** `./`
+**Owner:** Project: Management
 
-**Remote:** `git@github.com:noodlestan/conventions.git`
+**Author:** Noodlestan Collective
 
-**Canonical Name:** `noodlestan/conventions`
+**Repository:** Repository: Conventions
 
-**Private:** `true`
-
-**PackageFile:** `package.json`
-
-**License:** MIT
-
-**Workspaces:**
-
-- `packages/*`
-
-**Namespaces:**
+**Resources:**
 
 - Namespace: Refs Conventions
+- Package: TypeScript Conventions
+- Package: JSX Conventions
+- Package: SolidJS Conventions
+- Package: SCSS Conventions
 
-**Setup:**
+**Private:** `false`
 
-Run at root of repository, not per package:
-
-```bash
-npm ci # to install dependencies.
-```
-
-**Verification:**
-
-Run per package modified:
-
-```bash
-npm run lint:fix # to fix formatting issues automatically
-npm run lint # to report other issues
-npm run build
-npm run test
-```
+**License:** License: Noodlestan 2026 MIT

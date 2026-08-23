@@ -1,0 +1,49 @@
+# Module
+
+## Repository: Conventions
+
+**Purpose:** Maintain reusable Noodlestan conventions as a standalone reference package.
+
+**Description:** A private documentation and reference package containing convention documents and their inventory.
+
+**Owner:** Project: Conventions
+
+**Author:** Noodlestan Collective
+
+**Remote:** `git@github.com:noodlestan/conventions.git`
+
+**Consumers:** None
+
+**Private:** `false`
+
+**Workspaces:** None
+
+**Language:** Markdown
+
+**Engines:**
+
+- Node: `>= 22`
+
+**PackageManager:** `npm@10.2.3`
+
+**PackageFile:** package.json
+
+**Dependencies:**
+
+- Runtime:
+  - TBD
+- Dev:
+  - TBD
+
+**Scripts:**
+
+- Package Script Set: Root Lifecycle
+
+**Scaffolders:**
+
+- Scaffolder Skeleton: Project Skeleton
+- Scaffolder Files: Project README
+- Scaffolder Files: Project Package Json
+- Scaffolder Files: Project Lefthook
+
+**License:** License: Noodlestan 2026 MIT

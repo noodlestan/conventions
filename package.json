@@ -10,7 +10,17 @@
     "packages/*"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
-  "dependencies": {}
+  "scripts": {
+    "lint": "prettier . -c && eslint . --no-error-on-unmatched-pattern",
+    "lint:fix": "prettier . -c --write && eslint . --fix --no-error-on-unmatched-pattern"
+  },
+  "devDependencies": {
+    "@noodlestan/eslint-config": "^0.0.7",
+    "eslint": "8.57.1",
+    "lefthook": "2.1.9",
+    "prettier": "3.8.4",
+    "typescript": "5.9.3"
+  }
 }
