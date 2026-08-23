@@ -10,13 +10,13 @@
 
 ### Changes
 
-| Area | Result |
-| --- | --- |
-| Root README | Removed the migration-era statement that publication and consumer-installation decisions were pending. |
-| Metadata | Confirmed `package.json` identifies `@noodlestan/conventions`. |
+| Area                  | Result                                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Root README           | Removed the migration-era statement that publication and consumer-installation decisions were pending.                                     |
+| Metadata              | Confirmed `package.json` identifies `@noodlestan/conventions`.                                                                             |
 | Records and inventory | Confirmed project, namespace, package records, package directories, documents, and inventory agree for TypeScript, JSX, SolidJS, and SCSS. |
-| Extension graph | Confirmed JSX extends TypeScript and SolidJS extends JSX in both package records and document `:READ` directives; SCSS is independent. |
-| Links and checkout | Confirmed README/inventory links resolve; a fresh archive checkout reads README and inventory without workspace files. |
+| Extension graph       | Confirmed JSX extends TypeScript and SolidJS extends JSX in both package records and document `:READ` directives; SCSS is independent.     |
+| Links and checkout    | Confirmed README/inventory links resolve; a fresh archive checkout reads README and inventory without workspace files.                     |
 
 ### Validation
 

@@ -10,12 +10,12 @@
 
 ### Changes
 
-| Instruction goal | Evidence |
-| --- | --- |
+| Instruction goal                                                                   | Evidence                                                                                                                                                                                                             |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Create the four candidate package directories and migrate the convention documents | Added `packages/typescript/typescript.md`, `packages/jsx/jsx.md`, `packages/solidjs/solid-js.md`, and `packages/scss/scss.md`. Source content is preserved; only the required child inheritance sections were added. |
-| Record and expose package ownership and inheritance | Updated the four package descriptions; existing project, namespace, package paths, canonical names, and extension records agree. `index.md` lists all four package links and relationships. |
-| Keep extending packages explicit and SCSS independent | `jsx` contains `:READ @noodlestan/refs-conventions-typescript/`; `solid-js` contains `:READ @noodlestan/refs-conventions-jsx/`; SCSS has no parent directive. |
-| Update repository documentation | Updated `README.md` and `index.md` to describe and link the migrated package layout. |
+| Record and expose package ownership and inheritance                                | Updated the four package descriptions; existing project, namespace, package paths, canonical names, and extension records agree. `index.md` lists all four package links and relationships.                          |
+| Keep extending packages explicit and SCSS independent                              | `jsx` contains `:READ @noodlestan/refs-conventions-typescript/`; `solid-js` contains `:READ @noodlestan/refs-conventions-jsx/`; SCSS has no parent directive.                                                        |
+| Update repository documentation                                                    | Updated `README.md` and `index.md` to describe and link the migrated package layout.                                                                                                                                 |
 
 Validation passed:
 
