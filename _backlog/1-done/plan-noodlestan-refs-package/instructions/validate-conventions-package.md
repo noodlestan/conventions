@@ -4,9 +4,6 @@
 
 **commit.Id:** `validate-conventions-package`
 
-**State:** `PLANNED` — package migration is complete and its records and
-extension directives have been reviewed.
-
 These are your instructions. They include a section at the end on how to report back to requester.
 
 - RULE: If at any point you are instructed to **REPORT A BLOCKER** execute the instruction in the "## How to Report Back" section and STOP processing any other instructions.

@@ -4,9 +4,6 @@
 
 **commit.Id:** `migrate-reference-conventions`
 
-**State:** `PLANNED` — the project record and package mapping have been
-reviewed following the repository-foundation and package-record delegations.
-
 These are your instructions. They include a section at the end on how to report back to requester.
 
 - RULE: If at any point you are instructed to **REPORT A BLOCKER** execute the instruction in the "## How to Report Back" section and STOP processing any other instructions.
