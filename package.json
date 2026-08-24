@@ -13,8 +13,8 @@
     "node": ">=22"
   },
   "scripts": {
-    "lint": "prettier . -c && eslint . --no-error-on-unmatched-pattern",
-    "lint:fix": "prettier . -c --write && eslint . --fix --no-error-on-unmatched-pattern"
+    "lint": "prettier . -c",
+    "lint:fix": "prettier . -c --write"
   },
   "devDependencies": {
     "@noodlestan/eslint-config": "^0.0.8",
