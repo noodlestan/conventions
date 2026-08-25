@@ -6,8 +6,6 @@
 
 **Description:** Reference conventions for JSX, extending TypeScript conventions.
 
-**Extends:** `@noodlestan/conventions-typescript`
-
 **Path:** `packages/jsx/`
 
 **Canonical Name:** `@noodlestan/conventions-jsx`

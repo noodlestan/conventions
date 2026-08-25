@@ -6,8 +6,6 @@
 
 **Description:** Reference conventions for SolidJS, extending JSX conventions.
 
-**Extends:** `@noodlestan/conventions-jsx`
-
 **Path:** `packages/solidjs/`
 
 **Version:** `0.0.1`
