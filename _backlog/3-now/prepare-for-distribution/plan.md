@@ -427,25 +427,24 @@ release(conventions): 0.0.1 version of all convention packages
 
 **Goal:** Validate that a Noodlestan project can consume the published conventions packages.
 
-**Description:** Demonstrate consumption from a Noodlestan project using npm dependency or git URL. Define how convention files land in the consumer's `.agents/` context.
+**Description:** Demonstrate consumption from `no-comply` using npm dependency. Convention files are copied to `art_modules/` via postinstall script.
 
 **Status:** `PLANNING`
 
 **Changes:**
 
-- Define how installed convention files are copied/linked into consumer's `.agents/` directory structure.
-- Create a post-install script or npm lifecycle hook to copy convention files.
-- Choose a consumer project (TBD: `no-comply` or `artificial`).
-- Add the convention package as a dependency in consumer's `package.json`.
-- Verify conventions are available in consumer's `.agents/conventions/` directory.
+- Add `@noodlestan/conventions-typescript` (and optionally `conventions-jsx`, `conventions-solidjs`) as dependency in `no-comply/package.json`.
+- Create a postinstall script that copies all `node_modules/@noodlestan/conventions-*` to `art_modules/`.
+- Add `art_modules/` to `.gitignore` in `no-comply`.
+- Verify conventions are available in `no-comply/art_modules/@noodlestan/`.
+- Test extension chain: install `conventions-solidjs`, verify `conventions-typescript` and `conventions-jsx` are also copied.
 
-**Open Questions:**
+**Decisions:**
 
-- **Consumer selection:** Which project should be the first consumer? `no-comply` has `.agents/` structure, `artificial` is being split.
-- **Installation target:** Should convention files land in `.agents/conventions/` or `.agents/domains/conventions/`?
-- **File copying mechanism:** npm `postinstall` script? lifecycle hook? manual copy?
-- **Extension chain handling:** When installing `conventions-solidjs`, should it also copy `conventions-typescript` and `conventions-jsx` (the base packages)?
-- **Version pinning:** Should consumers pin to exact version or use `*`?
+- **Consumer:** `no-comply` is the first consumer.
+- **Installation target:** `art_modules/{package namespace/name}/*` — mirror copy of node_modules.
+- **Gitignore:** `art_modules/` added to `.gitignore`.
+- **Postinstall:** Copy all `node_modules/@noodlestan/conventions-*` — assumes all are direct or inherited dependencies.
 
 **Commits:**
 
@@ -454,8 +453,6 @@ release(conventions): 0.0.1 version of all convention packages
 **Dependencies:**
 
 - Iteration: Smoke Publish 0.0.1 (packages must be published).
-- ADR: Art Packages in `$ARTIFICIALS/architecture/records/adr/` must be captured (proposal level) before instructions can be refined.
-- ADR: Art Dependencies — defines how packages declare and consume dependencies.
 
 ---
 
@@ -531,7 +528,10 @@ Begin with Iteration: Integrate Migration Validation to close the WIP items from
 
 ## Follow Ups
 
--
+- Redesign `write-conventions.art` to work with convention libraries (proposed as PRs against repos) vs local conventions (maintained per-project). A project may maintain local conventions and install from libraries; both sets must be discoverable.
+- For mature environment: load a local manifest, resolve dependencies, verify all installed by npm before copying to target.
+- Add ADR: Art Packages — define how packages declare and consume dependencies.
+- Add ADR: Art Dependencies — define dependency resolution and installation semantics.
 
 ## Feedback
 
