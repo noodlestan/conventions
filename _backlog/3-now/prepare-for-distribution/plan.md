@@ -2,7 +2,7 @@
 
 **ID:** `prepare-for-distribution`
 
-**Status:** `PLANNING`
+**Status:** `WORKING`
 
 **Template:** `$WORKSPACE/.agents/domains/plans/templates/plan.tart`
 
@@ -235,7 +235,7 @@ Execution occurs from `$WORKSPACE/`; package work is performed in `$CONVENTIONS/
 
 **Description:** Execute the WIP actionable items: validate links, update workspace records, perform zero-reference check, and clean up old `reference/` tree.
 
-**Status:** `PLANNING`
+**Status:** `READY`
 
 **Changes:**
 
@@ -258,7 +258,6 @@ validate(conventions): validate links, update records, document architecture
 - Describe architecture in `architecture/index.md`.
 ```
 
-**Status:** `PLANNED`
 
 **Policy:** `AUTONOMOUS`
 
@@ -276,7 +275,6 @@ cleanup(workspace): cleanup reference tree after zero-reference check
 - Remove old workspace `reference/` tree.
 ```
 
-**Status:** `PLANNED`
 
 **Policy:** `AUTONOMOUS`
 
@@ -295,7 +293,6 @@ docs(conventions): integrate architecture documentation
 - Populate index.md with rationale and links.
 ```
 
-**Status:** `PLANNED`
 
 **Policy:** `AUTONOMOUS`
 
@@ -313,7 +310,7 @@ docs(conventions): integrate architecture documentation
 
 **Description:** Create `package.json` and `npm-deployment.art` files in each package's `_records/` directory. Update the project record with new package resources. Canonical names follow `@noodlestan/refs-conventions-{typescript,jsx,solidjs,scss,commits}`.
 
-**Status:** `PLANNING`
+**Status:** `READY`
 
 **Changes:**
 
@@ -335,7 +332,6 @@ docs(conventions): scaffold package and deployment records
 - Update namespace record owner from `Project: Artificial` to `Project: Conventions`.
 ```
 
-**Status:** `PLANNED`
 
 **Policy:** `AUTONOMOUS`
 
@@ -353,7 +349,7 @@ docs(conventions): scaffold package and deployment records
 
 **Description:** Enhance the `conventions-lib` scaffolder and scaffold each package to be publishable. Convention files move into `art/` directories (analogous to `src/`), and `package.json` includes `files: ["art/", "LICENSE-MIT", "README.md"]`.
 
-**Status:** `PLANNING`
+**Status:** `READY`
 
 **Changes:**
 
@@ -378,7 +374,6 @@ feat(conventions): scaffold publishable packages with art directories
 - Ensure each package has a `README.md`.
 ```
 
-**Status:** `PLANNED`
 
 **Policy:** `AUTONOMOUS`
 
