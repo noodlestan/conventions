@@ -2,7 +2,7 @@
 
 ## Scaffolder Skeleton: Conventions Lib
 
-**Purpose:** Scaffolds a conventions reference package with its README and package metadata.
+**Purpose:** Scaffolds a publishable conventions reference package with its README, package metadata, license, and convention art directory.
 
 **Source:** `./skeleton`
 

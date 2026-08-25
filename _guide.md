@@ -22,7 +22,7 @@ architecture/       — Description, Principles, ADRs
 packages/           — convention package content
 ```
 
-## Setup
+## Setting Up
 
 Run at the root of the repository:
 
@@ -30,7 +30,7 @@ Run at the root of the repository:
 npm ci # to install dependencies.
 ```
 
-## Verification
+## Verifying
 
 Run per package modified:
 
@@ -39,6 +39,12 @@ npm run lint:fix # to fix formatting issues automatically
 npm run lint # to report other issues
 npm run build
 npm run test
+```
+
+Run at the root of the repository:
+
+```bash
+npm ci # to install dependencies.
 ```
 
 ## Records Management

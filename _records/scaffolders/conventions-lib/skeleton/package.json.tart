@@ -10,17 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/noodlestan/artificial",
-    "directory": "{{%namespace.path}}{{%package.path}}"
+    "url": "https://github.com/noodlestan/conventions",
+    "directory": "{{%package.path}}"
   },
-  "files": [
-    "src",
-    "LICENSE-MIT",
-    "README.md"
-  ],
+  "files": ["art", "LICENSE-MIT", "README.md"],
   "scripts": {
-  ::TEMPLATE for each `%script` in `%package.scripts`
-    "{{%script.name}}": "{{%script.command}}",
-  ::END
+    "lint": "prettier . -c",
+    "lint:fix": "prettier . -c --write",
+    "ci": "npm run lint"
   }
 }
