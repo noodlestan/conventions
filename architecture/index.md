@@ -37,3 +37,17 @@ Packages are organized by convention concern. See the
 Project, namespace, and package records are the authoritative metadata for
 the repository scaffold. See the [Records ADR](architecture/records/adr/records.art)
 for the decision.
+
+## Rationale
+
+The architecture follows these [Design Principles](principles.md) and meets
+these [Non-Functional Requirements](NFRs.md). Key decisions are recorded in
+ADRs:
+
+- [Taxonomy](records/adr/taxonomy.art) — Package mapping by convention concern.
+- [Packaging](records/adr/packaging.art) — Extension chain and package composition.
+- [Records](records/adr/records.art) — Records as repository metadata source of truth.
+
+The repository was created to give conventions a standalone home outside the
+workspace's planning tree. The workspace retains coordination and delegation
+while the conventions repo owns its content, inventory, and metadata.

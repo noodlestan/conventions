@@ -258,7 +258,6 @@ validate(conventions): validate links, update records, document architecture
 - Describe architecture in `architecture/index.md`.
 ```
 
-
 **Policy:** `AUTONOMOUS`
 
 **Hash:** `TBD`
@@ -274,7 +273,6 @@ cleanup(workspace): cleanup reference tree after zero-reference check
 - Perform zero-reference check before removing remaining workspace `reference/` tree.
 - Remove old workspace `reference/` tree.
 ```
-
 
 **Policy:** `AUTONOMOUS`
 
@@ -292,7 +290,6 @@ docs(conventions): integrate architecture documentation
 - Create `principles.md` and `NFRs.md`.
 - Populate index.md with rationale and links.
 ```
-
 
 **Policy:** `AUTONOMOUS`
 
@@ -331,7 +328,6 @@ docs(conventions): scaffold package and deployment records
 - Update project record with new package resources.
 - Update namespace record owner from `Project: Artificial` to `Project: Conventions`.
 ```
-
 
 **Policy:** `AUTONOMOUS`
 
@@ -373,7 +369,6 @@ feat(conventions): scaffold publishable packages with art directories
 - Move convention `.md` files into `art/` directories.
 - Ensure each package has a `README.md`.
 ```
-
 
 **Policy:** `AUTONOMOUS`
 
