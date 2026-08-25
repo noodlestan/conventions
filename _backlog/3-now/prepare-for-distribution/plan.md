@@ -388,7 +388,7 @@ feat(conventions): scaffold publishable packages with art directories
 
 **Description:** Publish the 5 convention packages as `0.0.1` to npm with public access. Initialise changelogs.
 
-**Status:** `PLANNING`
+**Status:** `DONE`
 
 **Changes:**
 
@@ -399,6 +399,22 @@ feat(conventions): scaffold publishable packages with art directories
 **Commits:**
 
 - `smoke-publish-0-0-1` — Publish all 5 packages at 0.0.1; add changelogs.
+
+##### Commit: `release-conventions-0-0-1`
+
+**Repository:** Repository Scope: Conventions `$CONVENTIONS`
+
+**Message:**
+
+```
+release(conventions): 0.0.1 version of all convention packages
+```
+
+**Status:** `DONE`
+
+**Policy:** `AUTONOMOUS`
+
+**Hash:** `20c2906`
 
 **Dependencies:**
 
@@ -411,17 +427,25 @@ feat(conventions): scaffold publishable packages with art directories
 
 **Goal:** Validate that a Noodlestan project can consume the published conventions packages.
 
-**Description:** TBD — demonstrate consumption from a Noodlestan project (likely `no-comply` or `artificial`) using npm dependency or git URL.
+**Description:** Demonstrate consumption from a Noodlestan project using npm dependency or git URL. Define how convention files land in the consumer's `.agents/` context.
 
-**Status:** `DRAFT`
+**Status:** `PLANNING`
 
 **Changes:**
 
-- post-install script MVP is needed to copy convention files into the `$CONSUMER` project manifested destination for the packages being installed..
-- publish new version of one base package (no dependencies)
-- install packages in `$CONSUMER` project.
-- publish new version of one package with dependencies
-- upgrade packages in `$CONSUMER` prject.
+- Define how installed convention files are copied/linked into consumer's `.agents/` directory structure.
+- Create a post-install script or npm lifecycle hook to copy convention files.
+- Choose a consumer project (TBD: `no-comply` or `artificial`).
+- Add the convention package as a dependency in consumer's `package.json`.
+- Verify conventions are available in consumer's `.agents/conventions/` directory.
+
+**Open Questions:**
+
+- **Consumer selection:** Which project should be the first consumer? `no-comply` has `.agents/` structure, `artificial` is being split.
+- **Installation target:** Should convention files land in `.agents/conventions/` or `.agents/domains/conventions/`?
+- **File copying mechanism:** npm `postinstall` script? lifecycle hook? manual copy?
+- **Extension chain handling:** When installing `conventions-solidjs`, should it also copy `conventions-typescript` and `conventions-jsx` (the base packages)?
+- **Version pinning:** Should consumers pin to exact version or use `*`?
 
 **Commits:**
 
@@ -430,8 +454,8 @@ feat(conventions): scaffold publishable packages with art directories
 **Dependencies:**
 
 - Iteration: Smoke Publish 0.0.1 (packages must be published).
-- ADR: Art Packages in `$ARTIFICIALS/architecture/records/adr/` must be captured and at least proposal (it's npm, but requires a manifest of dependencies and where to copy them not) before instructions for the post-install script can be refined.
-- ADR: Art Dependencies
+- ADR: Art Packages in `$ARTIFICIALS/architecture/records/adr/` must be captured (proposal level) before instructions can be refined.
+- ADR: Art Dependencies — defines how packages declare and consume dependencies.
 
 ---
 
