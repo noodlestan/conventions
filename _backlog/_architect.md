@@ -79,13 +79,13 @@ reference inventory.
   designed; do not infer a final taxonomy from the current flat files.
 - Give every convention file one package owner. Shared use is handled by a
   base-package extension relationship, not by leaving material unassigned.
-- Use the working package names `@noodlestan/refs-conventions-typescript`,
-  `@noodlestan/refs-conventions-jsx`,
-  `@noodlestan/refs-conventions-solidjs`, and
-  `@noodlestan/refs-conventions-scss` until an ADR changes them.
-- Use `refs-conventions` as the namespace for these packages.
+- Use the working package names `@noodlestan/conventions-typescript`,
+  `@noodlestan/conventions-jsx`,
+  `@noodlestan/conventions-solidjs`, and
+  `@noodlestan/conventions-scss` until an ADR changes them.
+- Use `@noodlestan` as the namespace for these packages.
 - Define extension in the content itself: an extending convention file must
-  include a mandatory `:READ \`@noodlestan/refs-conventions-parent/\`` section.
+  include a mandatory ":READ `@noodlestan/conventions-{parent}/art/{file}.art`" section.
 - Record material architecture choices in `reference/_adr/`; keep this brief
   focused on the resulting direction and sequencing.
 - Defer publication and consumer-installation choices until the package

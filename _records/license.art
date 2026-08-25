@@ -1,14 +1,16 @@
-# noodlestan/conventions
+# Module
 
-This repository contains Noodlestan Conventions documents and an inventory of their ownership and relationships.
+## License: Noodlestan 2026 MIT
 
-The convention documents live under their approved package boundaries. See the [inventory](index.md) for package ownership and extension relationships.
+**Short:**
 
-The repository is maintained as a standalone reference source.
+Copyright (c) 2026 [Noodlestan](https://noodlestan.org/).
 
-## License
+Published under a [MIT license](https://noodlestan.mit-license.org/).
 
-MIT License
+**Long:**
+
+MIT License https://noodlestan.mit-license.org/
 
 Copyright (c) 2026 Noodlestan https://noodlestan.org/
 

@@ -235,7 +235,7 @@ Execution occurs from `$WORKSPACE/`; package work is performed in `$CONVENTIONS/
 
 **Description:** Execute the WIP actionable items: validate links, update workspace records, perform zero-reference check, and clean up old `reference/` tree.
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Changes:**
 
@@ -260,7 +260,7 @@ validate(conventions): validate links, update records, document architecture
 
 **Policy:** `AUTONOMOUS`
 
-**Hash:** `TBD`
+**Hash:** `50323b3`
 
 ##### Commit: `cleanup-reference-tree`
 
@@ -276,7 +276,9 @@ cleanup(workspace): cleanup reference tree after zero-reference check
 
 **Policy:** `AUTONOMOUS`
 
-**Hash:** `TBD`
+**Hash:** `SKIPPED`
+
+**Note:** Skipped — reference/ directory already removed.
 
 ##### Commit: `integrate-architecture-notes`
 
@@ -293,7 +295,7 @@ docs(conventions): integrate architecture documentation
 
 **Policy:** `AUTONOMOUS`
 
-**Hash:** `TBD`
+**Hash:** `a09fa8d`
 
 **Dependencies:**
 
@@ -307,7 +309,7 @@ docs(conventions): integrate architecture documentation
 
 **Description:** Create `package.json` and `npm-deployment.art` files in each package's `_records/` directory. Update the project record with new package resources. Canonical names follow `@noodlestan/conventions-{typescript,jsx,solidjs,scss,commits}`.
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Changes:**
 
@@ -331,7 +333,7 @@ docs(conventions): scaffold package and deployment records
 
 **Policy:** `AUTONOMOUS`
 
-**Hash:** `TBD`
+**Hash:** `269fc66`
 
 **Dependencies:**
 
@@ -345,7 +347,7 @@ docs(conventions): scaffold package and deployment records
 
 **Description:** Enhance the `conventions-lib` scaffolder and scaffold each package to be publishable. Convention files move into `art/` directories (analogous to `src/`), and `package.json` includes `files: ["art/", "LICENSE-MIT", "README.md"]`.
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Changes:**
 
@@ -372,7 +374,7 @@ feat(conventions): scaffold publishable packages with art directories
 
 **Policy:** `AUTONOMOUS`
 
-**Hash:** `TBD`
+**Hash:** `21a074b`
 
 **Dependencies:**
 
@@ -505,9 +507,7 @@ Begin with Iteration: Integrate Migration Validation to close the WIP items from
 
 ## Follow Ups
 
-- Decide package manager, versioning policy, release cadence, and changelog convention.
-- Add CI, automated link checking, and release automation.
-- Consider generated documentation site if repository references prove insufficient.
+-
 
 ## Feedback
 

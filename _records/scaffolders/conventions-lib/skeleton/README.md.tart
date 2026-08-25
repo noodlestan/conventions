@@ -3,3 +3,7 @@
 > {{%package.purpose}}
 
 {{%package.description}}
+
+## License
+
+{{%package.license.short}}
