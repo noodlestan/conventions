@@ -245,11 +245,61 @@ Execution occurs from `$WORKSPACE/`; package work is performed in `$CONVENTIONS/
 - Describe architecture in `$CONVENTIONS/architecture/index.md`.
 - Integrate `$CONVENTIONS/_backlog/_architect.md` into `$CONVENTIONS/architecture/index.md` create `principles.md` `NFRs.md` and populate index.md with rationale and links to those files.
 
-**Commits:**
+##### Commit: `validate-links-and-records`
 
-- `validate-links-and-records` — Validate links, update records, document architecture.
-- `cleanup-reference-tree` — Remove old workspace `reference/` tree after zero-reference check.
-- `integrate-architecture-notes` — Integrate architecture documentation.
+**Repository:** Repository Scope: Conventions `$CONVENTIONS`
+
+**Message:**
+
+```
+validate(conventions): validate links, update records, document architecture
+- Validate all repository-local links in `packages/` and `refs/`.
+- Update workspace records to reflect moved context.
+- Describe architecture in `architecture/index.md`.
+```
+
+**Status:** `PLANNED`
+
+**Policy:** `AUTONOMOUS`
+
+**Hash:** `TBD`
+
+##### Commit: `cleanup-reference-tree`
+
+**Repository:** Repository Scope: Workspace `$WORKSPACE`
+
+**Message:**
+
+```
+cleanup(workspace): cleanup reference tree after zero-reference check
+- Perform zero-reference check before removing remaining workspace `reference/` tree.
+- Remove old workspace `reference/` tree.
+```
+
+**Status:** `PLANNED`
+
+**Policy:** `AUTONOMOUS`
+
+**Hash:** `TBD`
+
+##### Commit: `integrate-architecture-notes`
+
+**Repository:** Repository Scope: Conventions `$CONVENTIONS`
+
+**Message:**
+
+```
+docs(conventions): integrate architecture documentation
+- Integrate `_backlog/_architect.md` into `architecture/index.md`.
+- Create `principles.md` and `NFRs.md`.
+- Populate index.md with rationale and links.
+```
+
+**Status:** `PLANNED`
+
+**Policy:** `AUTONOMOUS`
+
+**Hash:** `TBD`
 
 **Dependencies:**
 
@@ -272,9 +322,24 @@ Execution occurs from `$WORKSPACE/`; package work is performed in `$CONVENTIONS/
 - Update `$CONVENTIONS/_records/project.art` with new package resources.
 - Update `$CONVENTIONS/refs/_records/namespace.art` owner from `Project: Artificial` to `Project: Conventions`.
 
-**Commits:**
+##### Commit: `scaffold-package-and-deployment-records`
 
-- `scaffold-package-and-deployment-records` — Create package.json and npm-deployment.art for all 5 packages; update project and namespace records.
+**Repository:** Repository Scope: Conventions `$CONVENTIONS`
+
+**Message:**
+
+```
+docs(conventions): scaffold package and deployment records
+- Create `package.json` and `npm-deployment.art` for each of the 5 packages.
+- Update project record with new package resources.
+- Update namespace record owner from `Project: Artificial` to `Project: Conventions`.
+```
+
+**Status:** `PLANNED`
+
+**Policy:** `AUTONOMOUS`
+
+**Hash:** `TBD`
 
 **Dependencies:**
 
@@ -298,9 +363,26 @@ Execution occurs from `$WORKSPACE/`; package work is performed in `$CONVENTIONS/
 - Move convention `.md` files into `art/` directories under each package.
 - Ensure each package has a `README.md`.
 
-**Commits:**
+##### Commit: `scaffold-publishable-packages`
 
-- `scaffold-publishable-packages` — Enhance scaffolder, scaffold all 5 packages with art/ directories and publishable metadata.
+**Repository:** Repository Scope: Conventions `$CONVENTIONS`
+
+**Message:**
+
+```
+feat(conventions): scaffold publishable packages with art directories
+- Update `conventions-lib` scaffolder for publishable packages.
+- Enhance `package.json.tart` template with publishConfig, repository, files, scripts.
+- Add `LICENSE-MIT` to each package.
+- Move convention `.md` files into `art/` directories.
+- Ensure each package has a `README.md`.
+```
+
+**Status:** `PLANNED`
+
+**Policy:** `AUTONOMOUS`
+
+**Hash:** `TBD`
 
 **Dependencies:**
 
