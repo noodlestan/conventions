@@ -1,5 +1,9 @@
 # Architecture: Conventions
 
+This repository was created to give conventions a standalone home outside the
+workspace's planning tree. The workspace retains coordination and delegation
+while the conventions repo owns its content, inventory, and metadata.
+
 ## Project Architecture
 
 The `@noodlestan/conventions` repository is a standalone reference package
@@ -7,13 +11,8 @@ that owns its convention documents, package inventory, and metadata.
 
 ### Repository Structure
 
-- **Root:** `@noodlestan/conventions` — project root and README.
+- **Root:** `@noodlestan/conventions` — project root, `_guide.md`, and README.
 - **`packages/`:** Convention documents organized by package ownership.
-  - `@noodlestan/refs-conventions-typescript` — TypeScript conventions.
-  - `@noodlestan/refs-conventions-jsx` — JSX conventions (extends TypeScript).
-  - `@noodlestan/refs-conventions-solidjs` — SolidJS conventions (extends JSX).
-  - `@noodlestan/refs-conventions-scss` — SCSS conventions (independent).
-- **`refs/`:** Package namespace records under the `refs-conventions` namespace.
 - **`_records/`:** Project, namespace, and package records (source of truth).
 - **`architecture/`:** ADRs and architecture documentation.
 
@@ -46,8 +45,3 @@ ADRs:
 
 - [Taxonomy](records/adr/taxonomy.art) — Package mapping by convention concern.
 - [Packaging](records/adr/packaging.art) — Extension chain and package composition.
-- [Records](records/adr/records.art) — Records as repository metadata source of truth.
-
-The repository was created to give conventions a standalone home outside the
-workspace's planning tree. The workspace retains coordination and delegation
-while the conventions repo owns its content, inventory, and metadata.

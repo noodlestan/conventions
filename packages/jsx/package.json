@@ -1,0 +1,29 @@
+{
+  "name": "@noodlestan/conventions-jsx",
+  "version": "0.0.1",
+  "description": "JSX syntax and authoring conventions",
+  "author": "Noodlestan Collective",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noodlestan/conventions.git",
+    "directory": "packages/jsx"
+  },
+  "files": [
+    "art",
+    "LICENSE-MIT",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "prettier . -c",
+    "lint:fix": "prettier . -c --write",
+    "ci": "npm run lint"
+  },
+  "dependencies": {
+    "@noodlestan/conventions-typescript": "*"
+  }
+}

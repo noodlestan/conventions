@@ -192,14 +192,14 @@ SOFTWARE.
 Create `$CONVENTIONS/packages/{pkg}/README.md` for each of the 5 packages with a brief description:
 
 ````markdown
-# @noodlestan/refs-conventions-{package}
+# @noodlestan/conventions-{package}
 
 {Description} part of the Noodlestan conventions package.
 
 ## Installation
 
 ```bash
-npm install @noodlestan/refs-conventions-{package}
+npm install @noodlestan/conventions-{package}
 ```
 ````
 

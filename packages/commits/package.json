@@ -1,0 +1,26 @@
+{
+  "name": "@noodlestan/conventions-commits",
+  "version": "0.0.1",
+  "description": "Commit conventions for Noodlestan",
+  "author": "Noodlestan Collective",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noodlestan/conventions.git",
+    "directory": "packages/commits"
+  },
+  "files": [
+    "art",
+    "LICENSE-MIT",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "prettier . -c",
+    "lint:fix": "prettier . -c --write",
+    "ci": "npm run lint"
+  }
+}

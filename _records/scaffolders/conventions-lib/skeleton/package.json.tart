@@ -1,6 +1,26 @@
 {
-  "name": "{{%package.canonical-name}}",
-  "private": true,
+  "name": "@{{%package.canonical-name}}",
+  "version": "{{%package.version}}",
   "description": "{{%package.description}}",
-  "license": "MIT"
+  "author": "Noodlestan Collective",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noodlestan/artificial",
+    "directory": "{{%namespace.path}}{{%package.path}}"
+  },
+  "files": [
+    "src",
+    "LICENSE-MIT",
+    "README.md"
+  ],
+  "scripts": {
+  ::TEMPLATE for each `%script` in `%package.scripts`
+    "{{%script.name}}": "{{%script.command}}",
+  ::END
+  }
 }

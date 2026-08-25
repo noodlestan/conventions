@@ -7,7 +7,7 @@
 **Status:** Adopted
 
 **Context:** The workspace currently stores a small flat set of convention
-documents (`typescript`, `jsx`, `solid-js`, and `scss`). The standalone
+documents (`commits`, `typescript`, `jsx`, `solid-js`, and `scss`). The standalone
 repository needs packages, but the package taxonomy has not been defined. A
 directory layout must not become an accidental taxonomy, and a package should
 have a coherent consumer concern rather than collect unrelated documents.
@@ -15,16 +15,16 @@ have a coherent consumer concern rather than collect unrelated documents.
 **Decision:** Use convention concern as the package-mapping criterion. The
 adopted mapping is:
 
-- `@noodlestan/refs-conventions-typescript` — TypeScript language and project
+- `@noodlestan/conventions-typescript` — TypeScript language and project
   conventions.
-- `@noodlestan/refs-conventions-jsx` — JSX syntax and authoring conventions;
+- `@noodlestan/conventions-jsx` — JSX syntax and authoring conventions;
   extends the TypeScript conventions.
-- `@noodlestan/refs-conventions-solidjs` — Solid-specific conventions;
+- `@noodlestan/conventions-solidjs` — Solid-specific conventions;
   extends the JSX conventions.
-- `@noodlestan/refs-conventions-scss` — SCSS and styling conventions.
+- `@noodlestan/conventions-scss` — SCSS and styling conventions.
 
-The root repository remains `@noodlestan/conventions`; the packages belong to
-the `refs-conventions` namespace.
+The root repository remains `@noodlestan/conventions`; the packages also belong to
+the `@noodlestan` and are prefixed with `conventions-`.
 
 There is no unassigned “shared material” category. A document used by multiple
 packages belongs to the nearest common base package and is inherited through
@@ -36,6 +36,3 @@ can be revised before migration without treating the current flat tree as a
 public API. A package that spans concerns requires an explicit extension or
 composition rationale. The current extension chain is
 `typescript ← jsx ← solidjs`; `scss` is independent.
-
-Repository-level guidance remains outside package ownership in the README,
-inventory, project records, and workflow companions.

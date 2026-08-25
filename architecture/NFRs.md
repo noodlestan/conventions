@@ -13,7 +13,10 @@ extracted from the architect briefing.
 
 ## Inventory Accuracy
 
-- The convention inventory and README agree with the files actually present.
+- The project record identifies the packages.
+- Namespace records identify their packages
+
+- The convention inventory in README(s), `_records/project.art` , and package records at `packages/*/_records/package.art` are synchronized with the files actually present.
 
 ## Package Completeness
 
@@ -23,9 +26,6 @@ extracted from the architect briefing.
   package it extends.
 
 ## Namespace and Project Records
-
-- Namespace records identify their packages, and the project record identifies
-  its namespaces and package workspaces.
 
 ## Validation Independence
 

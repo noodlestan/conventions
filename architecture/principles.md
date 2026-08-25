@@ -23,7 +23,7 @@ repository. They are extracted from the architect briefing and ADRs.
 - Treat package extension as an explicit relationship. An extending package
   may add or constrain a base package, but must not silently fork its content.
 - Define extension in the content itself: an extending convention file must
-  include a mandatory `:READ \`@noodlestan/refs-conventions-parent/\`` section.
+  include a mandatory `:READ \`@noodlestan/conventions-parent/\`` section.
 
 ## Records as Source of Truth
 
@@ -42,15 +42,7 @@ repository. They are extracted from the architect briefing and ADRs.
 ## Migration Integrity
 
 - Preserve convention content and links during migration unless a broken link
-  requires a documented correction.
-
-## Naming Conventions
-
-- Use the working package names `@noodlestan/refs-conventions-typescript`,
-  `@noodlestan/refs-conventions-jsx`,
-  `@noodlestan/refs-conventions-solidjs`, and
-  `@noodlestan/refs-conventions-scss` until an ADR changes them.
-- Use `refs-conventions` as the namespace for these packages.
+  requires a doc
 
 ## Deferred Decisions
 

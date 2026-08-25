@@ -102,7 +102,7 @@ For `$CONVENTIONS/packages/typescript/_records/package.json`:
 
 ```json
 {
-  "name": "@noodlestan/refs-conventions-typescript",
+  "name": "@noodlestan/conventions-typescript",
   "version": "0.0.0",
   "description": "TypeScript language and project conventions",
   "author": "Noodlestan Collective",
@@ -115,7 +115,7 @@ For `$CONVENTIONS/packages/jsx/_records/package.json`:
 
 ```json
 {
-  "name": "@noodlestan/refs-conventions-jsx",
+  "name": "@noodlestan/conventions-jsx",
   "version": "0.0.0",
   "description": "JSX syntax and authoring conventions",
   "author": "Noodlestan Collective",
@@ -128,7 +128,7 @@ For `$CONVENTIONS/packages/solidjs/_records/package.json`:
 
 ```json
 {
-  "name": "@noodlestan/refs-conventions-solidjs",
+  "name": "@noodlestan/conventions-solidjs",
   "version": "0.0.0",
   "description": "SolidJS-specific conventions",
   "author": "Noodlestan Collective",
@@ -141,7 +141,7 @@ For `$CONVENTIONS/packages/scss/_records/package.json`:
 
 ```json
 {
-  "name": "@noodlestan/refs-conventions-scss",
+  "name": "@noodlestan/conventions-scss",
   "version": "0.0.0",
   "description": "SCSS and styling conventions",
   "author": "Noodlestan Collective",
@@ -154,7 +154,7 @@ For `$CONVENTIONS/packages/commits/_records/package.json`:
 
 ```json
 {
-  "name": "@noodlestan/refs-conventions-commits",
+  "name": "@noodlestan/conventions-commits",
   "version": "0.0.0",
   "description": "Commit conventions for Noodlestan",
   "author": "Noodlestan Collective",
@@ -184,7 +184,7 @@ For each package, create a file like:
 
 **Deploy:** Deployment Command: NPM Package CLI
 
-**Canonical Name:** `@noodlestan/refs-conventions-{package}`
+**Canonical Name:** `@noodlestan/conventions-{package}`
 
 **Registry:** `https://registry.npmjs.org`
 

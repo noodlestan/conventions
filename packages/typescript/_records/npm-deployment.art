@@ -1,0 +1,17 @@
+# Module
+
+## NPM Package Deployment: TypeScript Conventions
+
+**Owner:** Package: TypeScript Conventions
+
+**Status:** `PENDING`
+
+**Build:** Deployment Build: NPM Command
+
+**Deploy:** Deployment Command: NPM Package CLI
+
+**Canonical Name:** `@noodlestan/conventions-typescript`
+
+**Registry:** `https://registry.npmjs.org`
+
+**Access:** `public`

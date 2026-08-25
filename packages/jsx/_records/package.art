@@ -1,0 +1,32 @@
+# Module
+
+## Package: JSX Conventions
+
+**Purpose:** JSX syntax and authoring conventions.
+
+**Description:** Reference conventions for JSX, extending TypeScript conventions.
+
+**Extends:** `@noodlestan/conventions-typescript`
+
+**Path:** `packages/jsx/`
+
+**Canonical Name:** `@noodlestan/conventions-jsx`
+
+**Version:** –
+
+**Private:** `false`
+
+**Published:** `false`
+
+**Language:** Markdown
+
+**PackageFile:** package.json
+
+**Dependencies:**
+
+- Runtime:
+  - `@noodlestan/conventions-typescript` @ `*`
+
+**Scaffolders:**
+
+- Scaffolder Skeleton: Conventions Lib

@@ -1,0 +1,29 @@
+# Module
+
+## Package: Commits Conventions
+
+**Purpose:** Distribute commit conventions to Noodlestan projects.
+
+**Description:** Commit conventions for Noodlestan.
+
+**Path:** `packages/commits/`
+
+**Canonical Name:** `@noodlestan/conventions-commits`
+
+**Version:** –
+
+**Private:** `false`
+
+**Published:** `false`
+
+**Language:** Markdown
+
+**PackageFile:** package.json
+
+**Dependencies:**
+
+- None.
+
+**Scaffolders:**
+
+- Scaffolder Skeleton: Conventions Lib

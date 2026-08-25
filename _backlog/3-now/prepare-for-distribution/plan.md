@@ -123,7 +123,7 @@ The plan coordinates changes in 1 repository (Conventions) with 5 packages:
 
 **Path:** `$CONVENTIONS/packages/typescript/`
 
-**Canonical Name:** `@noodlestan/refs-conventions-typescript`
+**Canonical Name:** `@noodlestan/conventions-typescript`
 
 **Dependencies:**
 
@@ -135,7 +135,7 @@ The plan coordinates changes in 1 repository (Conventions) with 5 packages:
 
 **Path:** `$CONVENTIONS/packages/jsx/`
 
-**Canonical Name:** `@noodlestan/refs-conventions-jsx`
+**Canonical Name:** `@noodlestan/conventions-jsx`
 
 **Dependencies:**
 
@@ -143,7 +143,7 @@ The plan coordinates changes in 1 repository (Conventions) with 5 packages:
 
 **Notes:**
 
-- Conventions on this package extend conventions from `@noodlestan/refs-conventions-typescript` so it should be set as dirct dependency in package.json.
+- Conventions on this package extend conventions from `@noodlestan/conventions-typescript` so it should be set as dirct dependency in package.json.
 
 #### Package Scope: SolidJS Conventions
 
@@ -151,7 +151,7 @@ The plan coordinates changes in 1 repository (Conventions) with 5 packages:
 
 **Path:** `$CONVENTIONS/packages/solidjs/`
 
-**Canonical Name:** `@noodlestan/refs-conventions-solidjs`
+**Canonical Name:** `@noodlestan/conventions-solidjs`
 
 **Dependencies:**
 
@@ -159,7 +159,7 @@ The plan coordinates changes in 1 repository (Conventions) with 5 packages:
 
 **Notes:**
 
-- Conventions on this package extend conventions from `@noodlestan/refs-conventions-jsx` so it should be set as dirct dependency in package.json.
+- Conventions on this package extend conventions from `@noodlestan/conventions-jsx` so it should be set as dirct dependency in package.json.
 
 #### Package Scope: SCSS Conventions
 
@@ -167,7 +167,7 @@ The plan coordinates changes in 1 repository (Conventions) with 5 packages:
 
 **Path:** `$CONVENTIONS/packages/scss/`
 
-**Canonical Name:** `@noodlestan/refs-conventions-scss`
+**Canonical Name:** `@noodlestan/conventions-scss`
 
 **Dependencies:**
 
@@ -179,7 +179,7 @@ The plan coordinates changes in 1 repository (Conventions) with 5 packages:
 
 **Path:** `$CONVENTIONS/packages/commits/`
 
-**Canonical Name:** `@noodlestan/refs-conventions-commits`
+**Canonical Name:** `@noodlestan/conventions-commits`
 
 **Dependencies:**
 
@@ -305,7 +305,7 @@ docs(conventions): integrate architecture documentation
 
 **Goal:** Create publishable package records and npm deployment records for all 5 packages.
 
-**Description:** Create `package.json` and `npm-deployment.art` files in each package's `_records/` directory. Update the project record with new package resources. Canonical names follow `@noodlestan/refs-conventions-{typescript,jsx,solidjs,scss,commits}`.
+**Description:** Create `package.json` and `npm-deployment.art` files in each package's `_records/` directory. Update the project record with new package resources. Canonical names follow `@noodlestan/conventions-{typescript,jsx,solidjs,scss,commits}`.
 
 **Status:** `READY`
 
@@ -491,7 +491,7 @@ Begin with Iteration: Integrate Migration Validation to close the WIP items from
 
 ## Decisions
 
-- **Canonical names** follow `@noodlestan/refs-conventions-{typescript,jsx,solidjs,scss,commits}` — preserving the adopted taxonomy.
+- **Canonical names** follow `@noodlestan/conventions-{typescript,jsx,solidjs,scss,commits}` — preserving the adopted taxonomy.
 - **art/ directory** is the published content directory (analogous to `src/` in code packages).
 - **5 packages** are in scope: TypeScript, JSX, SolidJS, SCSS, and Commits.
 - **Extension chain** preserved: TypeScript ← JSX ← SolidJS; SCSS and Commits independent.

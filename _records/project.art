@@ -14,11 +14,11 @@
 
 **Resources:**
 
-- Namespace: Refs Conventions
 - Package: TypeScript Conventions
 - Package: JSX Conventions
 - Package: SolidJS Conventions
 - Package: SCSS Conventions
+- Package: Commits Conventions
 
 **Private:** `false`
 

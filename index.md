@@ -5,11 +5,13 @@ extends TypeScript, SolidJS extends JSX, and SCSS is independent.
 
 ## Convention Documents
 
+- [Commits conventions](packages/commits/commits.md) —
+  `@noodlestan/conventions-typescript`
 - [TypeScript conventions](packages/typescript/typescript.md) —
-  `@noodlestan/refs-conventions-typescript`
+  `@noodlestan/conventions-typescript`
 - [JSX conventions](packages/jsx/jsx.md) —
-  `@noodlestan/refs-conventions-jsx`, extends TypeScript
+  `@noodlestan/conventions-jsx`, extends TypeScript
 - [SolidJS conventions](packages/solidjs/solid-js.md) —
-  `@noodlestan/refs-conventions-solidjs`, extends JSX
+  `@noodlestan/conventions-solidjs`, extends JSX
 - [SCSS conventions](packages/scss/scss.md) —
-  `@noodlestan/refs-conventions-scss`
+  `@noodlestan/conventions-scss`
