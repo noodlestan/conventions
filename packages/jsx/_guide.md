@@ -41,12 +41,13 @@ Run from the repository root (monorepo):
 npm ci # to install dependencies.
 ```
 
-### Operating Instructions: Verifying Completion
+### Operating Instructions: Verifying Step
 
 **Instructions:**
 
 Run from this package directory:
 
 ```bash
-npm run ci # lint
+npm run lint:fix # to fix formatting issues automatically
+npm run lint # to report other issues (prettier, eslint, tsc --noEmit)
 ```
