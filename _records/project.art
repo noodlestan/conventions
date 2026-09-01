@@ -12,6 +12,8 @@
 
 **Repository:** Repository: Conventions
 
+**Code:** https://github.com/noodlestan/conventions
+
 **Resources:**
 
 - Package: TypeScript Conventions
@@ -21,5 +23,7 @@
 - Package: Commits Conventions
 
 **Private:** `false`
+
+**Management:** Uses Workflow: Planning Work with a backlog at `_backlog/`.
 
 **License:** License: Noodlestan 2026 MIT

@@ -1,12 +1,12 @@
-# Noodlestan Conventions
+# Conventions
 
-This repository contains reusable Noodlestan convention packages, their repository metadata, architecture decisions, and the planning workflow used to maintain them.
+Maintain reusable Noodlestan conventions as a standalone reference package.
 
 ## Recommended Reading
 
-Agents SHOULD scan these files for definitions and resource locations when faced with uncertainty or ambiguity that may result from missing resources.
+Agents SHOULD scan these files for relevant clarifications when faced with ambiguity or omissions that may result from missing definitions.
 
-- `_guide.md` — this project overview, workflow, and agent interactions.
+- `_guide.md` — this file: system overview, layout, setup, verification.
 - `_backlog/_architect.md` — project direction, package taxonomy, extension model, and sequence.
 - `packages/` — convention package content.
 - `architecture/records/adr/` — architecture proposals and decisions that constrain planning.
@@ -41,13 +41,6 @@ Records are co-located with the resources they describe in `_records/` directori
 - **Package:** `{package-path}/_records/package.art`
 - **Deployments:** `{package-path}/_records/npm-deployment.art`
 
-Examples:
-
-- `checkouts/conventions/_records/project.art`
-- `checkouts/conventions/_records/repository.art`
-- `checkouts/conventions/packages/typescript/_records/package.art`
-- `checkouts/conventions/packages/typescript/_records/npm-deployment.art`
-
 ## Knowledge References
 
 This repository maintains an architecture reference at `architecture/index.md` and decision records at `architecture/records/adr`.
@@ -65,14 +58,12 @@ Projects in this repository use the following workflows:
 
 ### Planning Work
 
-This project plans its work with the workflow defined in `$DOMAINS/work/workflows/planning-work/workflow.art`.
-
 - The backlog lives at `_backlog/` with subdirectories such as `/3-now` and `/4-next/`.
 - The requirements, use cases, and principles are captured in `_backlog/_architect.md`.
 
 ## Operating Instructions
 
-#### Operating Instructions: Setting Up
+### Operating Instructions: Setting Up
 
 **Instructions:**
 
@@ -82,7 +73,7 @@ Run from the repository root (monorepo):
 npm ci # to install dependencies.
 ```
 
-#### Operating Instructions: Verifying Commit
+### Operating Instructions: Verifying Commit
 
 **Instructions:**
 
@@ -92,7 +83,7 @@ Runs automatically on pre-commit hook (from the repository root):
 npm run lint # to check formatting
 ```
 
-#### Operating Instructions: Verifying Completion
+### Operating Instructions: Verifying Completion
 
 **Instructions:**
 
