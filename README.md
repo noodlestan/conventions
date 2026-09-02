@@ -1,10 +1,12 @@
-# noodlestan/conventions
+# Noodlestan Conventions
 
-This repository contains Noodlestan Conventions documents and an inventory of their ownership and relationships.
+> Distributable Noodlestan conventions written in Art.
+
+Conventions packages for Noodlestan stack, including Typescript, JSX, Solid JS, and SCSS.
+
+## Convention Packages
 
 The convention documents live under their approved package boundaries. See the [inventory](index.md) for package ownership and extension relationships.
-
-The repository is maintained as a standalone reference source.
 
 ## License
 

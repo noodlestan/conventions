@@ -1,6 +1,8 @@
-# Conventions
+# Guide: Conventions
 
-Maintain reusable Noodlestan conventions as a standalone reference package.
+> Host and manage the Noodlestan Conventions packages and its backlog.
+
+A collection of convention packages written in Art, architecture for distributing conventions, and backlog of conventions and distribution tools.
 
 ## Recommended Reading
 
