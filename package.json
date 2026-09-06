@@ -15,7 +15,8 @@
   "scripts": {
     "lint": "prettier . -c",
     "lint:fix": "prettier . -c --write",
-    "ci": "turbo run ci"
+    "ci:root": "npm run lint",
+    "ci": "npm run ci:root && turbo run ci"
   },
   "devDependencies": {
     "@noodlestan/eslint-config": "^0.0.8",

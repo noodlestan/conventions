@@ -8,6 +8,13 @@ Conventions packages for Noodlestan stack, including Typescript, JSX, Solid JS, 
 
 The convention documents live under their approved package boundaries. See the [inventory](index.md) for package ownership and extension relationships.
 
+## Development
+
+### Scripts
+
+- **$** `npm run lint` — Lint markdown files.
+- **$** `npm run ci` — Run all CI scripts in all packages.
+
 ## License
 
 MIT License

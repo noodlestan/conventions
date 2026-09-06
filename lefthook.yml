@@ -1,5 +1,5 @@
 pre-commit:
   parallel: false
   commands:
-    lint:
-      run: npm run lint
+    ci:
+      run: npm run ci
