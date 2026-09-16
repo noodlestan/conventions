@@ -40,7 +40,6 @@ First consumer project to adopt Noodlestan conventions via npm packages. Establi
 **Changes:**
 
 - Add `@noodlestan/conventions-typescript` to Art JS `package.json`
-- Optionally add `@noodlestan/conventions-jsx` if Art JS uses JSX
 - Run `npm install` to verify installation
 
 #### Iteration: Configure \_guide.md
@@ -51,8 +50,8 @@ First consumer project to adopt Noodlestan conventions via npm packages. Establi
 
 **Changes:**
 
-- Add Mandatory Reading section to `_guide.md` referencing installed convention packages
-- Add conventions section explaining: "This project follows Noodlestan conventions. Read convention indexes and apply the rules as stated in the index. Follow links to extended conventions. Read convention examples in case of ambiguity or conflict."
+- Add Mandatory Reading section to `_guide.md` referencing installed index of the convention packages with path to installed location relative to guide: `./node_modules/@noodlestan-conventions-typescript/art/index.md`
+- Add `### Conventions` inside `## Knowledge References` explaining: "This project follows Noodlestan conventions. Read convention indexes and apply the rules as stated in the index. In case of ambiguity or conflict applygin conventions, follow links from the conventions indexes to extended conventions files to read the "Avoid" and "Prefer" examples."
 
 #### Iteration: Document Adoption Process
 
