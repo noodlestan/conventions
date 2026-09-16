@@ -2,7 +2,7 @@
 
 **ID:** `indexes-and-grouped-details`
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Purpose:** Restructure all convention package indexes to use a consistent format with terse rule summaries in index files and expanded rules with Avoid/Prefer examples in per-group source files.
 
@@ -11,6 +11,7 @@
 ## Summary
 
 Restructured convention indexes for TypeScript, JSX, SCSS, and SolidJS packages:
+
 - Renamed `typescript.md` → `index.md` with `### {Group}` sections
 - Extracted long rules into `src/{group}.md` files with `**Summary:**`, `**Avoid:**`, and `**Prefer:**` examples
 - Applied `**{Terse Name}** – {Summary}` format to all index bullet points
@@ -39,13 +40,16 @@ Execution occurs in `$CONVENTIONS/packages/{pkg}/art/` directories.
 **Status:** `DONE`
 
 **Changes:**
+
 - Renamed `typescript.md` → `index.md`
 - Created `src/filesystem.md`, `src/strict-code.md`, `src/explicit-code.md`, `src/flat-code.md`, `src/literals.md`, `src/control-flow.md`
 - Extracted 30 conventions with Avoid/Prefer examples
 - Added new rules: Boolean naming, plural arrays, expand arrays, early returns, switch default
 
 **Commits:**
-- Part of `build(conventions): Add Indexes and separate modules per topic, all with examples.`
+
+- `ca720b9` — `plan(conventions): Plan indexes-and-grouped-details READY and in now/.`
+- `cab1c0b` — `build(conventions): Add Indexes and separate modules per topic, all with examples.`
 
 #### Iteration: JSX Conventions Restructure
 
@@ -54,12 +58,14 @@ Execution occurs in `$CONVENTIONS/packages/{pkg}/art/` directories.
 **Status:** `DONE`
 
 **Changes:**
+
 - Renamed `jsx.md` → `index.md`
 - Created `src/flat-code.md`, `src/solidjs-framework.md`, `src/events.md`, `src/icons.md`, `src/refs.md`, `src/forms.md`, `src/children.md`
 - Mapped 7 original sections into 7 groups with 11 conventions
 
 **Commits:**
-- Part of `build(conventions): Add Indexes and separate modules per topic, all with examples.`
+
+- `cab1c0b` — `build(conventions): Add Indexes and separate modules per topic, all with examples.`
 
 #### Iteration: SCSS Conventions Restructure
 
@@ -68,13 +74,15 @@ Execution occurs in `$CONVENTIONS/packages/{pkg}/art/` directories.
 **Status:** `DONE`
 
 **Changes:**
+
 - Renamed `scss.md` → `index.md`
 - Created `src/filesystem.md`, `src/layers.md`, `src/naming.md`, `src/tokens.md`
 - Extracted 16 conventions across 4 groups
 - Removed `Standard-UI / Theming` section from index (preserved in `src/standard-ui-theming.md`)
 
 **Commits:**
-- Part of `build(conventions): Add Indexes and separate modules per topic, all with examples.`
+
+- `cab1c0b` — `build(conventions): Add Indexes and separate modules per topic, all with examples.`
 
 #### Iteration: SolidJS Conventions Restructure
 
@@ -83,12 +91,14 @@ Execution occurs in `$CONVENTIONS/packages/{pkg}/art/` directories.
 **Status:** `DONE`
 
 **Changes:**
+
 - Renamed `solid-js.md` → `index.md`
 - Created `src/props.md`, `src/context-providers.md`
 - Extracted 4 conventions across 2 groups
 
 **Commits:**
-- Part of `build(conventions): Add Indexes and separate modules per topic, all with examples.`
+
+- `cab1c0b` — `build(conventions): Add Indexes and separate modules per topic, all with examples.`
 
 ## Findings
 

@@ -2,7 +2,7 @@
 
 **ID:** `prepare-for-distribution`
 
-**Status:** `WORKING`
+**Status:** `DONE`
 
 **Template:** `$WORKSPACE/.agents/domains/plans/templates/plan.tart`
 
