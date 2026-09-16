@@ -1,5 +1,9 @@
 # Conventions: Typescript / Types
 
+**Purpose:** Reduce unnecessary variation, make type structure predictable, and improve readability.
+
+**Description:** Conventions that keep type declarations flat and consistent, avoid unnecessary abstraction, and make dependencies between types immediately visible.
+
 ## Convention: No Interface
 
 **Summary:** Use `type` declarations instead of `interface` declarations.

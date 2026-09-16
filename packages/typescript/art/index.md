@@ -1,6 +1,16 @@
 # Conventions: Typescript
 
+**Purpose:** Reduce variation and drift while improving readability, exposing complexity, and forcing its decomposition.
+
+**Description:** Conventions that make code predictable and easy to scan, minimise variation in how concepts and operations are expressed, and keep complexity visible so it can be understood and decomposed rather than hidden in syntax or structure.
+
 ## Principles
+
+- Make complexity visible rather than hiding it in syntax or structure.
+- Decompose complexity into smaller, named, semantic parts.
+- Minimise variation in how similar concepts and operations are expressed.
+- Make intent, semantics, and relationships explicit in the code.
+- Decrease cognitive load by keeping code predictable, flat, and easy to scan.
 
 ## Conventions: Typescript / Filesystem
 
@@ -10,10 +20,9 @@
 - **File as Function** – Every file is a function, every function is a file. Private functions are always extracted to `./private/`.
 - **Types Location** – All types in `types.ts` except non-exported types consumed directly in the file they are declared.
 - **Constants Location** – All constants in `types.ts` except non-exported constants consumed directly in the file they are declared.
-- **Barrel File Imports** – Always import from barrel files (for projects with barrel files).
-- **No Deep Module Imports (When Barrels)** – **Summary:** If barrel file exists at `../../module/` import from barrel and not from `../../module/sub-module`.
-- **No Private Directory Imports** – Never import from `./private/sub-directory`.
-- **No Deep Private Imports** – Never import from `../../module/private`
+- **Barrel File Imports** – When a barrel file exists for a module, import from the barrel instead of importing directly from the module's internal files.
+- **No Deep Private Directory Imports** – Never import resources from sub-directories of a private directory. Example: `./private/sub-directory/{resource}`.
+- **No External Private Imports** – Never import from another module's private directory `../../module/private`.
 
 ## Conventions: Typescript / Strict Code
 

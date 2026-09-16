@@ -1,6 +1,8 @@
 # Conventions: Typescript / Control Flow
 
-## Convention: Always Block If/Else
+**Purpose:** Improve readability and make control-flow complexity more visible.
+
+**Description:** Define conventions that keep branching, nesting, and alternative execution paths explicit and easy to scan.
 
 **Summary:** If and else statements always open a block.
 
@@ -36,7 +38,9 @@ if (value) {
 }
 ```
 
-## Convention: Prefer Early Returns
+Purpose: Improve readability and make control-flow complexity more visible.
+
+Description: Define conventions that keep branching, nesting, and alternative execution paths explicit and easy to scan.
 
 **Summary:** Prefer early returns over nested control structures.
 
@@ -66,7 +70,9 @@ function processUser(user: User) {
 }
 ```
 
-## Convention: Switch Default Case
+Purpose: Improve readability and make control-flow complexity more visible.
+
+Description: Define conventions that keep branching, nesting, and alternative execution paths explicit and easy to scan.
 
 **Summary:** Always include a default case in switch statements.
 

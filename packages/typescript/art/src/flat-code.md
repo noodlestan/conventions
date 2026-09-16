@@ -1,5 +1,9 @@
 # Conventions: Typescript / Flat Code
 
+**Purpose:** Improve readability by keeping code visually flat and making complexity explicit.
+
+**Description:** Conventions that prevent nesting, dense expressions, and multi-line syntactic structures from hiding control flow or relationships between values.
+
 ## Convention: No Complex Inline Types
 
 **Summary:** Never declare types with multiple properties, nested members, or unions directly in function signatures. Add a named type above the function declaration instead.

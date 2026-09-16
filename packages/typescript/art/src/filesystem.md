@@ -1,20 +1,38 @@
 # Conventions: Typescript / Filesystem
 
+**Purpose:** Make the filesystem structure reflect the module structure and make module boundaries explicit.
+
+**Description:** Conventions for organising directories, files, types, constants, and imports so that module ownership, public APIs, and private implementation boundaries are immediately visible.
+
 ## Convention: Directory Module Structure
 
 **Summary:** Every directory is a module.
 
 **Avoid:**
 
-```ts
-// src/utils/helpers.ts - standalone file not in a module directory
+```
+src/
+└── doThing.ts  # standalone file not in a module directory
 ```
 
 **Prefer:**
 
-```ts
-// src/utils/index.ts - module entry point
-// src/utils/helpers.ts - internal helper within the module
+```
+src/
+└── users/                   # Structured Module
+    ├── index.ts             # entry point
+    ├── types.ts             # public types
+    ├── constants.ts         # public constants
+    ├── private/             # private implementation
+    │   ├── types.ts         # private types
+    │   ├── constants.ts     # private constants
+    │   ├── doThing.ts       # private helper
+    │   └── thing/           # parts of the private helper
+    │       └── doProcess.ts # decomposition of private helper
+    └── {resource}/          # resource sub-module
+        ├── index.ts         # resource entry point
+        ├── types.ts         # public types related to resource
+        └── ...              # resource decomposition (private, helpers, sub-modules, ...)
 ```
 
 ## Convention: File as Function
@@ -90,7 +108,7 @@ export function doThing() { ... }
 
 ## Convention: Barrel File Imports
 
-**Summary:** Always import from barrel files (for projects with barrel files).
+**Summary:** When a barrel file exists for a module, import from the barrel instead of importing directly from the module's internal files.
 
 **Avoid:**
 
@@ -104,35 +122,19 @@ import { doThing } from '../../utils/doThings';
 import { doThing } from '../../utils';
 ```
 
-## Convention: No Deep Module Imports (When Barrels)
+## Convention: No Deep Private Directory Imports
 
-**Summary:** If barrel file exists at `../../module/` import from barrel and not from `../../module/sub-module`.
-
-**Avoid:**
-
-```ts
-import { doThing } from '../../utils/doThings';
-```
-
-**Prefer:**
-
-```ts
-import { doThing } from '../../utils';
-```
-
-## Convention: No Private Directory Imports
-
-**Summary:** Never import from `./private/sub-directory`.
+**Summary:** Never import resources from sub-directories of a private directory. Example: `./private/sub-directory/{resource}`.
 
 **Forbidden:**
 
 ```ts
-import { doThing } from './private/doThings';
+import { doThing } from './private/helpers/doThings';
 ```
 
-## Convention: No Deep Private Imports (Without Barrel)
+## Convention: No External Private Imports
 
-**Summary:** Never import from `../../module/private` (for projects without barrel files).
+**Summary:** Never import from another module's private directory `../../module/private`.
 
 **Forbidden:**
 

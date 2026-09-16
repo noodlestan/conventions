@@ -1,5 +1,9 @@
 # Conventions: Typescript / Explicit Code
 
+**Purpose:** Improve readability by making code intent and semantics explicit.
+
+**Description:** Naming and declaration conventions that reduce ambiguity, expose meaning directly in the code, and avoid shorthand or syntactic patterns that obscure what the code does.
+
 ## Convention: Verb Function Names
 
 **Summary:** All functions start with a verb.

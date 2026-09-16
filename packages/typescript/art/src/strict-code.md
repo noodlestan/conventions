@@ -1,5 +1,9 @@
 # Conventions: Typescript / Strict Code
 
+**Purpose:** Reduce ambiguity and prevent unsafe assumptions in TypeScript code.
+
+**Description:** Conventions that require explicit type handling and prohibit constructs that bypass the type system or suppress nullability guarantees.
+
 ## Convention: No Any Type
 
 **Summary:** Never use `any` - use `unknown` instead. If that doesn't work, stop! to replan types.
