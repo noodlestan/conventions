@@ -127,7 +127,7 @@ The following conventions packages are in progress or planned.
 
 **Goal:** Use conventions in all noodlestan projects.
 
-**Description:** Add convention packages as dependencies of project repositories AND . Add Mandatory Reading in `_guide.md` to read from all installed `$PROJECT/node_modules/@noodlestan/conventions-{name}`. Add a conventions section in \_guide with a static text paragrpahs to explan how it works "this project follows conventions.." instructions to "read convention indexes and apply the rules as stated in the index, follow lnks to "this convention extends, read the convention examples in case of ambiguity or conflict". Go project by project, integrate learnings, and feed `Phase: 2 - Grow` from each projects's scope. Initialise local `conventions/` directory in repositories/packages that have convention specific to their architecture (Example: No-Comply). Document process of adding conventions to a project.
+**Description:** Add convention packages as dependencies of project repositories udpate `_guide.md` files with "Conventions" sections with reading directives for the installed `$PROJECT/node_modules/@noodlestan/conventions-{name}`. Project by project, integrate learnings, and feed `Phase: 2 - Grow` from each projects's scope. Initialise local `conventions/` directory in repositories/packages that have convention specific to their architecture (Example: No-Comply). Document process of adding conventions to a project.
 
 **Status:** `WORKING`
 
@@ -169,7 +169,7 @@ The following conventions packages are in progress or planned.
 | 0     | Plan: Noodlestan Refs Package `_backlog/1-done/plan-noodlestan-refs-package/plan.md`                 | `DONE`     |
 | 0     | Plan: Prepare Conventions for Distribution `_backlog/1-done/plan-prepare-for-distribution/plan.md`   | `DONE`     |
 | 0     | Plan: Indexes and Grouped Details `_backlog/1-done/plan-indexes-and-grouped-details/plan.md`         | `DONE`     |
-| 1     | Plan: Integrate Conventions in Workflows `_backlog/3-now/plan-integrate-conventions-in-workflows.md` | `PLANNING` |
+| 1     | Plan: Integrate Conventions in Workflows `_backlog/3-now/plan-integrate-conventions-in-workflows.md` | `DONE`     |
 | 1     | Plan: Pilot Project Adoption (Art JS) `_backlog/6-plan/plan-pilot-project-adoption-art-js.md`        | `PLANNING` |
 | 1     | Plan: Unit Tests Conventions (Art JS architect) `TBD`                                                | `PLANNED`  |
 

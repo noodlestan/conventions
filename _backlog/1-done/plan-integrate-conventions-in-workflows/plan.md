@@ -2,7 +2,7 @@
 
 **ID:** `integrate-conventions-in-workflows`
 
-**Status:** `WORKING`
+**Status:** `DONE`
 
 **Purpose:** Integrate conventions into planning, delegating, and executing workflows so that all agents automatically read and apply convention rules when working on tasks.
 
@@ -94,7 +94,7 @@ build(conventions): Reference conventions in skills and routines.
 
 **Goal:** Create convention audit routines and a skill to audit convention adoption across projects.
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Changes:**
 
@@ -105,10 +105,10 @@ build(conventions): Reference conventions in skills and routines.
 
 **Commits:**
 
-| ID                               | Repository / Checkout / Branch    | Policy       | Hash  | Status     |
-| -------------------------------- | --------------------------------- | ------------ | ----- | ---------- |
-| `add-convention-audit-routines`  | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | (TBD) | `AUTHORED` |
-| `create-audit-conventions-skill` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | (TBD) | `AUTHORED` |
+| ID                               | Repository / Checkout / Branch    | Policy       | Hash      | Status |
+| -------------------------------- | --------------------------------- | ------------ | --------- | ------ |
+| `add-convention-audit-routines`  | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `badf2af` | `DONE` |
+| `create-audit-conventions-skill` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `2c1685b` | `DONE` |
 
 ##### Commit: `add-convention-audit-routines`
 
