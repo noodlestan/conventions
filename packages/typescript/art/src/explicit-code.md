@@ -31,7 +31,7 @@ const processData = () => {};
 **Prefer:**
 
 ```ts
-function processData = () => {};
+function processData() {}
 ```
 
 ## Convention: No Abbreviations

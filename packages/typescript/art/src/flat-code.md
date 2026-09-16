@@ -97,15 +97,14 @@ const status = getStatus(true, false);
 **Avoid:**
 
 ```ts
-const result = validate() ? someValue : useValue ? value : fallback;
+const result = someComplexFunction() ? anotherComplexFunction() : defaultValue;
 ```
 
 **Prefer:**
 
 ```ts
-const isValid = validate();
-const withFallback = !useValue ? value : fallback;
-const processedValue = isValid ? someValue : withFallback;
+const isValid = someComplexFunction();
+const processedValue = isValid ? anotherComplexFunction() : defaultValue;
 ```
 
 ## Convention: No Function Calls in Literals
@@ -168,7 +167,7 @@ const result = condition ? data : defaultValue;
 ```ts
 const result = items
   .filter(i => i.active)
-  .map(i => item.name)
+  .map(i => i.name)
   .reduce((acc, name) => [...acc, name], []);
 ```
 

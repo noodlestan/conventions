@@ -74,7 +74,7 @@ export function doThing(options: doThingOptions) {};
 ```ts
 // src/utils/doThing.ts
 export const MAX_RETRIES = 3;
-export const doThing = () => { ... };
+export function doThing() { ... }
 ```
 
 **Prefer:**
@@ -83,9 +83,9 @@ export const doThing = () => { ... };
 // src/utils/types.ts
 export const MAX_RETRIES = 3;
 
-// src/utils/doThings.ts
+// src/utils/doThing.ts
 import { MAX_RETRIES } from './types';
-export const doThing = () => { ... };
+export function doThing() { ... }
 ```
 
 ## Convention: Barrel File Imports
@@ -104,9 +104,9 @@ import { doThing } from '../../utils/doThings';
 import { doThing } from '../../utils';
 ```
 
-## Convention: No Deep Module Imports
+## Convention: No Deep Module Imports (When Barrels)
 
-**Summary:** Never import from `../../module/sub-module`.
+**Summary:** If barrel file exists at `../../module/` import from barrel and not from `../../module/sub-module`.
 
 **Avoid:**
 
