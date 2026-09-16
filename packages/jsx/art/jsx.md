@@ -1,8 +1,6 @@
-# JSX Conventions
+# Conventions: JSX
 
 ## Mandatory Reading
-
-:READ `$DOMAINS/conventions/structure/conventions.art`
 
 :READ `@noodlestan/conventions-typescript/art/typescript.md`
 

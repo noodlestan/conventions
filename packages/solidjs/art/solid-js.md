@@ -1,8 +1,6 @@
-# Solid JS Conventions
+# Conventions: Solid JS
 
 ## Mandatory Reading
-
-:READ `$DOMAINS/conventions/structure/conventions.art`
 
 :READ `@noodlestan/conventions-jsx/art/jsx.md`
 
