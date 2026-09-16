@@ -164,14 +164,14 @@ The following conventions packages are in progress or planned.
 
 ## Items
 
-| Phase | Resource / Record                                                                                  | Status     |
-| ----- | -------------------------------------------------------------------------------------------------- | ---------- |
-| 0     | Plan: Noodlestan Refs Package `_backlog/1-done/plan-noodlestan-refs-package/plan.md`               | `DONE`     |
-| 0     | Plan: Prepare Conventions for Distribution `_backlog/1-done/plan-prepare-for-distribution/plan.md` | `DONE`     |
-| 0     | Plan: Indexes and Grouped Details `_backlog/1-done/plan-indexes-and-grouped-details/plan.md`       | `DONE`     |
-| 1     | Plan: Pilot Project Adoption (Art JS) `TBD`                                                        | `PLANNING` |
-| 1     | Plan: Bootstrap Conventions in Workflows `TBD`                                                     | `PLANNING` |
-| 1     | Plan: Unit Tests Conventions (Art JS architect) `TBD`                                              | `PLANNED`  |
+| Phase | Resource / Record                                                                                     | Status     |
+| ----- | ----------------------------------------------------------------------------------------------------- | ---------- |
+| 0     | Plan: Noodlestan Refs Package `_backlog/1-done/plan-noodlestan-refs-package/plan.md`                  | `DONE`     |
+| 0     | Plan: Prepare Conventions for Distribution `_backlog/1-done/plan-prepare-for-distribution/plan.md`    | `DONE`     |
+| 0     | Plan: Indexes and Grouped Details `_backlog/1-done/plan-indexes-and-grouped-details/plan.md`          | `DONE`     |
+| 1     | Plan: Pilot Project Adoption (Art JS) `_backlog/6-plan/plan-pilot-project-adoption-art-js.md`         | `PLANNING` |
+| 1     | Plan: Bootstrap Conventions in Workflows `_backlog/6-plan/plan-bootstrap-conventions-in-workflows.md` | `PLANNING` |
+| 1     | Plan: Unit Tests Conventions (Art JS architect) `TBD`                                                 | `PLANNED`  |
 
 ---
 
