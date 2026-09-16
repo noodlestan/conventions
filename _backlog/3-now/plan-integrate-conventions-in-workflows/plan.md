@@ -27,7 +27,7 @@ Make conventions part of the standard workflow so agents automatically consume t
 
 **Goal:** Add conventions as explicit examples in planning workflow structures.
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Changes:**
 
@@ -40,9 +40,9 @@ Make conventions part of the standard workflow so agents automatically consume t
 
 **Commits:**
 
-| ID                                       | Repository / Checkout / Branch    | Policy       | Hash  | Status     |
-| ---------------------------------------- | --------------------------------- | ------------ | ----- | ---------- |
-| `add-conventions-to-planning-structures` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | (TBD) | `AUTHORED` |
+| ID                                       | Repository / Checkout / Branch    | Policy       | Hash      | Status      |
+| ---------------------------------------- | --------------------------------- | ------------ | --------- | ----------- |
+| `add-conventions-to-planning-structures` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `34590e6` | `COMMITTED` |
 
 ##### Commit: `add-conventions-to-planning-structures`
 
@@ -64,7 +64,7 @@ build(conventions): Add convention references to planning structures.
 
 **Goal:** Update skills and routines related to writing instructions to reference conventions.
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Changes:**
 
@@ -73,9 +73,9 @@ build(conventions): Add convention references to planning structures.
 
 **Commits:**
 
-| ID                           | Repository / Checkout / Branch    | Policy       | Hash  | Status     |
-| ---------------------------- | --------------------------------- | ------------ | ----- | ---------- |
-| `update-skills-and-routines` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | (TBD) | `AUTHORED` |
+| ID                           | Repository / Checkout / Branch    | Policy       | Hash      | Status      |
+| ---------------------------- | --------------------------------- | ------------ | --------- | ----------- |
+| `update-skills-and-routines` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `7d7bd11` | `COMMITTED` |
 
 ##### Commit: `update-skills-and-routines`
 
