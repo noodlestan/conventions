@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.0.3
+
+### Changed
+
+- Renamed **File as Function** to **Function Extraction** and added more examples.
+- Clarified **All Caps Constants** making scope more explicit and adding examples of exempt constants.
+
+### Fixed
+
+- Fixed **Constants Location** — had wrong target path.
+
 ## 0.0.2
 
 ### Added
