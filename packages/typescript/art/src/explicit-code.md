@@ -76,7 +76,7 @@ items.map(i => transform(i, someValue));
 
 ## Convention: All Caps Constants
 
-**Summary:** Module level constants are always `const ALL_CAPS`.
+**Summary:** Module-level literal and regular-expression constants use `const ALL_CAPS`. Constants representing mutable structures, factory return values, configured objects, or other runtime values retain descriptive lower-case naming.
 
 **Avoid:**
 
@@ -90,6 +90,12 @@ const defaultTimeout = 5000;
 ```ts
 const MAX_RETRIES = 3;
 const DEFAULT_TIMEOUT = 5000;
+```
+
+**Allowed:**
+
+```ts
+const defaultConfig = createConfig();
 ```
 
 ## Convention: Boolean Naming

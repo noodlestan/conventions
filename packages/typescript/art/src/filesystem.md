@@ -35,9 +35,9 @@ src/
         └── ...              # resource decomposition (private, helpers, sub-modules, ...)
 ```
 
-## Convention: File as Function
+## Convention: Function Extraction
 
-**Summary:** Every file is a function, every function is a file. Private functions are always extracted to `./private/`.
+**Summary:** Every top-level reusable function is defined in its own file. Reusable functions may be extracted to `./helpers/` or another module. Private reusable functions must be extracted to `./private/`. Closure functions do not qualify for extraction.
 
 **Avoid:**
 
@@ -52,7 +52,7 @@ export function processDataAgain() {}
 
 ```ts
 // src/module/private/subProcess.ts
-export function processData() {}
+export function subProcess() {}
 
 // src/module/processData.ts
 export function processData() {}
@@ -85,7 +85,7 @@ export function doThing(options: doThingOptions) {};
 
 ## Convention: Constants Location
 
-**Summary:** All constants in `types.ts` except non-exported constants consumed directly in the file they are declared.
+**Summary:** All constants in `constants.ts` except non-exported constants consumed directly in the file they are declared.
 
 **Avoid:**
 
@@ -132,6 +132,13 @@ import { doThing } from '../../utils';
 import { doThing } from './private/helpers/doThings';
 ```
 
+**Allowed:**
+
+```ts
+import { doThing } from './private/';
+import { doThing } from './private/doThings'; // only allowed if no barrel exists
+```
+
 ## Convention: No External Private Imports
 
 **Summary:** Never import from another module's private directory `../../module/private`.
@@ -140,4 +147,12 @@ import { doThing } from './private/helpers/doThings';
 
 ```ts
 import { doThing } from '../../utils/private';
+```
+
+**Allowed:**
+
+```ts
+import { doThing } from '../../utils';
+import { doThing } from '../../utils/helpers'; // only allowed if no barrel exists
+import { doThing } from '../../utils/doThing'; // only allowed if no barrel exists
 ```

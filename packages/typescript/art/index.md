@@ -17,9 +17,9 @@
 :READ `./src/filesystem.md` for expanded rules and examples.
 
 - **Directory Module Structure** – Every directory is a module.
-- **File as Function** – Every file is a function, every function is a file. Private functions are always extracted to `./private/`.
+- **Function Extraction** – Every top-level reusable function is defined in its own file. Reusable functions may be extracted to `./helpers/` or another module. Private reusable functions must be extracted to `./private/`. Closure functions do not qualify for extraction.
 - **Types Location** – All types in `types.ts` except non-exported types consumed directly in the file they are declared.
-- **Constants Location** – All constants in `types.ts` except non-exported constants consumed directly in the file they are declared.
+- **Constants Location** – All constants in `constants.ts` except non-exported constants consumed directly in the file they are declared.
 - **Barrel File Imports** – When a barrel file exists for a module, import from the barrel instead of importing directly from the module's internal files.
 - **No Deep Private Directory Imports** – Never import resources from sub-directories of a private directory. Example: `./private/sub-directory/{resource}`.
 - **No External Private Imports** – Never import from another module's private directory `../../module/private`.
@@ -39,7 +39,7 @@
 - **Functions over Arrows** – Prefer function declarations over arrow functions unless an arrow function is required.
 - **No Abbreviations** – Never abbreviate variable names.
 - **No Single Character Names** – Single character symbols are absolutely forbidden, except in iterators with obvious meaning: indexes and items of a named collection.
-- **All Caps Constants** – Module level constants are always `const ALL_CAPS`.
+- **All Caps Constants** – Module-level literal and regular-expression constants use `const ALL_CAPS`. Constants representing mutable structures, factory return values, configured objects, or other runtime values retain descriptive lower-case naming.
 - **Boolean Naming** – Boolean functions start with `is`, `has`, `should`, or `can`. Boolean variables or non function members DO NOT use prefix.
 - **Plural Arrays** – Array names are plural nouns.
 
