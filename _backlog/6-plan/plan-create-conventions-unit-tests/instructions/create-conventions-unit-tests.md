@@ -41,14 +41,13 @@ The plan workflow (see the entry point guide → Planning Workflow → Working T
 
 ## Goals
 
-Formalise the Unit Tests conventions proposed by the Art MD adoption into `@noodlestan/conventions-typescript`, resolve the scope/override question, and publish the updated package.
+Formalise the Unit Tests conventions proposed by the Art MD adoption into `@noodlestan/conventions-typescript`, scoping them to unit test files and test helpers, and publish the updated package.
 
 ## Mandatory Reading
 
 - ::READ `$ART_MD/conventions/unit-tests/index.md` (Knowledge) — Unit Tests conventions proposal draft (7 terse + 2 verbose conventions).
 - ::READ `$CONVENTIONS/packages/typescript/art/index.md` (Knowledge) — Conventions index to update.
 - ::READ `$CONVENTIONS/packages/typescript/art/src/types.md` (Knowledge) — Example of the standard convention format.
-- ::READ `$ART_MD/_backlog/_parking-lot.md` (Knowledge) — Parking lot entry `**Conventions: Unit Tests (create)**` with the scope/override question.
 
 ## Changes
 
@@ -65,12 +64,12 @@ Create `$CONVENTIONS/packages/typescript/art/src/unit-tests.md` from the proposa
 
 Example: `$CONVENTIONS/packages/typescript/art/src/explicit-code.md`.
 
-Add, under purpose and description, a Scope and Overrides field.
+Add, under purpose and description, a Scope and Reconciliation block.
 
 ```
-**Scope:** This convention applies only to unit test files and test helpers.
+**Scope:** These conventions apply only to unit test files – `*.test.*` – and test helpers – `test/**/*`.
 
-**Reconciliation:** When this convention conflicts with another TypeScript convention, follow the rules defined here.
+**Reconciliation:** When a Unit Tests convention conflicts with another TypeScript convention, follow the rules defined in this file.
 ```
 
 Include:
@@ -84,14 +83,14 @@ Include:
 Edit `$CONVENTIONS/packages/typescript/art/index.md`:
 
 - Add a `## Conventions: Typescript / Unit Tests` section (place it after `## Conventions: Typescript / Control Flow`).
-- Include `:READ ./src/unit-tests.md for expanded rules and examples.`
+- Include ``::READ `./src/unit-tests.md` for expanded rules and examples.``
 - List the 7 terse conventions as bullet points, matching the style of the other sections.
 
 ### Step `3 / 4` — Commit `add-unit-tests-conventions`
 
 #### Commit: `add-unit-tests-conventions`
 
-**Policy:** AUTONOMOUS — Agent should commit autonomously, push, and proceed to the next step.
+**Policy:** NOPUSH — Agent MUST create the commit and proceed to the next step but MUST NOT push to the remote repository.
 
 **Message:**
 
@@ -104,6 +103,8 @@ build(typescript): Add unit tests conventions
 
 ### Step `4 / 4` — Commit `publish-conventions-typescript`
 
+Run npm install and stage `package-lock.json`
+
 #### Commit: `publish-conventions-typescript`
 
 **Policy:** MANUAL — Do NOT commit or push. Report back to the delegator and STOP processing any other instructions.
@@ -111,15 +112,17 @@ build(typescript): Add unit tests conventions
 **Message:**
 
 ```
-release(typescript): Publish @noodlestan/conventions-typescript
+release(typescript): {version}
 
-- Bump version and publish updated package
+- Update CHANGELOG
+- Bump version
+- Update package-lock.json
 ```
 
 ## Final Verification
 
 - Verify that `$CONVENTIONS/packages/typescript/art/src/unit-tests.md` exists and follows the standard format.
 - Verify that `$CONVENTIONS/packages/typescript/art/index.md` references `./src/unit-tests.md` and lists the terse conventions.
-- Verify that the scope/override decision is recorded in the conventions milestone.
+- Verify that `$CONVENTIONS/packages/typescript/art/src/unit-tests.md` carries the `**Scope:**` and `**Reconciliation:**` block scoping the conventions to `*.test.*` files and `test/**/*` helpers.
 - Verify that commits have been executed and pushed (or not pushed) according to the commit's policy.
 - Report according to the "How to Report Back to the Delegator" instructions.
