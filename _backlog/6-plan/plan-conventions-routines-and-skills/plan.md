@@ -75,7 +75,7 @@ feat(conventions): Add report paths to audit routines
 
 - Create "Routine: Plan Conventions Setup" in `$DOMAINS/conventions/routines/` — generates a plan for installing convention packages and configuring guides.
 - Create "Routine: Plan Conventions Audit" in `$DOMAINS/conventions/routines/` — generates a plan for auditing setup and per-package adoption.
-- Create "Routine: Plan Conventions Application" in `$DOMAINS/conventions/routines/` — generates a plan for applying fixes and consolidating insights.
+- Create "Routine: Plan Conventions Adoption" in `$DOMAINS/conventions/routines/` — generates a plan for applying fixes and consolidating insights.
 - Reference existing skills and skill commands (including `write-plan` skill).
 - Reference existing routines that are not covered by a skill command.
 - Use the Art MD process insights as the primary input: `$ART_MD/_backlog/0-archive/2026-09-18-audit-conventions/adoption-process-insights.md`.
@@ -99,7 +99,7 @@ feat(conventions): Add conventions planning routines
 
 - Add Routine: Plan Conventions Setup
 - Add Routine: Plan Conventions Audit
-- Add Routine: Plan Conventions Application
+- Add Routine: Plan Conventions Adoption
 ```
 
 ## Follow Ups

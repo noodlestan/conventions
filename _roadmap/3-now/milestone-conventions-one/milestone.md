@@ -170,7 +170,7 @@ The following conventions packages are in progress or planned.
 | 0     | Plan: Prepare Conventions for Distribution `_backlog/1-done/plan-prepare-for-distribution/plan.md`    | `DONE`     |
 | 0     | Plan: Indexes and Grouped Details `_backlog/1-done/plan-indexes-and-grouped-details/plan.md`          | `DONE`     |
 | 1     | Plan: Integrate Conventions in Workflows `_backlog/1-done/plan-integrate-conventions-in-workflows.md` | `DONE`     |
-| 1     | Plan: Pilot Project Adoption (Art MD) `_backlog/3-now/plan-pilot-project-adoption-art-md/plan.md`     | `READY`    |
+| 1     | Plan: Pilot Project Adoption (Art MD) `_backlog/1-done/plan-pilot-project-adoption-art-md/plan.md`    | `DONE`     |
 | 1     | Plan: Conventions Routines and Skills `_backlog/6-plan/plan-conventions-routines-and-skills/plan.md`  | `PLANNING` |
 | 2     | Plan: Create Conventions: Unit Tests `_backlog/6-plan/plan-create-conventions-unit-tests/plan.md`     | `PLANNING` |
 
