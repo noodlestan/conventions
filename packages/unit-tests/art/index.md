@@ -2,11 +2,18 @@
 
 **Purpose:** Keep unit tests consistent, readable, and independent of production rules where they would fight test idioms.
 
-**Description:** Unit-test conventions for this repository, split by category. Each module follows the canon `Summary` → `Avoid` → `Prefer` shape.
+**Description:** Unit-test conventions split by category, including conventions to relax base TypeScript conventions where test code would otherwise fight its own idioms.
 
 ## Mandatory Reading
 
 :READ `@noodlestan/conventions-typescript/art/index.md`
+
+## Conventions: Unit Tests / TypeScript Overrides
+
+:READ `./src/typescript-overrides.md` for expanded rules and examples.
+
+- **No Multi-Line Nested Declarations (Relaxed)** – In test code, object and array literals passed as call arguments may stay inline, single- or multi-line, including `expect` and `toHaveBeenCalledWith` matchers.
+- **No Function Calls in Literals (Relaxed)** – In test code, `vi.fn()`, `vi.spyOn`, `expect.any(...)`, fixture factory calls, and `new Date()` may appear inside literals.
 
 ## Conventions: Unit Tests / Naming
 
@@ -36,9 +43,3 @@
 
 - **Test Description Prefixes** – Test descriptions start with `WHEN`, `FOR`, or `GIVEN` in all caps.
 - **Block Spacing** – Separate setup, invocation, and assertion blocks with empty lines.
-
-## Conventions: Unit Tests / TypeScript Overrides
-
-:READ `./src/typescript-overrides.md` for expanded rules and examples.
-
-- **TypeScript Overrides** – Test code is exempt from two `@noodlestan/conventions-typescript` conventions: multi-line nested declarations in call arguments, and function calls inside literals.

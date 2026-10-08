@@ -1,6 +1,6 @@
 {
   "name": "@noodlestan/conventions-unit-tests",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Unit test conventions for Noodlestan",
   "author": "Noodlestan Collective",
   "license": "MIT",
