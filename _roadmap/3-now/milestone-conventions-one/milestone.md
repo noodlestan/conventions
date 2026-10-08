@@ -158,6 +158,7 @@ The following conventions packages are in progress or planned.
 | 1     | Plan: Pilot Project Adoption (Art MD) `_backlog/1-done/plan-pilot-project-adoption-art-md/plan.md`         | `DONE`     |
 | 2     | Plan: Create Conventions: Unit Tests `_backlog/1-done/plan-create-conventions-unit-tests/plan.md`          | `DONE`     |
 | 2     | Plan: Amend TypeScript Conventions `_backlog/1-done/plan-amend-typescript-conventions/plan.md`             | `DONE`     |
+| 3     | Plan: Publish Conventions Index `_backlog/3-now/plan-publish-conventions-index/plan.md`                    | `READY`    |
 | 3     | Plan: Conventions Routines and Skills `_backlog/6-plan/plan-conventions-routines-and-skills/plan.md`       | `PLANNING` |
 
 ---
