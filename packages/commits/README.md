@@ -10,7 +10,7 @@ npm install @noodlestan/conventions-commits
 
 ## Usage
 
-This package provides convention references for commits.
+This package provides conventions for commits.
 
 ## License
 

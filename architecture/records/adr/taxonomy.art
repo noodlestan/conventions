@@ -1,38 +1,19 @@
 # Module: Taxonomy
 
-**Purpose:** Decide how the current reference documents map to convention packages.
+**Purpose:** Decide how convention content is divided into packages.
 
-## Decision: Package References by Convention Concern
+## Decision: Content Split by Responsibility
 
 **Status:** Adopted
 
-**Context:** The workspace currently stores a small flat set of convention
-documents (`commits`, `typescript`, `jsx`, `solid-js`, and `scss`). The standalone
-repository needs packages, but the package taxonomy has not been defined. A
-directory layout must not become an accidental taxonomy, and a package should
-have a coherent consumer concern rather than collect unrelated documents.
+**Context:** Conventions span many technologies and grow over time. Kept as one body of content they have no clear owner, cannot be consumed or versioned on their own, and mix unrelated concerns.
 
-**Decision:** Use convention concern as the package-mapping criterion. The
-adopted mapping is:
+**Decision:** Break convention content down by responsibility: one package per coherent concern, named after that concern. Every document has exactly one owning package. Material needed by several packages belongs to the nearest common package and is inherited through the package dependency, never copied, so packages stay interdependent instead of forking shared ground.
 
-- `@noodlestan/conventions-typescript` — TypeScript language and project
-  conventions.
-- `@noodlestan/conventions-jsx` — JSX syntax and authoring conventions;
-  extends the TypeScript conventions.
-- `@noodlestan/conventions-solidjs` — Solid-specific conventions;
-  extends the JSX conventions.
-- `@noodlestan/conventions-scss` — SCSS and styling conventions.
+This decision does not enumerate packages. The packages that currently exist, and what each depends on, are described by the package records under `packages/*/_records/package.art`. Introducing a concern means adding a package; it is not a redesign of this decision.
 
-The root repository remains `@noodlestan/conventions`; the packages also belong to
-the `@noodlestan` and are prefixed with `conventions-`.
+**Consequences:**
 
-There is no unassigned “shared material” category. A document used by multiple
-packages belongs to the nearest common base package and is inherited through
-the extension chain. If no suitable base package exists, the taxonomy needs a
-new package decision rather than an orphan document.
-
-**Consequences:** Each document gets an explicit package owner. The mapping
-can be revised before migration without treating the current flat tree as a
-public API. A package that spans concerns requires an explicit extension or
-composition rationale. The current extension chain is
-`typescript ← jsx ← solidjs`; `scss` is independent.
+- Consumers depend on the packages covering their stack and nothing else.
+- A concern that outgrows its package is split rather than absorbed into a shared bucket.
+- There is no unassigned "shared material" category; a concern with no suitable owning package calls for a new package, not an orphan document.

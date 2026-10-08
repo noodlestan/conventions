@@ -1,17 +1,23 @@
 # Conventions Inventory
 
-The repository contains four convention packages under `packages/`. JSX
-extends TypeScript, SolidJS extends JSX, and SCSS is independent.
+The repository hosts five convention packages under `packages/`. Each package owns
+its documents and declares its dependencies as npm dependencies; the authoritative
+shape is in each package's `_records/package.art`.
 
-## Convention Documents
+## Convention Packages
 
-- [Commits conventions](packages/commits/commits.md) —
-  `@noodlestan/conventions-typescript`
-- [TypeScript conventions](packages/typescript/typescript.md) —
-  `@noodlestan/conventions-typescript`
-- [JSX conventions](packages/jsx/jsx.md) —
-  `@noodlestan/conventions-jsx`, extends TypeScript
-- [SolidJS conventions](packages/solidjs/solid-js.md) —
-  `@noodlestan/conventions-solidjs`, extends JSX
-- [SCSS conventions](packages/scss/scss.md) —
-  `@noodlestan/conventions-scss`
+| Package    | Path                   | Conventions                                    | Depends on                           |
+| ---------- | ---------------------- | ---------------------------------------------- | ------------------------------------ |
+| Commits    | `packages/commits/`    | [Commits](packages/commits/art/commits.art)    | —                                    |
+| TypeScript | `packages/typescript/` | [TypeScript](packages/typescript/art/index.md) | —                                    |
+| JSX        | `packages/jsx/`        | [JSX](packages/jsx/art/index.md)               | `@noodlestan/conventions-typescript` |
+| SolidJS    | `packages/solidjs/`    | [SolidJS](packages/solidjs/art/index.md)       | `@noodlestan/conventions-jsx`        |
+| SCSS       | `packages/scss/`       | [SCSS](packages/scss/art/index.md)             | —                                    |
+
+## Packages
+
+- `@noodlestan/conventions-commits`
+- `@noodlestan/conventions-typescript`
+- `@noodlestan/conventions-jsx`
+- `@noodlestan/conventions-solidjs`
+- `@noodlestan/conventions-scss`

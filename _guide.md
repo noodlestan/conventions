@@ -9,19 +9,23 @@ A collection of convention packages written in Art, architecture for distributin
 Agents SHOULD scan these files for relevant clarifications when faced with ambiguity or omissions that may result from missing definitions.
 
 - `_guide.md` — this file: system overview, layout, setup, verification.
-- `_backlog/_architect.md` — project direction, package taxonomy, extension model, and sequence.
+- `architecture/overview.md` — what this repository is, its benefits, definitions, and use cases.
+- `architecture/principles.md` — principles guiding design, distribution, and authoring.
+- `architecture/index.md` — index of architecture documents, design documents, and ADRs.
+- `_backlog/_parking-lot.md` — short-term actionables, open questions, and blockers.
 - `packages/` — convention package content.
 - `architecture/records/adr/` — architecture proposals and decisions that constrain planning.
-- `index.md` — inventory of references hosted in this repository.
+- `index.md` — inventory of conventions hosted in this repository.
 
 ## Repository Layout
 
 ```
-_guide.md           — this file
-_backlog/           — plans, instructions, reports
-_records/           — records (packages, namespaces)
-architecture/       — description, principles, ADRs
-packages/           — convention package content
+_guide.md               — this file
+_backlog/               — plans, instructions, reports
+_backlog/_parking-lot.md — short-term actionables, open questions, and blockers
+_records/               — records (packages, namespaces)
+architecture/           — overview, principles, design documents, ADRs
+packages/               — convention package content
 ```
 
 ## Projects
@@ -61,7 +65,8 @@ Projects in this repository use the following workflows:
 ### Planning Work
 
 - The backlog lives at `_backlog/` with subdirectories such as `/3-now` and `/4-next/`.
-- The requirements, use cases, and principles are captured in `_backlog/_architect.md`.
+- The project architecture, principles, and decisions live at `architecture/`.
+- Short-term focus, open questions, and blockers live at `_backlog/_parking-lot.md`.
 
 ## Operating Instructions
 

@@ -1,27 +1,29 @@
 # Module: Packaging
 
-**Purpose:** Decide how convention packages compose and extend one another.
+**Purpose:** Decide how convention packages are distributed and how they depend on each other.
 
-## Decision: Extensions Reference Their Base Package
+## Decision: Conventions Distributed as Npm Packages
 
 **Status:** Adopted
 
-**Context:** Some conventions may specialize a broader concern. Copying base
-documents into an extending package would create drift, while treating every
-package as unrelated would lose the relationship needed by consumers.
+**Context:** Conventions are consumed by many repositories. Ad-hoc copies and workspace-relative paths leave ownership and history ambiguous, and tie consumers to the layout of this repository.
 
-**Decision:**
+**Decision:** Convention packages are distributed as npm packages and consumed as regular dependencies. npm is a sufficient channel for distributing Art-based conventions; no bespoke channel, vendored copy, or path into this repository is required to obtain them.
 
-A package may explicitly extend another package. The package
-record names its base package, and every extending convention file contains a
-mandatory reading section pointing to the parent package
+**Consequences:**
 
-Example for `@noodlestan/conventions-solidjs` (extends `@noodlestan/conventions-jsx`):
+- A consumer installs a version and inherits ownership, history, and changelog.
+- Packaging metadata, versioning, and release cadence become the distribution concern of this repository.
 
-```text
-:READ `@noodlestan/conventions-jsx/`
-```
+## Decision: Conventions Dependencies as Npm Package Dependencies
 
-The child file describes only additions or constraints. It does not copy the
-base package's documents; consumers resolve the base package plus the
-extension.
+**Status:** Adopted
+
+**Context:** Some conventions specialise broader ones. Copying base documents into a specialised package creates drift; treating every package as unrelated loses the relationship consumers need.
+
+**Decision:** A package that builds on another declares that package as an npm dependency, and names it in its package record. The depending package's documents add to or constrain the base; they never copy the base's content. Consumers resolve the relationship transitively, through npm.
+
+**Consequences:**
+
+- Inheritance is explicit, versioned, and visible in `package.json`.
+- Adding, changing, or removing a dependency between packages is an ordinary dependency change rather than a content migration.
