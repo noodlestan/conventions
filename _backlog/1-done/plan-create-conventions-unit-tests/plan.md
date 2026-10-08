@@ -2,7 +2,7 @@
 
 **ID:** `create-conventions-unit-tests`
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Template:** `$DOMAINS/plans/templates/plan.tart`
 
@@ -186,9 +186,9 @@ npm run ci # lint
 
 #### Commits:
 
-| ID                            | Repository / Checkout / Branch        | Policy   | Hash    | Status     |
-| ----------------------------- | ------------------------------------- | -------- | ------- | ---------- |
-| `scaffold-unit-tests-package` | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `(TBD)` | `AUTHORED` |
+| ID                            | Repository / Checkout / Branch        | Policy   | Hash       | Status      |
+| ----------------------------- | ------------------------------------- | -------- | ---------- | ----------- |
+| `scaffold-unit-tests-package` | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `a2b2c108` | `COMMITTED` |
 
 ##### Commit: `scaffold-unit-tests-package`
 
@@ -197,7 +197,7 @@ npm run ci # lint
 **Message:**
 
 ```
-scaffold(unit-tests): Add the unit tests conventions package.
+build(unit-tests): Add the unit tests conventions package.
 
 - Copy the accepted proposal into `art/src` with authoring fixes.
 - Register the package in the inventory, guide, and project record.
@@ -241,4 +241,6 @@ scaffold(unit-tests): Add the unit tests conventions package.
 
 ### Feedback
 
-- None.
+- `IRRELEVANT` (Prepare Delegation) — `## Context` lacks `### Resource Kinds in Scope`; Kind `Package` → `$DOMAINS/packages/structures/package.art`.
+- `IRRELEVANT` (Prepare Delegation) — `## Context` lacks `### Workflows` (Planning Work, Executing Work).
+- `IRRELEVANT` (Prepare Delegation) — `## Context` lacks `### Workflow Operations` for those workflows.

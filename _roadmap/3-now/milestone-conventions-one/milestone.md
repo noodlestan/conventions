@@ -172,7 +172,7 @@ The following conventions packages are in progress or planned.
 | 1     | Plan: Integrate Conventions in Workflows `_backlog/1-done/plan-integrate-conventions-in-workflows/plan.md` | `DONE`     |
 | 1     | Plan: Pilot Project Adoption (Art MD) `_backlog/1-done/plan-pilot-project-adoption-art-md/plan.md`         | `DONE`     |
 | 1     | Plan: Conventions Routines and Skills `_backlog/6-plan/plan-conventions-routines-and-skills/plan.md`       | `PLANNING` |
-| 2     | Plan: Create Conventions: Unit Tests `_backlog/3-now/plan-create-conventions-unit-tests/plan.md`           | `READY`    |
+| 2     | Plan: Create Conventions: Unit Tests `_backlog/1-done/plan-create-conventions-unit-tests/plan.md`          | `DONE`     |
 
 ---
 
@@ -180,9 +180,7 @@ The following conventions packages are in progress or planned.
 
 ### Next
 
-- Delegate Plan: Create Conventions: Unit Tests `_backlog/3-now/plan-create-conventions-unit-tests/plan.md` (iteration `create-conventions-unit-tests` is `READY`).
-- Integrate Standard UI Theming conventions (currently in `$CONVENTIONS/packages/scss/art/src/standard-ui-theming.md`).
-- Apply index + grouped sources pattern to Commits conventions.
+- Add more convention packages.
 
 ### Blockers
 

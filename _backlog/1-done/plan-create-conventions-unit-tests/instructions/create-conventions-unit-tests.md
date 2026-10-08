@@ -58,26 +58,20 @@ Copy the accepted Art MD unit tests proposal into a new `@noodlestan/conventions
 
 ### Setting Up
 
-Run from the `$WORKSPACE/` root:
-
-```bash
-npm ci # to install dependencies.
-```
-
 Run from the `$CONVENTIONS` root:
 
 ```bash
 npm ci # to install dependencies.
 ```
 
-### Writing Commit Message
+### Verifying Step
 
-1. Read commit message conventions from `$WORKSPACE/knowledge/conventions/writing-commit-message.art`.
-2. Write a message following: `{Type}({Scope}): {Description}.` max 120 chars, optionally followed by up 3 bullet points, max 100 chars each.
-3. Use only values of `Type`, `Scope`, and valid `Type–Scope` associations defined in along with examples, and rules.
+Run from the `$CONVENTIONS` root:
 
-- RULE: Always read the commit message conventions once.
-- RULE: Do not invent commit types or scopes or assume a combination is valid.
+```bash
+npm run lint:fix # autofix formatting issues
+npm run lint # report remaining issues
+```
 
 ### Verifying Completion
 

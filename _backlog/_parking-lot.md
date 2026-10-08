@@ -4,7 +4,8 @@ WIP tracker, structured like the session parking lot: **ACTIONABLE** (in progres
 
 ## ACTIONABLE
 
-- None.
+- Integrate Standard UI Theming conventions (currently in `$CONVENTIONS/packages/scss/art/src/standard-ui-theming.md`).
+- Apply index + grouped sources pattern to Commits conventions. Update contents from `$WORKSPACE/knowledge/conventions/writing-commit-message.art`
 
 ## UNKNOWN
 
