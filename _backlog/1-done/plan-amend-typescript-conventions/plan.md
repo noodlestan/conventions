@@ -2,7 +2,7 @@
 
 **ID:** `amend-typescript-conventions`
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Template:** `$DOMAINS/plans/templates/plan.tart`
 
@@ -167,7 +167,7 @@ npm run ci # lint
 
 **Id:** `amend-typescript-conventions`
 
-**Status:** `READY`
+**Status:** `DONE`
 
 **Purpose:** Apply the 10 ruled items to the TypeScript conventions source so the next release carries them.
 
@@ -188,9 +188,9 @@ npm run ci # lint
 
 #### Commits:
 
-| ID                             | Repository / Checkout / Branch        | Policy   | Hash    | Status     |
-| ------------------------------ | ------------------------------------- | -------- | ------- | ---------- |
-| `amend-typescript-conventions` | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `(TBD)` | `AUTHORED` |
+| ID                             | Repository / Checkout / Branch        | Policy   | Hash      | Status      |
+| ------------------------------ | ------------------------------------- | -------- | --------- | ----------- |
+| `amend-typescript-conventions` | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `b727241` | `COMMITTED` |
 
 ##### Commit: `amend-typescript-conventions`
 

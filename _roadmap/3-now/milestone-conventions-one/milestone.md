@@ -23,6 +23,7 @@
 | Variable       | Resolved Path             | Purpose                         |
 | -------------- | ------------------------- | ------------------------------- |
 | `$WORKSPACE`   | Current working directory | Workspace root directory        |
+| `$MANAGEMENT`  | `checkouts/management/`   | Adoption tracker lives here     |
 | `$CONVENTIONS` | `checkouts/conventions/`  | Conventions repository checkout |
 
 ## Summary
@@ -35,23 +36,7 @@ Cover Noodlestan's main stacks with single source of truth conventions: TypeScri
 
 ### Consumer Projects
 
-The following projects with consume conventions via NPM packages.
-
-| Project           | Record                                                   | Status |
-| ----------------- | -------------------------------------------------------- | ------ |
-| Art Work          | `$WORKSPACE/_records/repositories/art-work.art`          | -      |
-| Purrception       | `$WORKSPACE/_records/repositories/purrception.art`       | -      |
-| Workspace Tooling | `$WORKSPACE/_records/repositories/workspace-tooling.art` | -      |
-| Art Lib           | `$WORKSPACE/_records/repositories/art-lib.art`           | -      |
-| Art JS            | `$WORKSPACE/_records/repositories/art-js.art`            | -      |
-| No Comply         | `$WORKSPACE/_records/repositories/no-comply.art`         | -      |
-| Artificials       | `$WORKSPACE/_records/repositories/artificials.art`       | -      |
-| Noodlestan Web    | `$WORKSPACE/_records/repositories/noodlestan-web.art`    | -      |
-| Purrtrait         | `$WORKSPACE/_records/repositories/purrtrait.art`         | -      |
-| Purrfect          | `$WORKSPACE/_records/repositories/purrfect.art`          | -      |
-| Artisans          | `$WORKSPACE/_records/repositories/artisans.art`          | -      |
-| Purrpose          | `$WORKSPACE/_records/repositories/purrpose.art`          | -      |
-| Art Domains       | `$WORKSPACE/_records/repositories/art-domains.art`       | -      |
+Adoption is tracked by `$MANAGEMENT/_ops/conventions/adoption.md`.
 
 ### Convention Packages
 
@@ -104,12 +89,12 @@ The following conventions packages are in progress or planned.
 
 ## Phases
 
-| Index | Name       | Status    |
-| ----- | ---------- | --------- |
-| 0     | Baseline   | `DONE`    |
-| 1     | Adopt      | `WORKING` |
-| 2     | Grow       | -         |
-| 3     | Distribute | -         |
+| Index | Name       | Status     |
+| ----- | ---------- | ---------- |
+| 0     | Baseline   | `DONE`     |
+| 1     | Adopt      | `DONE`     |
+| 2     | Grow       | `WORKING`  |
+| 3     | Distribute | `PLANNING` |
 
 ### Phase: 0 — Baseline
 
@@ -129,7 +114,7 @@ The following conventions packages are in progress or planned.
 
 **Description:** Add convention packages as dependencies of project repositories udpate `_guide.md` files with "Conventions" sections with reading directives for the installed `$PROJECT/node_modules/@noodlestan/conventions-{name}`. Project by project, integrate learnings, and feed `Phase: 2 - Grow` from each projects's scope. Initialise local `conventions/` directory in repositories/packages that have convention specific to their architecture (Example: No-Comply). Document process of adding conventions to a project.
 
-**Status:** `WORKING`
+**Status:** `DONE`
 
 **Dependencies:**
 
@@ -141,7 +126,7 @@ The following conventions packages are in progress or planned.
 
 **Description:** Add convention packages for Tests, HTML, Configuration, Markdown, and Art. Move SolidJS and Commits from DRAFT to ALPHA.
 
-**Status:** -
+**Status:** -`WORKING`
 
 **Dependencies:**
 
@@ -153,7 +138,7 @@ The following conventions packages are in progress or planned.
 
 **Description:** Abstract conventions to art files, generate index compile before distribution. Create skills to `adopt-conventions` (install and configure), `audit-convention-adoption` and `write-convention-draft`.
 
-**Status:** -
+**Status:** -`PLANNING`
 
 **Dependencies:**
 
@@ -171,9 +156,9 @@ The following conventions packages are in progress or planned.
 | 0     | Plan: Indexes and Grouped Details `_backlog/1-done/plan-indexes-and-grouped-details/plan.md`               | `DONE`     |
 | 1     | Plan: Integrate Conventions in Workflows `_backlog/1-done/plan-integrate-conventions-in-workflows/plan.md` | `DONE`     |
 | 1     | Plan: Pilot Project Adoption (Art MD) `_backlog/1-done/plan-pilot-project-adoption-art-md/plan.md`         | `DONE`     |
-| 1     | Plan: Conventions Routines and Skills `_backlog/6-plan/plan-conventions-routines-and-skills/plan.md`       | `PLANNING` |
 | 2     | Plan: Create Conventions: Unit Tests `_backlog/1-done/plan-create-conventions-unit-tests/plan.md`          | `DONE`     |
-| 2     | Plan: Amend TypeScript Conventions `_backlog/3-now/plan-amend-typescript-conventions/plan.md`              | `READY`    |
+| 2     | Plan: Amend TypeScript Conventions `_backlog/1-done/plan-amend-typescript-conventions/plan.md`             | `DONE`     |
+| 3     | Plan: Conventions Routines and Skills `_backlog/6-plan/plan-conventions-routines-and-skills/plan.md`       | `PLANNING` |
 
 ---
 
@@ -181,7 +166,7 @@ The following conventions packages are in progress or planned.
 
 ### Next
 
-- Delegate Plan: Amend TypeScript Conventions `_backlog/3-now/plan-amend-typescript-conventions/plan.md` (iteration `amend-typescript-conventions` is `READY`).
+- Plan: Plan: Conventions Routines and Skills
 - Add more convention packages.
 
 ### Blockers
