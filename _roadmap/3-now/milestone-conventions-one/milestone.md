@@ -173,6 +173,7 @@ The following conventions packages are in progress or planned.
 | 1     | Plan: Pilot Project Adoption (Art MD) `_backlog/1-done/plan-pilot-project-adoption-art-md/plan.md`         | `DONE`     |
 | 1     | Plan: Conventions Routines and Skills `_backlog/6-plan/plan-conventions-routines-and-skills/plan.md`       | `PLANNING` |
 | 2     | Plan: Create Conventions: Unit Tests `_backlog/1-done/plan-create-conventions-unit-tests/plan.md`          | `DONE`     |
+| 2     | Plan: Amend TypeScript Conventions `_backlog/3-now/plan-amend-typescript-conventions/plan.md`              | `READY`    |
 
 ---
 
@@ -180,6 +181,7 @@ The following conventions packages are in progress or planned.
 
 ### Next
 
+- Delegate Plan: Amend TypeScript Conventions `_backlog/3-now/plan-amend-typescript-conventions/plan.md` (iteration `amend-typescript-conventions` is `READY`).
 - Add more convention packages.
 
 ### Blockers
