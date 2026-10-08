@@ -15,7 +15,7 @@ Agents SHOULD scan these files for relevant clarifications when faced with ambig
 - `_backlog/_parking-lot.md` — short-term actionables, open questions, and blockers.
 - `packages/` — convention package content.
 - `architecture/records/adr/` — architecture proposals and decisions that constrain planning.
-- `index.md` — inventory of conventions hosted in this repository.
+- `packages/index.md` — inventory of conventions hosted in this repository.
 
 ## Repository Layout
 

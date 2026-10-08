@@ -8,12 +8,7 @@
 | ------------------------------ | ------------------------------------------------------------------------------------------ |
 | [overview.md](overview.md)     | Overview of the Conventions repository: benefits, definitions, use cases, and how it works |
 | [principles.md](principles.md) | Principles guiding the design, distribution, and authoring of this repository              |
-
-## Design Documents
-
-| Document                     | Purpose                                                  |
-| ---------------------------- | -------------------------------------------------------- |
-| [authoring.md](authoring.md) | Rules and guidelines for authors of convention documents |
+| [authoring.md](authoring.md)   | Rules and guidelines for authors of convention documents                                   |
 
 ## Decision Records
 

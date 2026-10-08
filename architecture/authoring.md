@@ -107,7 +107,7 @@ Rules for a source document:
 2. Scaffold `packages/{name}/` with `_guide.md`, `_records/`, `art/index.md`, and the package metadata (`package.json`, `README.md`, `CHANGELOG.md`, `LICENSE-MIT`).
 3. Write `_records/package.art` with the canonical name (`@noodlestan/conventions-{concern}`) and its dependencies.
 4. Declare any base package as a dependency in `package.json`, matching the package record. See the [Packaging ADR](records/adr/packaging.art).
-5. Add the package to the project record's resources and to the repository [inventory](../index.md).
+5. Add the package to the project record's resources and to the repository [inventory](../packages/index.md).
 
 ## Depending on a Base Package
 
