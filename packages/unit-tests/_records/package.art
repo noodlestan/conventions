@@ -1,0 +1,32 @@
+# Module
+
+## Package: Unit Tests Conventions
+
+**Purpose:** Unit test conventions for Noodlestan.
+
+**Description:** Reference conventions for unit tests, extending TypeScript conventions.
+
+**Path:** `packages/unit-tests/`
+
+**Canonical Name:** `@noodlestan/conventions-unit-tests`
+
+**Version:** `0.0.1`
+
+**Private:** `false`
+
+**Published:** `true`
+
+**Language:** Markdown
+
+**PackageFile:** package.json
+
+**Dependencies:**
+
+- Runtime:
+  - `@noodlestan/conventions-typescript` @ `*`
+
+**Scaffolders:**
+
+- Scaffolder Skeleton: Conventions Lib
+
+**License:** License: Noodlestan 2026 MIT

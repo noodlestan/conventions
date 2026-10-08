@@ -21,6 +21,7 @@
 - Package: SolidJS Conventions
 - Package: SCSS Conventions
 - Package: Commits Conventions
+- Package: Unit Tests Conventions
 
 **Private:** `false`
 

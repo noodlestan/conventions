@@ -1,6 +1,6 @@
 # Conventions Inventory
 
-The repository hosts five convention packages under `packages/`. Each package owns
+The repository hosts six convention packages under `packages/`. Each package owns
 its documents and declares its dependencies as npm dependencies; the authoritative
 shape is in each package's `_records/package.art`.
 
@@ -13,6 +13,7 @@ shape is in each package's `_records/package.art`.
 | JSX        | `packages/jsx/`        | [JSX](jsx/art/index.md)               | `@noodlestan/conventions-typescript` |
 | SolidJS    | `packages/solidjs/`    | [SolidJS](solidjs/art/index.md)       | `@noodlestan/conventions-jsx`        |
 | SCSS       | `packages/scss/`       | [SCSS](scss/art/index.md)             | —                                    |
+| Unit Tests | `packages/unit-tests/` | [Unit Tests](unit-tests/art/index.md) | `@noodlestan/conventions-typescript` |
 
 ## Packages
 
@@ -21,3 +22,4 @@ shape is in each package's `_records/package.art`.
 - `@noodlestan/conventions-jsx`
 - `@noodlestan/conventions-solidjs`
 - `@noodlestan/conventions-scss`
+- `@noodlestan/conventions-unit-tests`

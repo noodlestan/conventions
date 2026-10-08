@@ -37,6 +37,7 @@ packages/               — convention package content
 | SCSS       | `packages/scss/_guide.md`       | `NONE`  |
 | SolidJS    | `packages/solidjs/_guide.md`    | `NONE`  |
 | TypeScript | `packages/typescript/_guide.md` | `NONE`  |
+| Unit Tests | `packages/unit-tests/_guide.md` | `NONE`  |
 
 ## Records Management
 

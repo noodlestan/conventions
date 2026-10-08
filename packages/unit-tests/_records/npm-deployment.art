@@ -1,0 +1,17 @@
+# Module
+
+## NPM Package Deployment: Unit Tests Conventions
+
+**Owner:** Package: Unit Tests Conventions
+
+**Status:** `PENDING`
+
+**Build:** Deployment Build: NPM Command
+
+**Deploy:** Deployment Command: NPM Package CLI
+
+**Canonical Name:** `@noodlestan/conventions-unit-tests`
+
+**Registry:** `https://registry.npmjs.org`
+
+**Access:** `public`
