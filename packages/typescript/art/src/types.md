@@ -28,31 +28,34 @@ type User = {
 
 ## Convention: No Nested Type Declarations
 
-**Summary:** Never nest type declarations. Extract nested object types into named types, even when the nested type is only used once.
+**Summary:** Avoid nested type declarations. Extract non-trivial object types, inline generic arguments, and multiple compositions into named types. Simple nested objects and linear intersections may remain inline.
 
 **Avoid:**
 
 ```ts
 type User = {
-  name: string;
-  address: {
+  address: AbstractAddress & {
     street: string;
     city: string;
-  };
+  } & Pick<ExtendedAddress, 'country'>;
+};
+
+type User = {
+  addresses: Array<{
+    street: string;
+    city: string;
+  }>;
 };
 ```
 
 **Prefer:**
 
 ```ts
-type Address = {
-  street: string;
-  city: string;
-};
-
 type User = {
-  name: string;
-  address: Address;
+  address: AbstractAddress & {
+    street: string;
+    city: string;
+  };
 };
 ```
 

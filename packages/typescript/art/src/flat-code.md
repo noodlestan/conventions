@@ -49,7 +49,7 @@ function processUserData(user: UserData) {
 
 ## Convention: No Multi-Line Nested Declarations
 
-**Summary:** Function call arguments should be symbols, literals, or otherwise simple expressions; extract nested expressions, object literals, arrays, and function calls into preceding statements.
+**Summary:** Function call arguments should be symbols, literals, or otherwise simple expressions; extract nested expressions, object literals, arrays, and function calls into preceding statements. Nested calls that fit on one line are allowed.
 
 **Avoid:**
 
@@ -64,6 +64,21 @@ const items = getItems();
 const withFallback = useValue ? value : fallback;
 const data = { name, options };
 const processedItems = processItems(items, withFallback, data);
+```
+
+**Allowed:**
+
+```ts
+const object = createObject(createContext(config));
+```
+
+**Forbidden:**
+
+```ts
+const object = createObject(createContext(loadConfig()));
+const object = createObject(createContext({
+  options: { ... }
+}));
 ```
 
 ## Convention: No Nested Ternaries

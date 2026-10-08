@@ -17,8 +17,8 @@
 :READ `./src/filesystem.md` for expanded rules and examples.
 
 - **Directory Module Structure** – Every directory is a module.
-- **Function Extraction** – Every top-level reusable function is defined in its own file. Reusable functions may be extracted to `./helpers/` or another module. Private reusable functions must be extracted to `./private/`. Closure functions do not qualify for extraction.
-- **Types Location** – All types in `types.ts` except non-exported types consumed directly in the file they are declared.
+- **Function Extraction** – Every top-level reusable function is defined in its own file. Reusable functions may be extracted to `./helpers/` or another module. Private reusable functions must be extracted to `./private/`. Closure functions do not qualify for extraction. Shebang entry scripts and side-effect scripts are not covered by the rule.
+- **Types Location** – All types in `types.ts` except non-exported types consumed directly in the file they are declared. Types that are not used outside the file they are declared in MUST NOT be exported. Fixing the offending export sites is code work owned elsewhere, not a text change here.
 - **Constants Location** – All constants in `constants.ts` except non-exported constants consumed directly in the file they are declared.
 - **Barrel File Imports** – When a barrel file exists for a module, import from the barrel instead of importing directly from the module's internal files.
 - **No Deep Private Directory Imports** – Never import resources from sub-directories of a private directory. Example: `./private/sub-directory/{resource}`.
@@ -35,11 +35,11 @@
 
 :READ `./src/explicit-code.md` for expanded rules and examples.
 
-- **Verb Function Names** – All functions start with a verb.
+- **Verb Function Names** – All functions start with a verb. Noun-named function properties are allowed when the property is a getter or returns a semantically obvious data structure.
 - **Functions over Arrows** – Prefer function declarations over arrow functions unless an arrow function is required.
-- **No Abbreviations** – Never abbreviate variable names.
+- **No Abbreviations** – Never abbreviate variable names, except for the accepted abbreviations: `ctx`, `ts`, `op`, and `dir`.
 - **No Single Character Names** – Single character symbols are absolutely forbidden, except in iterators with obvious meaning: indexes and items of a named collection.
-- **All Caps Constants** – Module-level literal and regular-expression constants use `const ALL_CAPS`. Constants representing mutable structures, factory return values, configured objects, or other runtime values retain descriptive lower-case naming.
+- **All Caps Constants** – Constants exported from `constants.ts` and module-level constants that are assigned literal values use `const ALL_CAPS`. Constants representing mutable structures, factory return values, configured objects, or other runtime values retain descriptive lower-case naming.
 - **Boolean Naming** – Boolean functions start with `is`, `has`, `should`, or `can`. Boolean variables or non function members DO NOT use prefix.
 - **Plural Arrays** – Array names are plural nouns.
 
@@ -48,7 +48,7 @@
 :READ `./src/types.md` for expanded rules and examples.
 
 - **No Interface** – Use `type` declarations instead of `interface` declarations.
-- **No Nested Type Declarations** – Never nest type declarations. Extract nested object types into named types, even when the nested type is only used once.
+- **No Nested Type Declarations** – Avoid nested type declarations. Extract non-trivial object types, inline generic arguments, and multiple compositions into named types. Simple nested objects and linear intersections may remain inline.
 - **Order Types by Dependency** – Declare types before the types that use them. Types with no dependencies come first, followed by types that depend on them.
 
 ## Conventions: Typescript / Flat Code
@@ -57,7 +57,7 @@
 
 - **No Complex Inline Types** – Never declare types with multiple properties, nested members, or unions directly in function signatures. Add a named type above the function declaration instead.
 - **No Inline Destructuring** – Never destructure params directly in function signatures, do it in the first lines of the function instead.
-- **No Multi-Line Nested Declarations** – Function call arguments should be symbols, literals, or otherwise simple expressions; extract nested expressions, object literals, arrays, and function calls into preceding statements.
+- **No Multi-Line Nested Declarations** – Function call arguments should be symbols, literals, or otherwise simple expressions; extract nested expressions, object literals, arrays, and function calls into preceding statements. Nested calls that fit on one line are allowed.
 - **No Nested Ternaries** – Never nest conditional expressions. Use statements or a helper with early returns instead, while preserving lazy evaluation of branches that may not be needed.
 - **No Complex Expressions in Ternaries** – Do not put complex expressions (such as function calls, or compound boolean expressions) directly in a conditional expression. Extract the expression to an intermediate state or helper first.
 - **No Function Calls in Literals** – Do not place function calls in literal declarations.

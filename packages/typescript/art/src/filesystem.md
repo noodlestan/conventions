@@ -37,7 +37,7 @@ src/
 
 ## Convention: Function Extraction
 
-**Summary:** Every top-level reusable function is defined in its own file. Reusable functions may be extracted to `./helpers/` or another module. Private reusable functions must be extracted to `./private/`. Closure functions do not qualify for extraction.
+**Summary:** Every top-level reusable function is defined in its own file. Reusable functions may be extracted to `./helpers/` or another module. Private reusable functions must be extracted to `./private/`. Closure functions do not qualify for extraction. Shebang entry scripts and side-effect scripts are not covered by the rule.
 
 **Avoid:**
 
@@ -61,9 +61,19 @@ export function processData() {}
 export function processDataAgain() {}
 ```
 
+**Allowed:**
+
+```ts
+#!/usr/bin/env node
+// bin/codec.ts
+import { codec } from './codec';
+
+codec.run();
+```
+
 ## Convention: Types Location
 
-**Summary:** All types in `types.ts` except non-exported types consumed directly in the file they are declared.
+**Summary:** All types in `types.ts` except non-exported types consumed directly in the file they are declared. Types that are not used outside the file they are declared in MUST NOT be exported. Fixing the offending export sites is code work owned elsewhere, not a text change here.
 
 **Avoid:**
 
@@ -76,8 +86,6 @@ export function doThing(options: doThingOptions) {};
 **Prefer:**
 
 ```ts
-// src/utils/doThing.ts
-
 // src/utils/doThing.ts
 type doThingOptions = { ... };
 export function doThing(options: doThingOptions) {};
@@ -98,11 +106,11 @@ export function doThing() { ... }
 **Prefer:**
 
 ```ts
-// src/utils/types.ts
+// src/utils/constants.ts
 export const MAX_RETRIES = 3;
 
 // src/utils/doThing.ts
-import { MAX_RETRIES } from './types';
+import { MAX_RETRIES } from './constants';
 export function doThing() { ... }
 ```
 

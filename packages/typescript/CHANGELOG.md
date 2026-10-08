@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Unreleased
+
+### Changed
+
+- Amended `No Abbreviations`, `Constants Location`, `All Caps Constants`, `Verb Function Names`, `Function Extraction`, `No Nested Type Declarations`.
+- Clarified `Types Location`, `No Function Calls in Literals`, `No Multi-Line Nested Declarations`, `Functions over Arrows`.
+
 ## 0.0.3
 
 ### Changed

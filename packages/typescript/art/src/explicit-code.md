@@ -6,7 +6,17 @@
 
 ## Convention: Verb Function Names
 
-**Summary:** All functions start with a verb.
+**Summary:** All functions start with a verb. Noun-named function properties are allowed when the property is a getter or returns a semantically obvious data structure.
+
+**Allowed:**
+
+```ts
+class Context {
+  get message() {
+    return this._message;
+  }
+}
+```
 
 **Avoid:**
 
@@ -40,7 +50,16 @@ function processData() {}
 
 ## Convention: No Abbreviations
 
-**Summary:** Never abbreviate variable names.
+**Summary:** Never abbreviate variable names, except for the accepted abbreviations: `ctx`, `ts`, `op`, and `dir`.
+
+**Allowed:**
+
+```ts
+const ctx = createContext();
+const ts = Date.now();
+const op = getOperation();
+const dir = getDirectory();
+```
 
 **Avoid:**
 
@@ -76,7 +95,7 @@ items.map(i => transform(i, someValue));
 
 ## Convention: All Caps Constants
 
-**Summary:** Module-level literal and regular-expression constants use `const ALL_CAPS`. Constants representing mutable structures, factory return values, configured objects, or other runtime values retain descriptive lower-case naming.
+**Summary:** Constants exported from `constants.ts` and module-level constants that are assigned literal values use `const ALL_CAPS`. Constants representing mutable structures, factory return values, configured objects, or other runtime values retain descriptive lower-case naming.
 
 **Avoid:**
 
@@ -96,6 +115,13 @@ const DEFAULT_TIMEOUT = 5000;
 
 ```ts
 const defaultConfig = createConfig();
+const config = getConfig();
+```
+
+**Forbidden:**
+
+```ts
+export const notAllCapsName = '';
 ```
 
 ## Convention: Boolean Naming

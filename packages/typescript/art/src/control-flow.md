@@ -4,6 +4,8 @@
 
 **Description:** Define conventions that keep branching, nesting, and alternative execution paths explicit and easy to scan.
 
+## Convention: Always Block If/Else
+
 **Summary:** If and else statements always open a block.
 
 **Avoid:**
@@ -42,6 +44,8 @@ Purpose: Improve readability and make control-flow complexity more visible.
 
 Description: Define conventions that keep branching, nesting, and alternative execution paths explicit and easy to scan.
 
+## Convention: Prefer Early Returns
+
 **Summary:** Prefer early returns over nested control structures.
 
 **Avoid:**
@@ -73,6 +77,8 @@ function processUser(user: User) {
 Purpose: Improve readability and make control-flow complexity more visible.
 
 Description: Define conventions that keep branching, nesting, and alternative execution paths explicit and easy to scan.
+
+## Convention: Switch Default Case
 
 **Summary:** Always include a default case in switch statements.
 
