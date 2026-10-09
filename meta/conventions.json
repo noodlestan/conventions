@@ -1,0 +1,38 @@
+[
+  {
+    "name": "@noodlestan/conventions-commits",
+    "version": "0.0.1",
+    "description": "Commit conventions for Noodlestan.",
+    "dependencies": {}
+  },
+  {
+    "name": "@noodlestan/conventions-jsx",
+    "version": "0.0.1",
+    "description": "Reference conventions for JSX, extending TypeScript conventions.",
+    "dependencies": { "@noodlestan/conventions-typescript": "*" }
+  },
+  {
+    "name": "@noodlestan/conventions-scss",
+    "version": "0.0.1",
+    "description": "Reference conventions for SCSS.",
+    "dependencies": {}
+  },
+  {
+    "name": "@noodlestan/conventions-solidjs",
+    "version": "0.0.1",
+    "description": "Reference conventions for SolidJS, extending JSX conventions.",
+    "dependencies": { "@noodlestan/conventions-jsx": "*" }
+  },
+  {
+    "name": "@noodlestan/conventions-typescript",
+    "version": "0.1.0",
+    "description": "Reference conventions for TypeScript.",
+    "dependencies": {}
+  },
+  {
+    "name": "@noodlestan/conventions-unit-tests",
+    "version": "0.1.0",
+    "description": "Reference conventions for unit tests, extending TypeScript conventions.",
+    "dependencies": { "@noodlestan/conventions-typescript": "*" }
+  }
+]

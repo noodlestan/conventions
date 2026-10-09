@@ -1,25 +1,24 @@
 # Conventions Inventory
 
-The repository hosts six convention packages under `packages/`. Each package owns
+> ⚠️ Auto-generated, do not modify.
+
+The repository hosts 6 convention packages under `packages/`. Each package owns
 its documents and declares its dependencies as npm dependencies; the authoritative
 shape is in each package's `_records/package.art`.
 
 ## Convention Packages
 
-| Package    | Path                   | Conventions                           | Depends on                           |
-| ---------- | ---------------------- | ------------------------------------- | ------------------------------------ |
-| Commits    | `packages/commits/`    | [Commits](commits/art/commits.art)    | —                                    |
-| TypeScript | `packages/typescript/` | [TypeScript](typescript/art/index.md) | —                                    |
-| JSX        | `packages/jsx/`        | [JSX](jsx/art/index.md)               | `@noodlestan/conventions-typescript` |
-| SolidJS    | `packages/solidjs/`    | [SolidJS](solidjs/art/index.md)       | `@noodlestan/conventions-jsx`        |
-| SCSS       | `packages/scss/`       | [SCSS](scss/art/index.md)             | —                                    |
-| Unit Tests | `packages/unit-tests/` | [Unit Tests](unit-tests/art/index.md) | `@noodlestan/conventions-typescript` |
+| Name / Package                                    | Version | Depends on                           | Index                              |
+| ------------------------------------------------- | ------- | ------------------------------------ | ---------------------------------- |
+| Commits — `@noodlestan/conventions-commits`       | 0.0.1   | —                                    | —                                  |
+| JSX — `@noodlestan/conventions-jsx`               | 0.0.1   | `@noodlestan/conventions-typescript` | [index](./jsx/art/index.md)        |
+| SCSS — `@noodlestan/conventions-scss`             | 0.0.1   | —                                    | [index](./scss/art/index.md)       |
+| SolidJS — `@noodlestan/conventions-solidjs`       | 0.0.1   | `@noodlestan/conventions-jsx`        | [index](./solidjs/art/index.md)    |
+| TypeScript — `@noodlestan/conventions-typescript` | 0.1.0   | —                                    | [index](./typescript/art/index.md) |
+| Unit Tests — `@noodlestan/conventions-unit-tests` | 0.1.0   | `@noodlestan/conventions-typescript` | [index](./unit-tests/art/index.md) |
 
-## Packages
+## How to update this index
 
-- `@noodlestan/conventions-commits`
-- `@noodlestan/conventions-typescript`
-- `@noodlestan/conventions-jsx`
-- `@noodlestan/conventions-solidjs`
-- `@noodlestan/conventions-scss`
-- `@noodlestan/conventions-unit-tests`
+```bash
+npm run generate:package-index
+```
