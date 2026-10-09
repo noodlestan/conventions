@@ -66,11 +66,11 @@ Adds repo-root tooling, generated artefacts, and test tooling; no convention rul
 **Partial:**
 
 - `name` — `noodlestan/conventions`
-- `scripts` — add `generate:package-index`, `test`
+- `scripts` — add `generate:package-index`, `test:scripts`
 
 **Changes:**
 
-— Add `scripts/create-package-index/` (`index.ts`, `types.ts`, `constants.ts`, `private/{function}.ts`, `templates/package-index.njk`).
+— Add `scripts/create-package-index/` (`index.ts`, `types.ts`, `constants.ts`, category modules under `record/`, `discovery/`, `validation/`, `rendering/`, `writing/`, and `templates/package-index.njk`).
 
 — Validate record-to-manifest sync (`Version`, `Canonical Name`, `Description`, `Path`) and warn on mismatch.
 
@@ -82,7 +82,7 @@ Adds repo-root tooling, generated artefacts, and test tooling; no convention rul
 
 — Run `npm run generate:package-index`.
 
-— Run `npm run test`.
+— Run `npm run test:scripts`.
 
 **Dependencies:**
 
@@ -96,7 +96,7 @@ Run from `$WORKSPACE/`; all changes are in `$CONVENTIONS` on branch `main`.
 
 ### Next
 
-Commit the `publish-conventions-index` iteration.
+No further action; the iteration's two commits are integrated and pushed.
 
 ### Blockers
 
@@ -167,16 +167,16 @@ npm run ci # lint
 
 **Purpose:** Automate discoverability of conventions packages.
 
-**Description:** Add the modular package index generator, its nunjucks template, record-to-manifest validation, the generated outputs, and vitest coverage for the pure functions; register the `generate:package-index` and `test` npm scripts.
+**Description:** Add the package index generator, its nunjucks template, record-to-manifest validation, the generated outputs, and vitest coverage; register the `generate:package-index` and `test:scripts` npm scripts.
 
 **Changes:**
 
-- Add `scripts/create-package-index/` (`index.ts`, `types.ts`, `constants.ts`, `private/{function}.ts`, `templates/package-index.njk`).
+- Add `scripts/create-package-index/` with one function per file in category modules (`record/`, `discovery/`, `validation/`, `rendering/`, `writing/`), plus `index.ts`, `types.ts`, `constants.ts`, and `templates/package-index.njk`.
 - Validate each record against its manifest and discovery directory (`Version`, `Canonical Name`, `Description`, `Path`); warn on mismatch.
 - Generate `packages/index.md` and `meta/conventions.json` from manifest data; exclude private packages.
 - Always write outputs; exit `1` when validation warnings are emitted.
-- Add `vitest.config.ts`, `test/helpers/package/makePackageFixture.ts`, and test files covering the pure functions.
-- Register `generate:package-index` and `test` in `package.json`; add `tsconfig.json` and `"type": "module"`.
+- Add `vitest.config.ts`, a shared `test/helpers/package/makePackageFixture.ts` fixture, and test files colocated with their source functions.
+- Register `generate:package-index` and `test:scripts` in `package.json`; add `tsconfig.json`, `"type": "module"`, and the eslint config.
 
 **Dependencies:**
 
@@ -184,9 +184,10 @@ npm run ci # lint
 
 #### Commits:
 
-| ID                          | Repository / Checkout / Branch        | Policy   | Hash      | Status      |
-| --------------------------- | ------------------------------------- | -------- | --------- | ----------- |
-| `publish-conventions-index` | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `a6a9f2a` | `COMMITTED` |
+| ID                                   | Repository / Checkout / Branch        | Policy   | Hash      | Status      |
+| ------------------------------------ | ------------------------------------- | -------- | --------- | ----------- |
+| `publish-conventions-index`          | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `a6a9f2a` | `COMMITTED` |
+| `publish-conventions-index-refactor` | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `cdc515a` | `COMMITTED` |
 
 ##### Commit: `publish-conventions-index`
 
@@ -202,6 +203,16 @@ build(conventions): Add package index generator.
 - Add vitest tests for the generator's pure functions.
 ```
 
+##### Commit: `publish-conventions-index-refactor`
+
+**Repository:** Conventions
+
+**Message:**
+
+```
+refactor(scripts): Apply noodlestan conventions.
+```
+
 ---
 
 ## Coordination
@@ -213,7 +224,7 @@ build(conventions): Add package index generator.
 
 ### Evidence
 
-- `npm run generate:package-index` produces `packages/index.md` and `meta/conventions.json`; `npm run lint`, `npx tsc --noEmit`, and `npm run test` (18 tests) pass.
+- `npm run generate:package-index` produces `packages/index.md` and `meta/conventions.json`; `npm run lint` (prettier + eslint + tsc) and `npm run test:scripts` (18 tests, coverage thresholds met) pass.
 - `meta/conventions.json` contains only `name`, `version`, `description`, and `dependencies` per non-private package.
 - The script exits `1` when a record drifts from its manifest (version, canonical name, description, or path).
 
@@ -226,7 +237,7 @@ build(conventions): Add package index generator.
 - **Manifest is the source of truth for version, canonical name, and path; the record is the source of truth for description** — manifests were updated to match record descriptions, and records already matched manifests on the other fields.
 - **`meta/conventions.json` carries only manifest data** (`name`, `version`, `description`, `dependencies`); private packages are excluded.
 - **Validation is advisory but enforced** — outputs are always written, but the script exits `1` when record-to-manifest mismatches are detected.
-- **Generator is modular** — one function per file under `private/`, with `types.ts` and `constants.ts`, and its template lives alongside it.
+- **Generator is modular** — one function per file, grouped into category directories without barrels (`record/`, `discovery/`, `validation/`, `rendering/`, `writing/`), with `types.ts`, `constants.ts`, colocated tests, and its template alongside.
 
 ### Knowledge to Update
 
