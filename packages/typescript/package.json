@@ -1,7 +1,7 @@
 {
   "name": "@noodlestan/conventions-typescript",
   "version": "0.1.0",
-  "description": "TypeScript language and project conventions",
+  "description": "Reference conventions for TypeScript.",
   "author": "Noodlestan Collective",
   "license": "MIT",
   "private": false,

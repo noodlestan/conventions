@@ -1,7 +1,7 @@
 {
   "name": "@noodlestan/conventions-unit-tests",
   "version": "0.1.0",
-  "description": "Unit test conventions for Noodlestan",
+  "description": "Reference conventions for unit tests, extending TypeScript conventions.",
   "author": "Noodlestan Collective",
   "license": "MIT",
   "private": false,

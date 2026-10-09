@@ -1,7 +1,7 @@
 {
   "name": "@noodlestan/conventions-scss",
   "version": "0.0.1",
-  "description": "SCSS and styling conventions",
+  "description": "Reference conventions for SCSS.",
   "author": "Noodlestan Collective",
   "license": "MIT",
   "private": false,

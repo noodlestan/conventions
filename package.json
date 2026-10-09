@@ -2,6 +2,7 @@
   "name": "noodlestan/conventions",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "description": "Conventions packages for Noodlestan stack, including Typescript, JSX, Solid JS, and SCSS.",
   "author": "Noodlestan",
   "license": "MIT",
@@ -13,14 +14,28 @@
     "node": ">=22"
   },
   "scripts": {
-    "lint": "prettier . -c",
-    "lint:fix": "prettier . -c --write",
-    "ci:root": "npm run lint",
+    "generate:package-index": "tsx scripts/create-package-index/index.ts",
+    "lint": "prettier . -c && eslint . && tsc --noEmit",
+    "lint:fix": "prettier . -c --write && eslint . --fix",
+    "test:scripts": "vitest run --silent=passed-only --coverage --dir scripts/",
+    "ci:root": "npm run lint && npm run test:scripts",
     "ci": "npm run ci:root && turbo run ci"
   },
   "devDependencies": {
+    "@noodlestan/eslint-config": "0.0.8",
+    "@noodlestan/prettier-config": "0.0.1",
+    "@noodlestan/tsconfig": "0.2.0",
+    "@types/node": "25.9.5",
+    "@types/nunjucks": "3.2.6",
+    "@vitest/coverage-v8": "4.1.8",
     "lefthook": "2.1.9",
+    "nunjucks": "^3.2.4",
     "prettier": "3.8.4",
-    "turbo": "2.9.18"
+    "simple-git": "3.24.0",
+    "tsx": "4.23.13",
+    "turbo": "2.9.18",
+    "typescript": "5.9.3",
+    "vite": "8.0.16",
+    "vitest": "4.1.8"
   }
 }
