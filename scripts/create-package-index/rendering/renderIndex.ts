@@ -9,10 +9,10 @@ import { buildTable } from './buildTable.js';
 import { renderTable } from './renderTable.js';
 
 export function renderIndex(packages: ConventionPackage[]): string {
-	const { headers, rows } = buildTable(packages);
-	const table = renderTable(headers, rows);
+	const table = buildTable(packages);
+	const tableMarkdown = renderTable(table.headers, table.rows);
 	const template = join(TEMPLATES_DIR, 'package-index.njk');
-	return nunjucks
-		.configure(TEMPLATES_DIR, { autoescape: false })
-		.render(template, { packages, table });
+	const environment = nunjucks.configure(TEMPLATES_DIR, { autoescape: false });
+
+	return environment.render(template, { packages, table: tableMarkdown });
 }

@@ -12,17 +12,26 @@ export async function readRecord(dir: string): Promise<PackageRecord> {
 
 	const nameMatch = content.match(/## Package:\s*(.+)/);
 	const name = nameMatch?.[1]?.trim();
-	if (!name) throw new Error(`Could not resolve package name from ${file}`);
+	if (!name) {
+		throw new Error(`Could not resolve package name from ${file}`);
+	}
 
 	const canonicalName = extractField(content, 'Canonical Name') || '';
-	if (!canonicalName) throw new Error(`Could not resolve canonical name from ${file}`);
+	if (!canonicalName) {
+		throw new Error(`Could not resolve canonical name from ${file}`);
+	}
+
+	const purpose = extractField(content, 'Purpose') || '';
+	const description = extractField(content, 'Description') || '';
+	const path = extractField(content, 'Path') || '';
+	const version = extractField(content, 'Version') || '';
 
 	return {
 		name,
-		purpose: extractField(content, 'Purpose') || '',
-		description: extractField(content, 'Description') || '',
-		path: extractField(content, 'Path') || '',
-		version: extractField(content, 'Version') || '',
+		purpose,
+		description,
+		path,
+		version,
 		canonicalName,
 	};
 }

@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest';
 
-import { dependenciesCell } from '../private/dependenciesCell.js';
+import { makePackageFixture } from '../../test/helpers/package/makePackageFixture.js';
 
-import { makePackageFixture } from './helpers/package/makePackageFixture.js';
+import { formatDependenciesCell } from './formatDependenciesCell.js';
 
-describe('dependenciesCell', () => {
+describe('formatDependenciesCell', () => {
 	it('GIVEN dependencies it returns them sorted and backtick-wrapped', () => {
-		const pkg = makePackageFixture({
+		const conventionPackage = makePackageFixture({
 			manifest: {
 				dependencies: {
 					'@noodlestan/conventions-jsx': '*',
@@ -15,15 +15,15 @@ describe('dependenciesCell', () => {
 			},
 		});
 
-		const result = dependenciesCell(pkg);
+		const result = formatDependenciesCell(conventionPackage);
 
 		expect(result).toBe('`@noodlestan/conventions-jsx`, `@noodlestan/conventions-typescript`');
 	});
 
 	it('GIVEN no dependencies it returns an em dash', () => {
-		const pkg = makePackageFixture({ manifest: { dependencies: {} } });
+		const conventionPackage = makePackageFixture({ manifest: { dependencies: {} } });
 
-		const result = dependenciesCell(pkg);
+		const result = formatDependenciesCell(conventionPackage);
 
 		expect(result).toBe('—');
 	});

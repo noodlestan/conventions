@@ -2,7 +2,7 @@
 
 **ID:** `publish-conventions-index`
 
-**Status:** `WORKING`
+**Status:** `DONE`
 
 **Template:** `$DOMAINS/plans/templates/plan.tart`
 
@@ -155,15 +155,15 @@ npm run ci # lint
 
 ## Items:
 
-| Iteration                            | Status    |
-| ------------------------------------ | --------- |
-| Iteration: Publish Conventions Index | `WORKING` |
+| Iteration                            | Status |
+| ------------------------------------ | ------ |
+| Iteration: Publish Conventions Index | `DONE` |
 
 ### Iteration: Publish Conventions Index
 
 **Id:** `publish-conventions-index`
 
-**Status:** `WORKING`
+**Status:** `DONE`
 
 **Purpose:** Automate discoverability of conventions packages.
 
@@ -184,9 +184,9 @@ npm run ci # lint
 
 #### Commits:
 
-| ID                          | Repository / Checkout / Branch        | Policy   | Hash    | Status     |
-| --------------------------- | ------------------------------------- | -------- | ------- | ---------- |
-| `publish-conventions-index` | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `(TBD)` | `AUTHORED` |
+| ID                          | Repository / Checkout / Branch        | Policy   | Hash      | Status      |
+| --------------------------- | ------------------------------------- | -------- | --------- | ----------- |
+| `publish-conventions-index` | Conventions / `$CONVENTIONS` / `main` | `NOPUSH` | `a6a9f2a` | `COMMITTED` |
 
 ##### Commit: `publish-conventions-index`
 

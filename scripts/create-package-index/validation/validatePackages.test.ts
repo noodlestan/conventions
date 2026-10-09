@@ -1,8 +1,8 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { validatePackages } from '../private/validatePackages.js';
+import { makePackageFixture } from '../../test/helpers/package/makePackageFixture.js';
 
-import { makePackageFixture } from './helpers/package/makePackageFixture.js';
+import { validatePackages } from './validatePackages.js';
 
 describe('validatePackages', () => {
 	afterEach(() => {

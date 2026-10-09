@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { renderTable } from '../private/renderTable.js';
+import { renderTable } from './renderTable.js';
 
 describe('renderTable', () => {
 	it('GIVEN headers and rows it renders a padded markdown table', () => {

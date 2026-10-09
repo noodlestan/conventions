@@ -8,12 +8,13 @@ import { discoverPackageAt } from './discoverPackageAt.js';
 
 export async function discoverPackages(): Promise<ConventionPackage[]> {
 	const entries = readdirSync(PACKAGES_DIR, { withFileTypes: true });
-	const dirs = entries
-		.filter(
-			entry => entry.isDirectory() && existsSync(join(PACKAGES_DIR, entry.name, 'package.json')),
-		)
-		.map(entry => join(PACKAGES_DIR, entry.name))
-		.sort();
+	const directories = entries.filter(entry => entry.isDirectory());
+	const packageEntries = directories.filter(entry =>
+		existsSync(join(PACKAGES_DIR, entry.name, 'package.json')),
+	);
+	const dirs = packageEntries.map(entry => join(PACKAGES_DIR, entry.name));
+	const sortedDirs = dirs.sort();
+	const packages = sortedDirs.map(dir => discoverPackageAt(dir));
 
-	return Promise.all(dirs.map(dir => discoverPackageAt(dir)));
+	return Promise.all(packages);
 }

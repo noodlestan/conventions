@@ -2,9 +2,9 @@ import { writeFileSync } from 'node:fs';
 
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { writeCollectionJson } from '../private/writeCollectionJson.js';
+import { makePackageFixture } from '../../test/helpers/package/makePackageFixture.js';
 
-import { makePackageFixture } from './helpers/package/makePackageFixture.js';
+import { writeCollectionJson } from './writeCollectionJson.js';
 
 vi.mock('node:fs', async importOriginal => {
 	const actual = await importOriginal<typeof import('node:fs')>();

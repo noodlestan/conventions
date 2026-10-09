@@ -15,6 +15,11 @@ export type PackageRecord = {
 	canonicalName: string;
 };
 
+export type Table = {
+	headers: string[];
+	rows: string[][];
+};
+
 export type ConventionPackage = {
 	id: string;
 	dir: string;

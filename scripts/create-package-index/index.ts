@@ -1,7 +1,7 @@
-import { discoverPackages } from './private/discoverPackages.js';
-import { validatePackages } from './private/validatePackages.js';
-import { writeCollectionJson } from './private/writeCollectionJson.js';
-import { writeIndexMarkdown } from './private/writeIndexMarkdown.js';
+import { discoverPackages } from './discovery/discoverPackages.js';
+import { validatePackages } from './validation/validatePackages.js';
+import { writeCollectionJson } from './writing/writeCollectionJson.js';
+import { writeIndexMarkdown } from './writing/writeIndexMarkdown.js';
 
 async function main() {
 	const packages = await discoverPackages();

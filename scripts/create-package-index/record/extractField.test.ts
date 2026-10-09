@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { extractField } from '../private/extractField.js';
+import { extractField } from './extractField.js';
 
 describe('extractField', () => {
 	it('GIVEN a backtick-wrapped field it returns the trimmed value', () => {

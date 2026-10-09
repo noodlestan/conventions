@@ -1,4 +1,8 @@
-import type { ConventionPackage, PackageManifest, PackageRecord } from '../../../types.js';
+import {
+	ConventionPackage,
+	PackageManifest,
+	PackageRecord,
+} from '../../../create-package-index/types.js';
 
 const defaultManifest: PackageManifest = {
 	name: '@noodlestan/conventions-typescript',
