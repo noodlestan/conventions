@@ -15,10 +15,11 @@
   },
   "scripts": {
     "generate:package-index": "tsx scripts/create-package-index/index.ts",
+    "check:package-index": "tsx scripts/check-package-index/index.ts",
     "lint": "prettier . -c && eslint . && tsc --noEmit",
     "lint:fix": "prettier . -c --write && eslint . --fix",
     "test:scripts": "vitest run --silent=passed-only --coverage --dir scripts/",
-    "ci:root": "npm run lint && npm run test:scripts",
+    "ci:root": "npm run lint && npm run test:scripts && npm run check:package-index",
     "ci": "npm run ci:root && turbo run ci"
   },
   "devDependencies": {

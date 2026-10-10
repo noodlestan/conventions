@@ -5,9 +5,12 @@ import { readManifest } from '../record/readManifest.js';
 import { readRecord } from '../record/readRecord.js';
 import type { ConventionPackage } from '../types.js';
 
+import { fetchPublishedVersion } from './fetchPublishedVersion.js';
+
 export async function discoverPackageAt(dir: string): Promise<ConventionPackage> {
 	const manifest = await readManifest(dir);
 	const record = await readRecord(dir);
+	const publishedVersion = await fetchPublishedVersion(manifest.name);
 	const id = basename(dir);
 	const recordFile = join(RECORD_DIR, RECORD_FILE);
 
@@ -17,5 +20,6 @@ export async function discoverPackageAt(dir: string): Promise<ConventionPackage>
 		recordFile,
 		manifest,
 		record,
+		publishedVersion,
 	};
 }

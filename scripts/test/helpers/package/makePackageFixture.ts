@@ -32,5 +32,7 @@ export function makePackageFixture(overrides: PackageFixtureOverrides = {}): Con
 		recordFile: overrides.recordFile ?? '_records/package.art',
 		manifest: { ...defaultManifest, ...overrides.manifest },
 		record: { ...defaultRecord, ...overrides.record },
+		publishedVersion:
+			overrides.publishedVersion !== undefined ? overrides.publishedVersion : '0.1.0',
 	};
 }

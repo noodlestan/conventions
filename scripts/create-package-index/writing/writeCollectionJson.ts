@@ -1,21 +1,22 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { dirname } from 'node:path';
 
-import { META_DIR } from '../constants.js';
 import type { ConventionPackage } from '../types.js';
 
 import { formatContent } from './formatContent.js';
 
-export async function writeCollectionJson(packages: ConventionPackage[]): Promise<void> {
-	mkdirSync(META_DIR, { recursive: true });
-	const outPath = join(META_DIR, 'conventions.json');
+export async function writeCollectionJson(
+	packages: ConventionPackage[],
+	outPath: string,
+): Promise<void> {
+	mkdirSync(dirname(outPath), { recursive: true });
 	const publicPackages = packages.filter(conventionPackage => !conventionPackage.manifest.private);
 	const items = publicPackages.map(conventionPackage => {
 		const manifest = conventionPackage.manifest;
 
 		return {
 			name: manifest.name,
-			version: manifest.version,
+			version: conventionPackage.publishedVersion ?? manifest.version,
 			description: manifest.description,
 			dependencies: manifest.dependencies || {},
 		};

@@ -10,7 +10,7 @@ describe('buildTable', () => {
 
 		const { headers, rows } = buildTable(packages);
 
-		expect(headers).toEqual(['Name / Package', 'Version', 'Depends on', 'Index']);
+		expect(headers).toEqual(['Name / Package', 'Version', 'Published', 'Depends on', 'Index']);
 		expect(rows).toHaveLength(1);
 	});
 });

@@ -26,4 +26,5 @@ export type ConventionPackage = {
 	recordFile: string;
 	manifest: PackageManifest;
 	record: PackageRecord;
+	publishedVersion: string | null;
 };
