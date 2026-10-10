@@ -333,7 +333,7 @@ chore(agents): Retire curator agent modes
 ### Not In Scope
 
 - Conventions package sources under `$CONVENTIONS/packages/`.
-- Routine wiring for `install-convention`, `audit-*`, and `discover-*`, which are tracked by `Plan: Conventions Routines and Skills`.
+- Routine wiring for `install-convention`, `audit-*`, and `discover-*`, which are tracked by `Plan: Add Manage Conventions Skill`.
 - Publishing or versioning conventions packages.
 
 ### Evidence
