@@ -159,6 +159,7 @@ The following conventions packages are in progress or planned.
 | 2     | Plan: Create Conventions: Unit Tests `_backlog/1-done/plan-create-conventions-unit-tests/plan.md`          | `DONE`     |
 | 2     | Plan: Amend TypeScript Conventions `_backlog/1-done/plan-amend-typescript-conventions/plan.md`             | `DONE`     |
 | 3     | Plan: Publish Conventions Index `_backlog/1-done/plan-publish-conventions-index/plan.md`                   | `DONE`     |
+| 3     | Plan: Add Write Conventions Skill `_backlog/4-now/plan-add-write-conventions-skill/plan.md`                | `READY`    |
 | 3     | Plan: Conventions Routines and Skills `_backlog/6-plan/plan-conventions-routines-and-skills/plan.md`       | `PLANNING` |
 
 ---
@@ -167,6 +168,7 @@ The following conventions packages are in progress or planned.
 
 ### Next
 
+- Plan: Add Write Conventions Skill
 - Plan: Plan: Conventions Routines and Skills
 - Add more convention packages.
 
@@ -188,7 +190,7 @@ The following conventions packages are in progress or planned.
 
 ### Findings
 
-- The `Standard-UI / Theming` section is cross-cutting and doesn't belong to SCSS conventions alone.
+- None.
 
 ### Decisions
 

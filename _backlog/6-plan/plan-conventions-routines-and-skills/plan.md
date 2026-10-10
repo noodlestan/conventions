@@ -21,6 +21,10 @@ Builds on the Art MD convention adoption feedback to improve the audit-conventio
 | `$CONVENTIONS` | `$WORKSPACE/checkouts/conventions` | Conventions source code and pilot project  |
 | `$ART_MD`      | `$WORKSPACE/checkouts/art-md`      | Pilot consumer project (adoption evidence) |
 
+## Sibling Work
+
+`Plan: Add Write Conventions Skill` (`_backlog/4-now/plan-add-write-conventions-skill/plan.md`) owns convention **authoring** in the same routine directory: the `draft-conventions`, `review-conventions`, and `create-or-update-conventions` routines and the `write-conventions` skill. This plan is scoped to **adoption** only — audit report paths and adoption planning routines.
+
 ## Scope
 
 ### Convention Packages
@@ -77,7 +81,7 @@ feat(conventions): Add report paths to audit routines
 - Create "Routine: Plan Conventions Audit" in `$DOMAINS/conventions/routines/` — generates a plan for auditing setup and per-package adoption.
 - Create "Routine: Plan Conventions Adoption" in `$DOMAINS/conventions/routines/` — generates a plan for applying fixes and consolidating insights.
 - Reference existing skills and skill commands (including `write-plan` skill).
-- Reference existing routines that are not covered by a skill command.
+- Reference existing adoption routines that are not covered by a skill command; authoring routines are out of scope and owned by `Plan: Add Write Conventions Skill`.
 - Use the Art MD process insights as the primary input: `$ART_MD/_backlog/0-archive/2026-09-18-audit-conventions/adoption-process-insights.md`.
 - Routines should generate plan structures with iterations similar to the ones used by the Art MD pilot.
 - Routines should present plan structure (iterations and commits) to user before writing the plan files.
