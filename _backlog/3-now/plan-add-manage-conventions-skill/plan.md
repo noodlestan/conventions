@@ -2,7 +2,7 @@
 
 **ID:** `add-manage-conventions-skill`
 
-**Status:** `READY`
+**Status:** `WORKING`
 
 **Template:** `$DOMAINS/plans/templates/plan.tart`
 
@@ -187,7 +187,7 @@ opencode validate # confirm agent modes still resolve
 
 | Iteration                           | Status  |
 | ----------------------------------- | ------- |
-| Iteration: Manage Conventions Skill | `READY` |
+| Iteration: Manage Conventions Skill | `DONE`  |
 | Iteration: Report Paths             | `READY` |
 | Iteration: Decouple Routines        | `READY` |
 
@@ -195,7 +195,9 @@ opencode validate # confirm agent modes still resolve
 
 **Id:** `add-manage-conventions-skill`
 
-**Status:** `READY`
+**Status:** `DONE`
+
+**Delegated:** 2026-10-11 to worker agent (`agent-worker`), instructions `./plan-add-manage-conventions-skill/instructions/add-manage-conventions-skill.md`.
 
 **Purpose:** Expose all five operational routines through one skill and retire the superseded skill.
 
@@ -222,11 +224,13 @@ opencode validate # confirm agent modes still resolve
 
 **Instructions:** `./plan-add-manage-conventions-skill/instructions/add-manage-conventions-skill.md`
 
+**Report:** `./plan-add-manage-conventions-skill/instructions/add-manage-conventions-skill__report.md`
+
 #### Commits:
 
-| ID                             | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
-| ------------------------------ | --------------------------------- | --------- | ------- | ---------- |
-| `add-manage-conventions-skill` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
+| ID                             | Repository / Checkout / Branch    | Policy    | Hash      | Status      |
+| ------------------------------ | --------------------------------- | --------- | --------- | ----------- |
+| `add-manage-conventions-skill` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `58db50d` | `COMMITTED` |
 
 ##### Commit: `add-manage-conventions-skill`
 
@@ -360,6 +364,7 @@ refactor(conventions): Decouple conventions routines
 
 ### Evidence
 
+- Iteration `add-manage-conventions-skill` DONE — commit `58db50d` (NO PUSH, local only); lint clean; all four agent modes and the new skill resolve via `opencode debug`.
 - `$SKILLS/index.md` lists `manage-conventions` and no longer lists `audit-conventions`.
 - `grep -r "audit-conventions" $WORKSPACE` returns no results.
 - `opencode validate` succeeds after the agent mode changes.
@@ -387,4 +392,4 @@ refactor(conventions): Decouple conventions routines
 
 ### Feedback
 
-- None.
+- `opencode validate` (Verifying Completion) is not a command in the installed opencode CLI; worker confirmed agent modes resolve via `opencode debug skill` and `opencode debug agent` instead. Consider updating the plan's Verifying Completion instructions.
