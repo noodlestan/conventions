@@ -73,7 +73,7 @@ Run from `$CONVENTIONS/`; all changes are package sources under `packages/commit
 
 ### Next
 
-Draft iteration 1 (authoring) and iteration 2 (publish).
+Delegate Iteration: Author Commits Conventions; Iteration: Release Commits Convention is MANUAL.
 
 ### Blockers
 
@@ -167,11 +167,15 @@ npm run ci # lint + tests + index check
 
 - None.
 
+**Instructions Mode:** `INSTRUCTIONS_SELF_CONTAINED_FILE`
+
+**Instructions:** `./plan-publish-commits-convention/instructions/author-commits-conventions.md`
+
 #### Commits:
 
-| ID                           | Repository / Checkout / Branch        | Policy       | Hash    | Status     |
-| ---------------------------- | ------------------------------------- | ------------ | ------- | ---------- |
-| `author-commits-conventions` | Conventions / `$CONVENTIONS` / `main` | `AUTONOMOUS` | `(TBD)` | `AUTHORED` |
+| ID                           | Repository / Checkout / Branch        | Policy    | Hash    | Status     |
+| ---------------------------- | ------------------------------------- | --------- | ------- | ---------- |
+| `author-commits-conventions` | Conventions / `$CONVENTIONS` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
 
 ##### Commit: `author-commits-conventions`
 
@@ -225,6 +229,17 @@ release(conventions): Publish commits package rewrite
 **Dependencies:**
 
 - Iteration: Author Commits Conventions must be complete.
+
+**Instructions Mode:** `INSTRUCTIONS_INLINED_IN_ITERATION`
+
+**Instructions (Manual — No Worker):**
+
+1. Bump `packages/commits/package.json` version. This is a content rewrite — use a minor bump unless the team decides otherwise.
+2. Add a `CHANGELOG.md` entry describing the rewrite from single-file to index + source layout.
+3. From `$CONVENTIONS/packages/commits/`, run `npm publish`.
+4. From `$CONVENTIONS/` root, run `npm run generate:package-index` to regenerate the index with the new published version.
+5. Verify `npm run check:package-index` passes.
+6. Stage and commit with the message in the commit blueprint below.
 
 #### Commits:
 
