@@ -2,7 +2,7 @@
 
 **ID:** `add-manage-conventions-skill`
 
-**Status:** `WORKING`
+**Status:** `DONE`
 
 **Template:** `$DOMAINS/plans/templates/plan.tart`
 
@@ -132,7 +132,7 @@ Run from `$WORKSPACE/`; all changes are agent source code in `$WORKSPACE/.agents
 
 ### Next
 
-Delegate the last READY iteration: Iteration: Decouple Routines.
+All three iterations DONE; the three commits are local (NO PUSH) awaiting the user to push.
 
 ### Blockers
 
@@ -185,11 +185,11 @@ opencode validate # confirm agent modes still resolve
 
 ## Items:
 
-| Iteration                           | Status  |
-| ----------------------------------- | ------- |
-| Iteration: Manage Conventions Skill | `DONE`  |
-| Iteration: Report Paths             | `DONE`  |
-| Iteration: Decouple Routines        | `READY` |
+| Iteration                           | Status |
+| ----------------------------------- | ------ |
+| Iteration: Manage Conventions Skill | `DONE` |
+| Iteration: Report Paths             | `DONE` |
+| Iteration: Decouple Routines        | `DONE` |
 
 ### Iteration: Manage Conventions Skill
 
@@ -306,7 +306,9 @@ feat(conventions): Add report paths to audit routines
 
 **Id:** `decouple-conventions-routines`
 
-**Status:** `READY`
+**Status:** `DONE`
+
+**Delegated:** 2026-10-11 to worker agent (`agent-worker`), inlined instructions (see Instructions below).
 
 **Purpose:** Make the operational routines work with any conventions provider.
 
@@ -336,9 +338,9 @@ feat(conventions): Add report paths to audit routines
 
 #### Commits:
 
-| ID                              | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
-| ------------------------------- | --------------------------------- | --------- | ------- | ---------- |
-| `decouple-conventions-routines` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
+| ID                              | Repository / Checkout / Branch    | Policy    | Hash      | Status      |
+| ------------------------------- | --------------------------------- | --------- | --------- | ----------- |
+| `decouple-conventions-routines` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `fbc82ce` | `COMMITTED` |
 
 ##### Commit: `decouple-conventions-routines`
 
@@ -366,6 +368,7 @@ refactor(conventions): Decouple conventions routines
 
 ### Evidence
 
+- Iteration `decouple-conventions-routines` DONE — commit `fbc82ce` (NO PUSH, local only); lint clean; install/audit routines reviewed with no noodelstan-specific coupling to generalise.
 - Iteration `add-report-paths-to-audit-routines` DONE — commit `b76bb2f` (NO PUSH, local only); lint and `npm run ci` pass.
 - Iteration `add-manage-conventions-skill` DONE — commit `58db50d` (NO PUSH, local only); lint clean; all four agent modes and the new skill resolve via `opencode debug`.
 - `$SKILLS/index.md` lists `manage-conventions` and no longer lists `audit-conventions`.
