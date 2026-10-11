@@ -132,7 +132,7 @@ Run from `$WORKSPACE/`; all changes are agent source code in `$WORKSPACE/.agents
 
 ### Next
 
-Draft the `manage-conventions` skill and the report-path iteration.
+Delegate the three READY iterations, starting with Iteration: Manage Conventions Skill.
 
 ### Blockers
 

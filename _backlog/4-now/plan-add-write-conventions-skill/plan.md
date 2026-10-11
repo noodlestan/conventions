@@ -131,7 +131,7 @@ Run from `$WORKSPACE/`; all changes are agent source code in `$WORKSPACE/.agents
 
 ### Next
 
-Draft the three routines and the `write-conventions` skill.
+Delegate the three READY iterations, starting with Iteration: Authoring Routines.
 
 ### Blockers
 
@@ -221,11 +221,15 @@ Each routine MUST carry `**Purpose:**`, `**Inputs:**`, `**Outputs:**`, and `**Pr
 
 - None.
 
+**Instructions Mode:** `INSTRUCTIONS_SELF_CONTAINED_FILE`
+
+**Instructions:** `./plan-add-write-conventions-skill/instructions/add-authoring-routines.md`
+
 #### Commits:
 
-| ID                       | Repository / Checkout / Branch    | Policy       | Hash    | Status     |
-| ------------------------ | --------------------------------- | ------------ | ------- | ---------- |
-| `add-authoring-routines` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `(TBD)` | `AUTHORED` |
+| ID                       | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
+| ------------------------ | --------------------------------- | --------- | ------- | ---------- |
+| `add-authoring-routines` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
 
 ##### Commit: `add-authoring-routines`
 
@@ -264,11 +268,15 @@ feat(conventions): Add canon-form authoring routines
 
 - Iteration: Authoring Routines must be complete.
 
+**Instructions Mode:** `INSTRUCTIONS_SELF_CONTAINED_FILE`
+
+**Instructions:** `./plan-add-write-conventions-skill/instructions/add-write-conventions-skill.md`
+
 #### Commits:
 
-| ID                            | Repository / Checkout / Branch    | Policy       | Hash    | Status     |
-| ----------------------------- | --------------------------------- | ------------ | ------- | ---------- |
-| `add-write-conventions-skill` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `(TBD)` | `AUTHORED` |
+| ID                            | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
+| ----------------------------- | --------------------------------- | --------- | ------- | ---------- |
+| `add-write-conventions-skill` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
 
 ##### Commit: `add-write-conventions-skill`
 
@@ -306,11 +314,21 @@ feat(conventions): Add write-conventions skill
 
 - Iteration: Write Conventions Skill must be complete, so no skill still grants either mode.
 
+**Instructions Mode:** `INSTRUCTIONS_INLINED_IN_ITERATION`
+
+**Instructions:**
+
+1. Delete `$SKILLS/agent-reference-curator/SKILL.md` and `$SKILLS/agent-context-curator/SKILL.md`.
+2. Delete `$WORKSPACE/.codex/agents/reference-curator.toml` and `$WORKSPACE/.codex/agents/context-curator.toml`.
+3. Remove the `reference-curator` and `context-curator` agent entries from `$WORKSPACE/opencode.json`.
+4. Remove the `## Reference Curator` and `## Context Curator` sections from `$SKILLS/agent-modes.md` and from the duplicate `$SKILLS/agents-modes.md`.
+5. Grep `$WORKSPACE` for `agent-reference-curator` and `agent-context-curator` and clear any remaining reference.
+
 #### Commits:
 
-| ID                           | Repository / Checkout / Branch    | Policy       | Hash    | Status     |
-| ---------------------------- | --------------------------------- | ------------ | ------- | ---------- |
-| `retire-curator-agent-modes` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `(TBD)` | `AUTHORED` |
+| ID                           | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
+| ---------------------------- | --------------------------------- | --------- | ------- | ---------- |
+| `retire-curator-agent-modes` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
 
 ##### Commit: `retire-curator-agent-modes`
 
