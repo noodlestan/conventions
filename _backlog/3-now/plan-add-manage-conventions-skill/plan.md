@@ -132,7 +132,7 @@ Run from `$WORKSPACE/`; all changes are agent source code in `$WORKSPACE/.agents
 
 ### Next
 
-Delegate the three READY iterations, starting with Iteration: Manage Conventions Skill.
+Delegate the last READY iteration: Iteration: Decouple Routines.
 
 ### Blockers
 
@@ -188,7 +188,7 @@ opencode validate # confirm agent modes still resolve
 | Iteration                           | Status  |
 | ----------------------------------- | ------- |
 | Iteration: Manage Conventions Skill | `DONE`  |
-| Iteration: Report Paths             | `READY` |
+| Iteration: Report Paths             | `DONE`  |
 | Iteration: Decouple Routines        | `READY` |
 
 ### Iteration: Manage Conventions Skill
@@ -250,7 +250,9 @@ feat(conventions): Add manage-conventions skill
 
 **Id:** `add-report-paths-to-audit-routines`
 
-**Status:** `READY`
+**Status:** `DONE`
+
+**Delegated:** 2026-10-11 to worker agent (`agent-worker`), inlined instructions (see Instructions below).
 
 **Purpose:** Let audit reports be written to files instead of only presented in chat.
 
@@ -282,9 +284,9 @@ feat(conventions): Add manage-conventions skill
 
 #### Commits:
 
-| ID                                   | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
-| ------------------------------------ | --------------------------------- | --------- | ------- | ---------- |
-| `add-report-paths-to-audit-routines` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
+| ID                                   | Repository / Checkout / Branch    | Policy    | Hash      | Status      |
+| ------------------------------------ | --------------------------------- | --------- | --------- | ----------- |
+| `add-report-paths-to-audit-routines` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `b76bb2f` | `COMMITTED` |
 
 ##### Commit: `add-report-paths-to-audit-routines`
 
@@ -364,6 +366,7 @@ refactor(conventions): Decouple conventions routines
 
 ### Evidence
 
+- Iteration `add-report-paths-to-audit-routines` DONE — commit `b76bb2f` (NO PUSH, local only); lint and `npm run ci` pass.
 - Iteration `add-manage-conventions-skill` DONE — commit `58db50d` (NO PUSH, local only); lint clean; all four agent modes and the new skill resolve via `opencode debug`.
 - `$SKILLS/index.md` lists `manage-conventions` and no longer lists `audit-conventions`.
 - `grep -r "audit-conventions" $WORKSPACE` returns no results.
