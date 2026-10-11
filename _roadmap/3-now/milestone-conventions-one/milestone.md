@@ -160,7 +160,7 @@ The following conventions packages are in progress or planned.
 | 2     | Plan: Amend TypeScript Conventions `_backlog/1-done/plan-amend-typescript-conventions/plan.md`             | `DONE`  |
 | 3     | Plan: Publish Conventions Index `_backlog/1-done/plan-publish-conventions-index/plan.md`                   | `DONE`  |
 | 3     | Plan: Add Write Conventions Skill `_backlog/4-now/plan-add-write-conventions-skill/plan.md`                | `READY` |
-| 3     | Plan: Add Manage Conventions Skill `_backlog/4-now/plan-add-manage-conventions-skill/plan.md`              | `READY` |
+| 3     | Plan: Add Manage Conventions Skill `_backlog/3-now/plan-add-manage-conventions-skill/plan.md`              | `READY` |
 
 ---
 

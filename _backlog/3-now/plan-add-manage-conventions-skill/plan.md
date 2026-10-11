@@ -218,11 +218,15 @@ opencode validate # confirm agent modes still resolve
 
 - None.
 
+**Instructions Mode:** `INSTRUCTIONS_SELF_CONTAINED_FILE`
+
+**Instructions:** `./plan-add-manage-conventions-skill/instructions/add-manage-conventions-skill.md`
+
 #### Commits:
 
-| ID                             | Repository / Checkout / Branch    | Policy       | Hash    | Status     |
-| ------------------------------ | --------------------------------- | ------------ | ------- | ---------- |
-| `add-manage-conventions-skill` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `(TBD)` | `AUTHORED` |
+| ID                             | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
+| ------------------------------ | --------------------------------- | --------- | ------- | ---------- |
+| `add-manage-conventions-skill` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
 
 ##### Commit: `add-manage-conventions-skill`
 
@@ -258,11 +262,25 @@ feat(conventions): Add manage-conventions skill
 
 - Iteration: Manage Conventions Skill must be complete.
 
+**Instructions Mode:** `INSTRUCTIONS_INLINED_IN_ITERATION`
+
+**Instructions:**
+
+1. Add `%report-path` input to `$DOMAINS/conventions/routines/audit-conventions-setup.art`:
+   - Add `%report-path` — Optional path to write the setup report to a file. When omitted, the report is presented in chat only.
+   - In the Procedure, after step 5 (`Return \`%setup-report\`.`), add: `6. When \`%report-path\` is provided, write \`%setup-report\` to the given file path.`
+2. Add `%report-path` input to `$DOMAINS/conventions/routines/audit-convention-module.art`:
+   - Add `%report-path` — Optional path to write the adoption report to a file. When omitted, the report is presented in chat only.
+   - In the Procedure, after step 4 (`Return \`%adoption-report\`.`), add: `5. When \`%report-path\` is provided, write \`%adoption-report\` to the given file path.`
+3. Update the `manage-conventions` skill commands `Audit Conventions Setup` and `Audit Convention Module Adoption` in `$SKILLS/manage-conventions/SKILL.md`:
+   - Add `%report-path` to each command's Inputs.
+   - Pass `%report-path` through to the routine execution.
+
 #### Commits:
 
-| ID                                   | Repository / Checkout / Branch    | Policy       | Hash    | Status     |
-| ------------------------------------ | --------------------------------- | ------------ | ------- | ---------- |
-| `add-report-paths-to-audit-routines` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `(TBD)` | `AUTHORED` |
+| ID                                   | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
+| ------------------------------------ | --------------------------------- | --------- | ------- | ---------- |
+| `add-report-paths-to-audit-routines` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
 
 ##### Commit: `add-report-paths-to-audit-routines`
 
@@ -299,11 +317,22 @@ feat(conventions): Add report paths to audit routines
 
 - None.
 
+**Instructions Mode:** `INSTRUCTIONS_INLINED_IN_ITERATION`
+
+**Instructions:**
+
+1. Fix the canonical name example in `$DOMAINS/conventions/routines/audit-convention-module.art`:
+   - In the Inputs section, change the `%conventions` example from `$PROJECT/node_modules/@noodlestan-conventions-typescript/art/index.md` to `$PROJECT/node_modules/@noodlestan/conventions-typescript/art/index.md`.
+2. Document the `%manifest-url` default in `$DOMAINS/conventions/routines/discover-available-conventions.art`:
+   - In the Inputs section, annotate the `%manifest-url` default as: `Defaults to the noodelstan manifest URL (provider-specific). Any conventions provider can override this with its own manifest URL.`
+3. Review `$DOMAINS/conventions/routines/install-convention.art` and `$DOMAINS/conventions/routines/audit-conventions-setup.art` for noodelstan-specific coupling (hardcoded package names, manifest URLs, guide section names). Generalise where found.
+4. Confirm no routine assumes conventions come from `node_modules` or carry operating-instruction resources. If any assumption is found, generalise it.
+
 #### Commits:
 
-| ID                              | Repository / Checkout / Branch    | Policy       | Hash    | Status     |
-| ------------------------------- | --------------------------------- | ------------ | ------- | ---------- |
-| `decouple-conventions-routines` | Workspace / `$WORKSPACE` / `main` | `AUTONOMOUS` | `(TBD)` | `AUTHORED` |
+| ID                              | Repository / Checkout / Branch    | Policy    | Hash    | Status     |
+| ------------------------------- | --------------------------------- | --------- | ------- | ---------- |
+| `decouple-conventions-routines` | Workspace / `$WORKSPACE` / `main` | `NO PUSH` | `(TBD)` | `AUTHORED` |
 
 ##### Commit: `decouple-conventions-routines`
 
