@@ -9,12 +9,12 @@ A collection of convention packages written in Art, architecture for distributin
 Agents SHOULD scan these files for relevant clarifications when faced with ambiguity or omissions that may result from missing definitions.
 
 - `_guide.md` — this file: system overview, layout, setup, verification.
-- `architecture/overview.md` — what this repository is, its benefits, definitions, and use cases.
-- `architecture/principles.md` — principles guiding design, distribution, and authoring.
-- `architecture/index.md` — index of architecture documents, design documents, and ADRs.
+- `knowledge/overview.md` — what this repository is, its benefits, definitions, and use cases.
+- `knowledge/principles.md` — principles guiding design, distribution, and authoring.
+- `knowledge/index.md` — index of architecture documents, design documents, and ADRs.
 - `_backlog/_parking-lot.md` — short-term actionables, open questions, and blockers.
 - `packages/` — convention package content.
-- `architecture/records/adr/` — architecture proposals and decisions that constrain planning.
+- `knowledge/records/adr/` — architecture proposals and decisions that constrain planning.
 - `packages/index.md` — inventory of conventions hosted in this repository.
 
 ## Repository Layout
@@ -24,7 +24,7 @@ _guide.md               — this file
 _backlog/               — plans, instructions, reports
 _backlog/_parking-lot.md — short-term actionables, open questions, and blockers
 _records/               — records (packages, namespaces)
-architecture/           — overview, principles, design documents, ADRs
+knowledge/           — overview, principles, design documents, ADRs
 packages/               — convention package content
 ```
 
@@ -50,7 +50,7 @@ Records are co-located with the resources they describe in `_records/` directori
 
 ## Knowledge References
 
-This repository maintains an architecture reference at `architecture/index.md` and decision records at `architecture/records/adr`.
+This repository maintains an knowledge reference at `knowledge/index.md` and decision records at `knowledge/records/adr`.
 
 ## Workflows
 
@@ -66,7 +66,7 @@ Projects in this repository use the following workflows:
 ### Planning Work
 
 - The backlog lives at `_backlog/` with subdirectories such as `/3-now` and `/4-next/`.
-- The project architecture, principles, and decisions live at `architecture/`.
+- The project architecture, principles, and decisions live at `knowledge/`.
 - Short-term focus, open questions, and blockers live at `_backlog/_parking-lot.md`.
 
 ## Operating Instructions

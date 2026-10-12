@@ -46,7 +46,7 @@ Create three canon-form authoring routines (`draft-conventions.art`, `review-con
 - `$WORKSPACE/_guide.md` (Guide) — Defines workspace operations and verification. Relevant for Setting Up, Verifying Step.
 - `$DOMAINS/conventions/index.md` (Domain) — Indexes all resources in the Conventions domain.
 - `$DOMAINS/conventions/routines/install-convention.art` (Routine) — Reference for the routine canon form (Purpose, Inputs, Outputs, numbered Procedure).
-- `$CONVENTIONS/architecture/authoring.md` (Architecture) — The authoring guide whose format the routines must NOT hard-code; its raw GitHub endpoint is the default for `%authoring-guide`.
+- `$CONVENTIONS/knowledge/authoring.md` (Guidelines) — The authoring guide whose format the routines must NOT hard-code; its raw GitHub endpoint is the default for `%authoring-guide`.
 - `knowledge/conventions/writing-commit-message.art` (Guide) — Commit message format and rules. Relevant for Writing Commit Message.
 
 - RULE: You MUST follow any links under `## Mandatory Reading` sections found in the listed files.
@@ -121,7 +121,7 @@ This iteration creates 3 routines, deletes 2, and updates the domain index.
 **Inputs:**
 
 - `%source` — Path or URL of the source content to convert into conventions.
-- `%authoring-guide` — Path or URL of the authoring guide that defines the conventions format. Default: `https://raw.githubusercontent.com/noodlestan/conventions/refs/heads/main/architecture/authoring.md`.
+- `%authoring-guide` — Path or URL of the authoring guide that defines the conventions format. Default: `https://raw.githubusercontent.com/noodlestan/conventions/refs/heads/main/knowledge/authoring.md`.
 - `%save-path` — Where the routine writes its artifact. Defaults to the base path of the source code of the package in context.
 
 **Outputs:**
@@ -158,7 +158,7 @@ This iteration creates 3 routines, deletes 2, and updates the domain index.
 **Inputs:**
 
 - `%draft` — Path to the drafted conventions document to review.
-- `%authoring-guide` — Path or URL of the authoring guide that defines the conventions format. Default: `https://raw.githubusercontent.com/noodlestan/conventions/refs/heads/main/architecture/authoring.md`.
+- `%authoring-guide` — Path or URL of the authoring guide that defines the conventions format. Default: `https://raw.githubusercontent.com/noodlestan/conventions/refs/heads/main/knowledge/authoring.md`.
 
 **Outputs:**
 
@@ -198,7 +198,7 @@ This iteration creates 3 routines, deletes 2, and updates the domain index.
 
 - `%draft` — Path to the reviewed conventions document.
 - `%package-path` — Path to the conventions package to create or update. Defaults to the base path of the source code of the package in context.
-- `%authoring-guide` — Path or URL of the authoring guide that defines the conventions format. Default: `https://raw.githubusercontent.com/noodlestan/conventions/refs/heads/main/architecture/authoring.md`.
+- `%authoring-guide` — Path or URL of the authoring guide that defines the conventions format. Default: `https://raw.githubusercontent.com/noodlestan/conventions/refs/heads/main/knowledge/authoring.md`.
 
 **Outputs:**
 

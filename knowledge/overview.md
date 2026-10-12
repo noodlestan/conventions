@@ -4,7 +4,7 @@
 
 ## What
 
-Conventions (`@noodlestan/conventions`) is a standalone repository of Noodlestan's convention packages. It holds convention content as grouped, indexed documents, organises that content into one npm package per coherent concern, and publishes each package so consumers install it as a normal dependency. It also holds this project's planning and architecture artefacts.
+Conventions (`@noodlestan/conventions`) is a standalone repository of Noodlestan's convention packages. It holds convention content as grouped, indexed documents, organises that content into one npm package per coherent concern, and publishes each package so consumers install it as a normal dependency. It also holds this project's planning and knowledge artefacts.
 
 The repository is a reference package, not a workspace and not a build root.
 
@@ -35,7 +35,7 @@ A standalone repository gives conventions a stable home: consumers depend on pac
 - **Source document** — `art/src/{group}.md`: the expanded rules and examples for one group of the index, reached through a `:READ` directive.
 - **Package dependency** — a relationship between two convention packages, declared in `package.json` and named in the package record. Example: `conventions-jsx` depends on `conventions-typescript`.
 - **Record** — the `_records/` metadata co-located with what it describes: project, repository, package, and npm deployment.
-- **ADR** — an adopted architecture decision recorded under `architecture/records/adr/`.
+- **ADR** — an adopted architecture decision recorded under `knowledge/records/adr/`.
 - **Parking lot** — `_backlog/_parking-lot.md`: short-term actionables, open questions, and blockers.
 
 ## Use Cases

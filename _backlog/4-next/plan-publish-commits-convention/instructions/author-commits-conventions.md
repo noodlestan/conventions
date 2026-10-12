@@ -44,7 +44,7 @@ Convert the commits package from the single-file `art/commits.art` to the standa
 
 - `$WORKSPACE/_guide.md` (Guide) — Defines workspace operations and verification. Relevant for Setting Up, Verifying Step.
 - `$WORKSPACE/knowledge/conventions/writing-commit-message.art` (Conventions) — The sole source of content to convert. Relevant for Writing Commit Message.
-- `$CONVENTIONS/architecture/authoring.md` (Architecture) — Defines the target format: index document shape, source document shape, and rules for writing a rule. Follow it precisely.
+- `$CONVENTIONS/knowledge/authoring.md` (Guidelines) — Defines the target format: index document shape, source document shape, and rules for writing a rule. Follow it precisely.
 - `$CONVENTIONS/packages/typescript/art/index.md` (Reference) — Working example of the index layout.
 - `$CONVENTIONS/packages/typescript/art/src/explicit-code.md` (Reference) — Working example of a source document.
 
@@ -107,7 +107,7 @@ This iteration rewrites the commits package art documents.
 **Instructions:**
 
 1. ::READ `$WORKSPACE/knowledge/conventions/writing-commit-message.art`. This is the sole source of content. The current content of `packages/commits/art/commits.art` is irrelevant — it will be deleted, not migrated.
-2. ::READ `$CONVENTIONS/architecture/authoring.md`. Follow its index document format, source document format, and rules for writing a rule precisely.
+2. ::READ `$CONVENTIONS/knowledge/authoring.md`. Follow its index document format, source document format, and rules for writing a rule precisely.
 3. Study `$CONVENTIONS/packages/typescript/art/index.md` and `$CONVENTIONS/packages/typescript/art/src/explicit-code.md` as working examples.
 4. Decompose the source content into `## Convention: {Name}` sections within a single `art/src/commit-message.md` file. The source covers commit format, allowed types, scopes, type–scope associations, examples, and rules — each becomes one or more convention sections.
 5. For each convention, decide the depth:

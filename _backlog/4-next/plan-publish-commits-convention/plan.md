@@ -27,7 +27,7 @@
 
 ## Summary
 
-The commits package currently hosts a single `art/commits.art` that reaches commit conventions through a `:READ` to the workspace domain rather than owning them inline — a known exception documented in `architecture/authoring.md`. This plan removes that exception: the package is rewritten to the standard layout with one source document, populated from `$WORKSPACE/knowledge/conventions/writing-commit-message.art`. The first iteration is the conversion; the second is a manual publish (version bump, npm publish, index update).
+The commits package currently hosts a single `art/commits.art` that reaches commit conventions through a `:READ` to the workspace domain rather than owning them inline — a known exception documented in `knowledge/authoring.md`. This plan removes that exception: the package is rewritten to the standard layout with one source document, populated from `$WORKSPACE/knowledge/conventions/writing-commit-message.art`. The first iteration is the conversion; the second is a manual publish (version bump, npm publish, index update).
 
 ## Context
 
@@ -36,7 +36,7 @@ The commits package currently hosts a single `art/commits.art` that reaches comm
 | Kind      | Path                                                          | Role                                                               |
 | --------- | ------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Source    | `$WORKSPACE/knowledge/conventions/writing-commit-message.art` | The workspace source containing the commit conventions to convert. |
-| Authoring | `$CONVENTIONS/architecture/authoring.md`                      | Defines the index + source format the output must follow.          |
+| Authoring | `$CONVENTIONS/knowledge/authoring.md`                         | Defines the index + source format the output must follow.          |
 | Reference | `$CONVENTIONS/packages/typescript/art/`                       | Example of the target layout: `index.md` + `src/` documents.       |
 
 ### Required Skills
@@ -59,7 +59,7 @@ Rewrites the art documents in `$CONVENTIONS/packages/commits/`. No other package
 
 **Changes:**
 
-— Replace `art/commits.art` with `art/index.md` + `art/src/commit-message.md` following the layout in `architecture/authoring.md`.
+— Replace `art/commits.art` with `art/index.md` + `art/src/commit-message.md` following the layout in `knowledge/authoring.md`.
 
 **Dependencies:**
 
@@ -139,7 +139,7 @@ npm run ci # lint + tests + index check
 
 **Purpose:** Convert the commits package to the index + source layout, populated from the workspace source.
 
-**Description:** Read `$WORKSPACE/knowledge/conventions/writing-commit-message.art`, extract the commit conventions, and write them into `packages/commits/art/index.md` and `packages/commits/art/src/commit-message.md` following the format defined in `architecture/authoring.md`. The existing `art/commits.art` is deleted.
+**Description:** Read `$WORKSPACE/knowledge/conventions/writing-commit-message.art`, extract the commit conventions, and write them into `packages/commits/art/index.md` and `packages/commits/art/src/commit-message.md` following the format defined in `knowledge/authoring.md`. The existing `art/commits.art` is deleted.
 
 **Changes:**
 
@@ -150,14 +150,14 @@ npm run ci # lint + tests + index check
 **Instructions for the Agent:**
 
 1. ::READ `$WORKSPACE/knowledge/conventions/writing-commit-message.art`. This is the sole source of content. The current content of `packages/commits/art/commits.art` is irrelevant — it will be deleted, not migrated.
-2. ::READ `$CONVENTIONS/architecture/authoring.md`. This defines the target format: the index document shape, the source document shape, and the rules for writing a rule. Follow it precisely.
+2. ::READ `$CONVENTIONS/knowledge/authoring.md`. This defines the target format: the index document shape, the source document shape, and the rules for writing a rule. Follow it precisely.
 3. Study `$CONVENTIONS/packages/typescript/art/index.md` and one file under `$CONVENTIONS/packages/typescript/art/src/` as working examples of the layout.
 4. Decompose the source content into `## Convention: {Name}` sections within the single `art/src/commit-message.md` file. The source covers commit format, allowed types, scopes, type–scope associations, examples, and rules — each becomes one or more convention sections.
 5. For each convention, decide the right depth based on what the rule communicates:
    - **Summary only** — for simple rules where the summary is self-evident (e.g. maximum message length). No Avoid/Prefer needed.
    - **Summary + breakdown** — for rules that enumerate allowed values or associations (e.g. valid commit types, type–scope associations). The breakdown lives in the summary or as a structured list within it.
    - **Summary + complete examples** — for rules that compose a message or bullet points and are best understood by seeing a full example. Include Avoid/Prefer pairs with concrete commit-message examples.
-6. Write `art/index.md` following the index format in `architecture/authoring.md`: H1 `# Conventions: Commits`, Purpose, Description, Principles, then one `## Conventions: Commits / Commit Message` section with its `:READ` directive and terse entries — one entry per `## Convention:` section in the source document.
+6. Write `art/index.md` following the index format in `knowledge/authoring.md`: H1 `# Conventions: Commits`, Purpose, Description, Principles, then one `## Conventions: Commits / Commit Message` section with its `:READ` directive and terse entries — one entry per `## Convention:` section in the source document.
 7. Write `art/src/commit-message.md` following the source document format: H1 `# Conventions: Commits / Commit Message`, Purpose, Description, then one `## Convention: {Name}` section per rule with its `**Summary:**` and, where needed, Avoid/Prefer examples.
 8. Ensure every index entry has a matching `## Convention:` section in the source document and every source section is listed in the index — no orphans, no unreachable conventions.
 9. Delete `art/commits.art`.
@@ -269,8 +269,8 @@ release(conventions): Publish commits package rewrite
 
 - Changes to any other conventions package.
 - Changes to the workspace source at `$WORKSPACE/knowledge/conventions/writing-commit-message.art`.
-- Changes to `architecture/authoring.md`.
-- Removal of the "Known Exceptions" section in `architecture/authoring.md` (separate cleanup).
+- Changes to `knowledge/authoring.md`.
+- Removal of the "Known Exceptions" section in `knowledge/authoring.md` (separate cleanup).
 
 ### Evidence
 
@@ -283,7 +283,7 @@ release(conventions): Publish commits package rewrite
 
 ### Findings
 
-- `architecture/authoring.md` has a "Known Exceptions" section documenting the commits single-file layout. This plan removes the exception but does not update that section — follow-up.
+- `knowledge/authoring.md` has a "Known Exceptions" section documenting the commits single-file layout. This plan removes the exception but does not update that section — follow-up.
 
 ### Decisions
 
@@ -298,7 +298,7 @@ release(conventions): Publish commits package rewrite
 
 ### Follow Ups
 
-- Remove the "Known Exceptions" section from `architecture/authoring.md` once the commits package no longer matches that description.
+- Remove the "Known Exceptions" section from `knowledge/authoring.md` once the commits package no longer matches that description.
 
 ### Feedback
 

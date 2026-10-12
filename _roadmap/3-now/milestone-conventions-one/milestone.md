@@ -63,11 +63,11 @@ The following conventions packages are in progress or planned.
 
 ### Upstream Work
 
-| Kind        | Path                                                  | Role                                                            |
-| ----------- | ----------------------------------------------------- | --------------------------------------------------------------- |
-| Parking Lot | `$CONVENTIONS/_backlog/_parking-lot.md`               | Tracks short-term actionables, pending questions, and blockers. |
-| Source      | `$CONVENTIONS/architecture/records/adr/taxonomy.art`  | ADR: Package mapping by convention concern.                     |
-| Source      | `$CONVENTIONS/architecture/records/adr/packaging.art` | ADR: Extension chain and package composition.                   |
+| Kind        | Path                                               | Role                                                            |
+| ----------- | -------------------------------------------------- | --------------------------------------------------------------- |
+| Parking Lot | `$CONVENTIONS/_backlog/_parking-lot.md`            | Tracks short-term actionables, pending questions, and blockers. |
+| Source      | `$CONVENTIONS/knowledge/records/adr/taxonomy.art`  | ADR: Package mapping by convention concern.                     |
+| Source      | `$CONVENTIONS/knowledge/records/adr/packaging.art` | ADR: Extension chain and package composition.                   |
 
 ### Required Skills
 
@@ -83,7 +83,7 @@ The following conventions packages are in progress or planned.
 
 ### Knowledge
 
-::READ `$CONVENTIONS/architecture/index.md` (Briefing) — Architecture principles and NFRs. Relevant for Planning Work Item.
+::READ `$CONVENTIONS/knowledge/index.md` (Briefing) — Architecture principles and NFRs. Relevant for Planning Work Item.
 
 ---
 

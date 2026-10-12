@@ -1,6 +1,6 @@
-# Architecture: Conventions
+# Knowledge: Conventions
 
-**Purpose:** Index the architecture documents, design documents, and decision records of the Conventions repository.
+**Purpose:** Index the knowledge documents, design documents, and decision records of the Conventions repository.
 
 ## Documents
 

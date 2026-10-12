@@ -29,7 +29,7 @@
 
 ## Summary
 
-Consolidate every convention-authoring surface under one skill. Three new routines — `draft-conventions.art`, `review-conventions.art`, and `create-or-update-conventions.art` — replace the two `#wip` write routines and follow the routine canon (Purpose, Inputs, Outputs, Procedure with numbered steps; no `RULE:` bullets). They do not prescribe a conventions format: rule shape comes from an `%authoring-guide` input whose documented default is the raw GitHub endpoint of `$CONVENTIONS/architecture/authoring.md`, since that file is not guaranteed to exist in consumer repositories. Draft and review are save-target agnostic, so an agent may stage a draft in its own repository and later promote it into a conventions package. A new `write-conventions` skill exposes the three routines as commands, and the superseded `draft-conventions` / `review-conventions` skills are deleted. Finally, `agent-reference-curator` and `agent-context-curator` are retired, leaving architect, planner, and the pair modes as the owners of this skill.
+Consolidate every convention-authoring surface under one skill. Three new routines — `draft-conventions.art`, `review-conventions.art`, and `create-or-update-conventions.art` — replace the two `#wip` write routines and follow the routine canon (Purpose, Inputs, Outputs, Procedure with numbered steps; no `RULE:` bullets). They do not prescribe a conventions format: rule shape comes from an `%authoring-guide` input whose documented default is the raw GitHub endpoint of `$CONVENTIONS/knowledge/authoring.md`, since that file is not guaranteed to exist in consumer repositories. Draft and review are save-target agnostic, so an agent may stage a draft in its own repository and later promote it into a conventions package. A new `write-conventions` skill exposes the three routines as commands, and the superseded `draft-conventions` / `review-conventions` skills are deleted. Finally, `agent-reference-curator` and `agent-context-curator` are retired, leaving architect, planner, and the pair modes as the owners of this skill.
 
 ## Context
 
@@ -39,7 +39,7 @@ Consolidate every convention-authoring surface under one skill. Three new routin
 | --------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Milestone | `$CONVENTIONS/_roadmap/3-now/milestone-conventions-one/milestone.md` | Phase 3 — Refine Distribution: author conventions and generate indexes. |
 | Routines  | `$DOMAINS/conventions/routines/`                                     | Current routine set to be consolidated.                                 |
-| Source    | `$CONVENTIONS/architecture/authoring.md`                             | Authoring rules this plan must not hard-code into the routines.         |
+| Source    | `$CONVENTIONS/knowledge/authoring.md`                                | Authoring rules this plan must not hard-code into the routines.         |
 
 ### Required Skills
 
@@ -214,7 +214,7 @@ Each routine MUST carry `**Purpose:**`, `**Inputs:**`, `**Outputs:**`, and `**Pr
 
 **Shared Inputs:**
 
-- `%authoring-guide` — Path or URL of the authoring guide that defines the conventions format. Default: `https://raw.githubusercontent.com/noodlestan/conventions/refs/heads/main/architecture/authoring.md`. The default is a raw endpoint because `$CONVENTIONS/architecture/authoring.md` is not present in consumer repositories.
+- `%authoring-guide` — Path or URL of the authoring guide that defines the conventions format. Default: `https://raw.githubusercontent.com/noodlestan/conventions/refs/heads/main/knowledge/authoring.md`. The default is a raw endpoint because `$CONVENTIONS/knowledge/authoring.md` is not present in consumer repositories.
 - `%save-path` — Where the routine writes its artifact. Defaults to the base path of the source code of the package in context. Draft and review MUST NOT assume the conventions repository.
 
 **Dependencies:**
@@ -367,7 +367,7 @@ chore(agents): Retire curator agent modes
 
 ### Decisions
 
-- **Format is an input, not a routine** — the routines MUST NOT encode a conventions format. `%authoring-guide` supplies it, defaulting to the raw GitHub endpoint of `architecture/authoring.md`, following the precedent of `%manifest-url` in `discover-available-conventions.art`.
+- **Format is an input, not a routine** — the routines MUST NOT encode a conventions format. `%authoring-guide` supplies it, defaulting to the raw GitHub endpoint of `knowledge/authoring.md`, following the precedent of `%manifest-url` in `discover-available-conventions.art`.
 - **Draft and review are save-target agnostic** — `%save-path` defaults to the package in context, so an agent may stage work in its own repository and promote it into a conventions package later.
 - **Routines follow the canon with no rules** — Purpose, Inputs, Outputs, numbered Procedure; `RULE:` bullets are removed from authoring guidance.
 - **One skill owns authoring** — `write-conventions` replaces two overlapping skills so agents have a single entry point.
