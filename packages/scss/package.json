@@ -2,6 +2,10 @@
   "name": "@noodlestan/conventions-scss",
   "version": "0.0.1",
   "description": "Reference conventions for SCSS.",
+  "keywords": [
+    "scss",
+    "conventions"
+  ],
   "author": "Noodlestan Collective",
   "license": "MIT",
   "private": false,

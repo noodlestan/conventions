@@ -2,6 +2,10 @@
   "name": "@noodlestan/conventions-commits",
   "version": "0.0.1",
   "description": "Commit conventions for Noodlestan.",
+  "keywords": [
+    "commits",
+    "conventions"
+  ],
   "author": "Noodlestan Collective",
   "license": "MIT",
   "private": false,

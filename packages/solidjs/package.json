@@ -2,6 +2,10 @@
   "name": "@noodlestan/conventions-solidjs",
   "version": "0.0.1",
   "description": "Reference conventions for SolidJS, extending JSX conventions.",
+  "keywords": [
+    "solidjs",
+    "conventions"
+  ],
   "author": "Noodlestan Collective",
   "license": "MIT",
   "private": false,

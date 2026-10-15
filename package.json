@@ -4,6 +4,15 @@
   "private": true,
   "type": "module",
   "description": "Conventions packages for Noodlestan stack, including Typescript, JSX, Solid JS, and SCSS.",
+  "keywords": [
+    "conventions",
+    "typescript",
+    "jsx",
+    "solidjs",
+    "scss",
+    "unit-tests",
+    "style-guide"
+  ],
   "author": "Noodlestan",
   "license": "MIT",
   "packageManager": "npm@10.2.3",

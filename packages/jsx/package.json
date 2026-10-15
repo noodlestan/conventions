@@ -2,6 +2,10 @@
   "name": "@noodlestan/conventions-jsx",
   "version": "0.0.1",
   "description": "Reference conventions for JSX, extending TypeScript conventions.",
+  "keywords": [
+    "jsx",
+    "conventions"
+  ],
   "author": "Noodlestan Collective",
   "license": "MIT",
   "private": false,

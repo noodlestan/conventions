@@ -2,6 +2,11 @@
   "name": "@noodlestan/conventions-unit-tests",
   "version": "0.1.0",
   "description": "Reference conventions for unit tests, extending TypeScript conventions.",
+  "keywords": [
+    "unit-tests",
+    "conventions",
+    "testing"
+  ],
   "author": "Noodlestan Collective",
   "license": "MIT",
   "private": false,
