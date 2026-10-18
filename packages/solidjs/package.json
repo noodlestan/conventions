@@ -4,7 +4,9 @@
   "description": "Reference conventions for SolidJS, extending JSX conventions.",
   "keywords": [
     "solidjs",
-    "conventions"
+    "typescript",
+    "conventions",
+    "style-guide"
   ],
   "author": "Noodlestan Collective",
   "license": "MIT",

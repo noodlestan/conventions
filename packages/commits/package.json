@@ -4,7 +4,8 @@
   "description": "Commit conventions for Noodlestan.",
   "keywords": [
     "commits",
-    "conventions"
+    "conventions",
+    "style-guide"
   ],
   "author": "Noodlestan Collective",
   "license": "MIT",

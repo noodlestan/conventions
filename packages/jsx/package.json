@@ -4,7 +4,9 @@
   "description": "Reference conventions for JSX, extending TypeScript conventions.",
   "keywords": [
     "jsx",
-    "conventions"
+    "typescript",
+    "conventions",
+    "style-guide"
   ],
   "author": "Noodlestan Collective",
   "license": "MIT",

@@ -6,11 +6,6 @@
   "description": "Conventions packages for Noodlestan stack, including Typescript, JSX, Solid JS, and SCSS.",
   "keywords": [
     "conventions",
-    "typescript",
-    "jsx",
-    "solidjs",
-    "scss",
-    "unit-tests",
     "style-guide"
   ],
   "author": "Noodlestan",

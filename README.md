@@ -4,7 +4,7 @@
 
 Conventions packages for Noodlestan stack, including Typescript, JSX, Solid JS, and SCSS.
 
-**Keywords:** conventions, typescript, jsx, solidjs, scss, unit-tests, style-guide.
+**Keywords:** conventions, style-guide.
 
 ## Convention Packages
 
