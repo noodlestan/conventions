@@ -6,7 +6,7 @@
 
 ## Convention: Helper Grouping
 
-**Summary:** Group helpers by domain directory under `test/helpers/{domain}/` — never leave a helper at the helpers root. Port shared utilities from `$ART_WORK` instead of re-inventing them.
+**Summary:** Group helpers by domain directory under `test/helpers/{domain}/` — never leave a helper at the helpers root. Port shared utilities from `$ART_WORKS` instead of re-inventing them.
 
 **Avoid:**
 
