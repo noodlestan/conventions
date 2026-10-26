@@ -9,20 +9,24 @@
   ],
   "author": "Noodlestan Collective",
   "license": "MIT",
-  "private": false,
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/noodlestan/conventions.git",
     "directory": "packages/scss"
   },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "art",
+    "README.md",
     "LICENSE-MIT",
-    "README.md"
+    "CHANGELOG.md"
   ],
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "lint": "prettier . -c",
     "lint:fix": "prettier . -c --write",

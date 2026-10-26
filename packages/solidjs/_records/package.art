@@ -27,6 +27,13 @@
 
 **PackageFile:** package.json
 
+**Files:**
+
+- `art`
+- `README.md`
+- `LICENSE-MIT`
+- `CHANGELOG.md`
+
 **Dependencies:**
 
 - Runtime:
